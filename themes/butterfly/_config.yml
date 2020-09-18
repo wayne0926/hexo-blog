@@ -20,6 +20,7 @@ menu:
     # - Movie || /movies/ || fas fa-video
    工具||fas fa-box-open :
     - 在线听写助手 || /tx/ || fas fa-check-circle
+    - 人生倒计时 || /time-to/ || far fa-clock
     # - 随机密码生成器 || /suijimima/ || fas fa-
    留言板: /messageboard/ || fas fa-comment-dots
    链接: /link/ || fas fa-link
