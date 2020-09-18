@@ -94,10 +94,10 @@ Hexo作为静态博客，好处相当明显，开销少，并且对于那种DDos
 
 ### 1.注册travis-ci.org
 
-前往 [https://travis-ci.org] 用Github账号注册 **注意了啊,注意了啊,** 是 `.org` 而不是 `.com` ! 鬼知道我在这上面浪费了多少时间! `travis-ci.org` 是免费给公开repo部署的,`travis-ci.com` 是收费的,但是 `travis-ci.com` 却是可以绑定并免费部署公开Repo的.最有问题的是这两个网站其中一个绑定repo后,另一个就不能绑定了!! 害得我以为是缓存搞出来的事,搞了半天没解决,一看地址栏人都傻了.![](https://unpkg.zhimg.com/chenyfan-oss@1.0.0/pic/moji/tx.png)
+前往 [https://travis-ci.org](https://travis-ci.org) 用Github账号注册 **注意了啊,注意了啊,** 是 `.org` 而不是 `.com` ! 鬼知道我在这上面浪费了多少时间! `travis-ci.org` 是免费给公开repo部署的,`travis-ci.com` 是收费的,但是 `travis-ci.com` 却是可以绑定并免费部署公开Repo的.最有问题的是这两个网站其中一个绑定repo后,另一个就不能绑定了!! 害得我以为是缓存搞出来的事,搞了半天没解决,一看地址栏人都傻了.![](https://unpkg.zhimg.com/chenyfan-oss@1.0.0/pic/moji/tx.png)
 
 ### 2.绑定travis
- 前往 [https://github.com/marketplace/travis-ci] 绑定travis-ci到你的github后 继续前往 [GitHub 的 Applications settings](https://github.com/settings/installations) ,点击 `Travis CI`配置你的repo能被TravisCI访问 
+ 前往 [https://github.com/marketplace/travis-ci](https://github.com/marketplace/travis-ci) 绑定travis-ci到你的github后 继续前往 [GitHub 的 Applications settings](https://github.com/settings/installations) ,点击 `Travis CI`配置你的repo能被TravisCI访问 
  
 ![](https://unpkg.zhimg.com/chenyfan-oss@1.0.0/pic/postpic/20200629142607.jpg)
 
@@ -122,7 +122,7 @@ Hexo作为静态博客，好处相当明显，开销少，并且对于那种DDos
 
 进入Repo的 **Master** 分支，新建一个 `.travis.yml` ，里面塞上：
 
-```yml
+```yaml
 sudo: false
 language: node_js
 node_js:
@@ -151,7 +151,7 @@ Token很重要,你必须要告诉Travis-ci,因为它要获取对你的repo的写
 
 所以,在 [### 4.修改Repo] 中,`github-token:` 后面跟着的不是明文,而是变量  `$GH_TOKEN`.
 
-进入 [https://travis-ci.org/github/{用户名}/{仓库名}/settings] 中,看到 **Environment Variables** ,Name选择 `GH_TOKEN` ,Value把[### 3.新建Token] 中的Token粘贴到里面去.BRANCH直接默认.
+进入 `https://travis-ci.org/github/{用户名}/{仓库名}/settings` 中,看到 **Environment Variables** ,Name选择 `GH_TOKEN` ,Value把[### 3.新建Token] 中的Token粘贴到里面去.BRANCH直接默认.
 
 **特别注意!,将后面DISPLAY VALUE IN BUILD LOG弄成灰色,不然你的Token将会公开!**,如果你不慎公开Token,请前往GithubPersonalToken删除并重新生成一个Token!
 
