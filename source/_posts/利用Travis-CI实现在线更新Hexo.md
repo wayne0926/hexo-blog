@@ -7,7 +7,7 @@ tags:
   - 在线更新
   - 奇淫巧计
 categories: 教程
-cover: https://rmt.dogedoge.com/fetch/hi-c-oss/storage/20200629152457.jpg
+cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/tc.jpg
 keywords: 利用Travis-CI实现在线更新Hexo
 description: 利用Travis-CI实现在线更新Hexo
 copyright_author: CYF
@@ -18,7 +18,6 @@ abbrlink:
 ---
 
 <div class="tip">本文转载于CYF ，已获得其本人同意 &ensp;&ensp; 原文👉 <a href="https://blog.cyfan.top/p/e626cb30.html" style="color:white;"> 利用Travis-CI实现在线更新Hexo</a></div>
-
 
 Hexo作为静态博客，好处相当明显，开销少，并且对于那种DDosS和CC套上CDN毅然不动。当然，最蛋疼的莫过于更新了，每次在自己电脑上辛辛苦苦码好字，一个push，hexo绿色光芒在命令提示符上闪烁着光芒，突然发现把仓库名字 `ChenYFan` 打成 `CehnYFan` <span class="heimu">真实事件</span> ，异或着是用手机查看自己的博客，突然发现：
 
@@ -102,7 +101,7 @@ Hexo作为静态博客，好处相当明显，开销少，并且对于那种DDos
 
 ### 2.绑定travis
  前往 [https://github.com/marketplace/travis-ci](https://github.com/marketplace/travis-ci) 绑定travis-ci到你的github后 继续前往 [GitHub 的 Applications settings](https://github.com/settings/installations) ,点击 `Travis CI`配置你的repo能被TravisCI访问 
- 
+
 ![](https://unpkg.zhimg.com/chenyfan-oss@1.0.0/pic/postpic/20200629142607.jpg)
 
 ### 3.新建Token
