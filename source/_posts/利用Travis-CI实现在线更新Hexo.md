@@ -10,6 +10,10 @@ categories: 教程
 cover: https://rmt.dogedoge.com/fetch/hi-c-oss/storage/20200629152457.jpg
 keywords: 利用Travis-CI实现在线更新Hexo
 description: 利用Travis-CI实现在线更新Hexo
+copyright_author: CYF
+copyright_author_href: https://cyfan.top
+copyright_url: https://blog.cyfan.top/p/e626cb30.html
+copyright_info: 本文转载于CYF，已获得其本人同意
 abbrlink:
 ---
 
