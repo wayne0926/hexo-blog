@@ -1,0 +1,12 @@
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>@charset "UTF-8";
+
+@font-face {
+  font-family: "NotoSerifSC-SemiBold";
+  src: url("NotoSerifSC-SemiBold.woff2") format("woff2"),
+       url("NotoSerifSC-SemiBold.woff") format("woff"),
+       url("NotoSerifSC-SemiBold.ttf") format("truetype"),
+       url("NotoSerifSC-SemiBold.eot") format("embedded-opentype"),
+       url("NotoSerifSC-SemiBold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

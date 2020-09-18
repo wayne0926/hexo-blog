@@ -1,0 +1,146 @@
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
+<!doctype html>
+<html lang="zh">
+
+<head>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="日记簿">
+    <meta name="author" content="Wei Ran">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>在线听写助手 - WR</title>
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <script src="javascript.js"></script>
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/"> -->
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <!-- <link href="starter-template.css" rel="stylesheet"> -->
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-xl">
+            <a class="navbar-brand" href="https://wr0926.ml/tx/new2/">在线听写助手</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07XL"
+                aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample07XL">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://wr0926.ml">主页 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="MsgBox2()">关于</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../liuyan/" tabindex="0" aria-disabled="true">反馈</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07XL" data-toggle="dropdown"
+                            aria-expanded="false">工具</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown07XL">
+                            <a class="dropdown-item" href="../../color/">Kalimah渐变色生成器</a>
+                            <a class="dropdown-item" href="../../time-to/">人生倒计时</a>
+                            <a class="dropdown-item" href="../../suijimima/">随机密码生成器</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- <form class="form-inline my-2 my-md-0">
+          <input class="form-control" type="text" placeholder="搜索" aria-label="Search">
+        </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <main role="main" class="container">
+        <div class="alert alert-danger">
+            <strong>警告!</strong> 此半成品，暂时无法使用（无法听写，只可点击单词发音）。<a href="https://wr0926.ml/tx/">点我访问可用版本</a>
+          </div>
+        <div class="alert alert-primary alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>使用说明：</strong>
+            将单词按照一行一词粘贴到下面的输入框。点击“转换”，然后下方会出现转换后的单词；单击每个单词，会发出读音，右下角会出现释义；设定间隔时间，点击“听写”，即可按时间间隔，依次读出每个单词。
+        </div>
+        <div class="input-group flxed-left">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="txtJSON">输入单词</label>
+            </div>
+            <textarea class="form-control" aria-label="With textarea" id="txtJSON"
+                style="max-height: 350px;min-height: 200px;" placeholder="粘贴/输入单词到这里"></textarea>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1" for="angle-from">时间间隔</span>
+            </div>
+            <input type="text" class="form-control" placeholder="设置单词朗读时间间隔" type="number" id="time" value="10" min="1">
+            <div class="input-group-prepend">
+                <span class="input-group-text">秒</span>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">朗读发音</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option value="2" type="radio" name="proun">美式发音</option>
+                    <option value="1" type="radio" name="proun">英式发音</option>
+                </select>
+                <div class="btn-group btn-group-lg text-center" role="group" style="width: 100%">
+                    <button class="btn btn-outline-primary" type="button" style="width: 50%;" id="convert"
+                        onclick="zhuanhuan()">转换</button>
+                    <button class="btn btn-primary" type="button" style="width: 50%;" id="dictation"
+                        >听写</button>
+                </div>
+            </div>
+            <div class="display" id="display" style="width:100%">
+            </div>
+    </main><!-- /.container -->
+    <audio id="audio" style="display:none"></audio>
+    <hr>
+    <footer class="container text-center">
+        <p>Copyright © 2020-2020<a href="https://wr0926.ml">Wei Ran</a></p>
+    </footer>
+
+
+
+</body>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script>
+    window.jQuery || document.write(
+        '<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.slim.min.js"><\/script>')
+</script>
+<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="autosize.min.js"></script>
+<script>
+    autosize(document.querySelectorAll('textarea'));
+</script>
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
+</html>

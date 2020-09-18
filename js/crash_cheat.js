@@ -1,0 +1,1 @@
+var OriginTitle = document.title; var titleTime; document.addEventListener("visibilitychange", function () { if (document.hidden) { } else { $('[rel="icon"]').attr("href", "/favicon.ico"); document.title = "(≧▽≦q)可爱的你回来了"; titleTime = setTimeout(function () { document.title = OriginTitle }, 1300) } });
