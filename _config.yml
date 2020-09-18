@@ -1,0 +1,228 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 时过境迁Wayne博客
+subtitle: ""
+description: "时过境迁Wayne的个人博客"
+keywords: "WR博客,时过境迁Wayne博客,时过境迁Wayne的博客,WR的博客,魏然的博客,Wayne的博客"
+author: 时过境迁Wayne
+language: zh-CN
+timezone: "Asia/Shanghai"
+
+# 网址
+# 如果您的网站位于子目录中，则将url设置为“ http://yoursite.com/child”，将根目录设置为“ /child /”
+url: https://www.wr0926.ml
+root: /
+# permalink: :year/:month/:day/:title/
+permalink: p/:abbrlink/  # 此处可以自己设置，也可以直接使用 :/abbrlink ，建议前面带目录，不然太乱
+abbrlink:
+    alg: crc32  #算法： crc16(default) and crc32
+    rep: hex  #进制： dec(default) and hex
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # 设置为false可从永久链接中删除结尾的“ index.html”
+  trailing_html: true # 设置为false可从永久链接中删除结尾的“ .html”
+
+# 目录
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render: 
+  - letbaidu\**
+# 写作
+new_post_name: :title.md # 新帖子的文件名
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # 在新标签页中打开外部链接
+  field: site # Apply to the whole site
+  exclude: ""
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ""
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ""
+
+# 主页设置
+# path：您的博客索引页面的根路径。(默认 = '')
+# per_page：每页显示的帖子。 (0 = 禁用分页)
+# order_by：发布订单。 (默认按日期顺序降序)
+index_generator:
+  path: ""
+  per_page: 10
+  order_by: -date
+
+# 分类和标签
+default_category: uncategorized
+category_map:
+tag_map:
+
+# 元数据元素
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# 日期/时间格式
+## Hexo使用Moment.js解析和显示日期
+## 您可以按照定义自定义日期格式
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option 支持 'mtime', 'date', 'empty'
+updated_option: "mtime"
+
+# 分页
+## 将per_page设置为0以禁用分页
+per_page: 10
+pagination_dir: page
+
+# 包含/排除文件
+## include:/exclude: 选项仅适用于 'source/' 夹
+include:
+exclude:
+ignore:
+
+# 扩展名
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: butterfly
+plugins: hexo-generator-feed
+# 部署方式
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  - type: git
+    # repo: git@github.com:wayne0926/wrblog.github.io.git
+    repo: 
+      github: https://github.com/wayne0926/wayne0926.github.io.git
+      coding: https://e.coding.net/wr0926/blog/blog.git
+      gitee: https://gitee.com/wayne0926/wayne0926.git
+    branch: master
+  - type: baidu_url_submitter
+  - type: cjh_google_url_submitter
+  - type: cjh_bing_url_submitter
+  - type: cjh_baidu_url_submitter
+    # branch: [branch]
+    # message: [message]''
+# backup:
+#     type: git
+#     repo: git@github.com:wayne0926/wrblog.github.io.git,backup
+#       #  github: https://github.com/wayne0926/wrblog.github.io,backup
+#       #  coding: https://e.coding.net/wr0926/blog/blog.git,backup
+# hexo-admin authentification
+admin:
+  deployCommand: "hexo-pubish.bat"
+  username: wayne0926
+  password_hash: $2a$10$joYksU1eboAe9F7HKxuxm.72jSNgKuX2Y7nw6IoXxBV1h3JB3tHSC
+  secret: 2006092620060926wr!
+
+baidu_url_submit:
+  count: 3 ## 比如3，代表提交最新的三个链接
+  host: www.wr0926.ml ## 在百度站长平台中注册的域名
+  token: mNvdE6LuwvryhaeS ## 请注意这是您的秘钥， 请不要发布在公众仓库里!
+  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
+
+#Feed Atom(RSS订阅)
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+# 看板娘
+live2d:
+  enable: true
+  scriptFrom: https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: true
+  react:
+    opacity: 0.7
+
+## URL提交
+hexo_submit_urls_to_search_engine:
+  submit_condition: count #链接被提交的条件，可选值：count | period 现仅支持count
+  count: 3 # 提交最新的10个链接
+  period: 900 # 提交修改时间在 900 秒内的链接
+  google: 0 # 是否向Google提交，可选值：1 | 0（0：否；1：是）
+  bing: 1 # 是否向bing提交，可选值：1 | 0（0：否；1：是）
+  baidu: 1 # 是否向baidu提交，可选值：1 | 0（0：否；1：是）
+  txt_path: submit_urls1.txt ## 文本文档名， 需要推送的链接会保存在此文本文档里
+  baidu_host: https://www.wr0926.ml ## 在百度站长平台中注册的域名
+  baidu_token: mNvdE6LuwvryhaeS ## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!
+  bing_host: https://wr0926.ml ## 在bing站长平台中注册的域名
+  bing_token: 20a2e3265af3455eb437e518d6ead7c7 ## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!
+  google_host: https://wr0926.ml ## 在google站长平台中注册的域名
+  google_key_file: Project.json #存放google key的json文件，放于网站根目录（与hexo _config.yml文件位置相同），请不要把json文件内容直接发布在公众仓库里!
+  replace: 0  # 是否替换链接中的部分字符串，可选值：1 | 0（0：否；1：是）
+  find_what: http://wr0926.ml
+  replace_with: https://wr0926.ml
+
+#
+aplayer:
+  meting: true
+
+# 跳转
+hexo_external_link:
+  enable: true
+  enable_base64_encode: false
+  url_param_name: 'u'
+  html_file_name: 'go.html'
+  target_blank: true
+  link_rel: 'external nofollow noopener noreferrer'
+  domain:  # 如果开启了防盗链，填写你的域名
+  safety_chain: false
+
+# offline config passed to sw-precache.
+service_worker:
+  maximumFileSizeToCacheInBytes: 5242880
+  staticFileGlobs:
+  - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
+  stripPrefix: public
+  verbose: true
+  runtimeCaching:
+    - urlPattern: /*  # 子路径（接受通配符）
+      handler: cacheFirst
+      options:
+        origin: unpkg.com  # 域名
+    - urlPattern: /gh/*   # 子路径（接受通配符）
+      handler: cacheFirst
+      options:
+        origin: cdn.jsdelivr.net  # 域名 
+    - urlPattern: /t/*   # 子路径（接受通配符）
+      handler: cacheFirst
+      options:
+        origin: at.alicdn.com  # 域名 
+    - urlPattern: /*   # 子路径（接受通配符）
+      handler: cacheFirst
+      options:
+        origin: fonts.googleapis.com  # 域名 
+    - urlPattern: /npm/*   # 子路径（接受通配符）
+      handler: cacheFirst
+      options:
+        origin: cdn.jsdelivr.net  # 域名 

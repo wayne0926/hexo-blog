@@ -1,0 +1,59 @@
+- let emojiMaps = '""'
+if site.data.valine
+  - emojiMaps = JSON.stringify(site.data.valine)
+
+script.
+  var requestSetting = function (from,set) {
+    var from = from
+    var setting = set.split(',').filter(function(item){
+    return from.indexOf(item) > -1
+    });
+    setting = setting.length == 0 ? from :setting;
+    return setting
+  }
+
+  var guestInfo = requestSetting(['nick','mail','link'],'#{ theme.valine.guest_info }')
+  var requiredFields = requestSetting(['nick','mail','link'],'#{ theme.valine.requiredFields }')
+  let friends = '#{theme.valine.friends}'.split(',')
+  let master = '#{theme.valine.master}'.split(',')
+  let tagMeta = '#{theme.valine.tagMeta || "博主,小伙伴,访客"}'.split(',')
+
+  function loadValine () {
+    function initValine () {
+      window.valine = new Valine({
+        el: '#vcomment',
+        appId: '#{theme.valine.appId}',
+        appKey: '#{theme.valine.appKey}',
+        placeholder: '#{theme.valine.placeholder}',
+        avatar: '#{theme.valine.avatar}',
+        meta: '#{theme.valine.guest_info }'.split(','),
+        pageSize: '#{theme.valine.pageSize}',
+        lang: '#{theme.valine.lang}',
+        recordIP: #{theme.valine.recordIP},
+        serverURLs: '#{theme.valine.serverURLs}',
+        emojiCDN: '#{theme.valine.emojiCDN}',
+        emojiMaps: !{emojiMaps},
+        enableQQ: #{theme.valine.enableQQ},
+        path: window.location.pathname,
+        master: master,
+        friends: friends,
+        tagMeta: tagMeta,
+        metaPlaceholder: !{JSON.stringify(theme.valine.metaPlaceholder || {})}
+      });
+      if ('#{theme.valine.requiredFields}') { valine.config.requiredFields= '#{theme.valine.requiredFields}'.split(',') }
+    }
+
+    if (typeof Valine === 'function') initValine() 
+    else $.getScript('!{url_for(theme.CDN.valine)}', initValine)
+  }
+
+  if ('!{theme.comments.use[0]}' === 'Valine' || !!{theme.comments.lazyload}) {
+    if (!{theme.comments.lazyload}) btf.loadComment(document.querySelector('#vcomment'),loadValine)
+    else setTimeout(() => loadValine(), 0)
+  } else {
+    function loadOtherComment () {
+      loadValine()
+    }
+  }
+  
+
