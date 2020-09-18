@@ -631,7 +631,7 @@ aside:
       link: https://github.com/wayne0926
   card_announcement:
     enable: true
-    content: <i class="fas fa-bell"></i>&ensp;欢迎来到时过境迁Wayne的博客<span><a href="https://wayne0926.gitee.io/"><i class="far fa-hand-point-right"></i>  国内镜像</a></span>
+    content: <i class="fas fa-bell"></i>&ensp;欢迎来到时过境迁Wayne的博客 <br> 本人已开学，博客更新可能只有周末甚至都不行，😔<span><a href="https://wayne0926.gitee.io/"><i class="far fa-hand-point-right"></i>  国内镜像</a></span>
   card_recent_post:
     enable: true
     limit: 5 # 如果设置为0将显示全部
