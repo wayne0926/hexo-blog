@@ -160,7 +160,7 @@ live2d:
     width: 150
     height: 300
   mobile:
-    show: true
+    show: false
   react:
     opacity: 0.7
 
