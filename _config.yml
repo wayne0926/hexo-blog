@@ -146,7 +146,7 @@ feed:
 
 # 看板娘
 live2d:
-  enable: true
+  enable: false
   scriptFrom: https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js
   pluginRootPath: live2dw/
   pluginJsPath: lib/
