@@ -63,6 +63,14 @@
       link: https://blog.cyfan.top
       avatar: https://img.cyfan.top/pic/BLOGER.jpg
       descr: 一个在互联网角落挣扎的小小博客，很小很小
+    - name: Flexiston
+      link: https://flesx.cn/
+      avatar: https://rmt.dogedoge.com/fetch/Flexiston/storage/avatar-min.jpg?fmt=webp
+      descr: 立即行动吧，未来要自己争取
+    - name: HCLonely
+      link: https://blog.hclonely.com/
+      avatar: https://cdn.jsdelivr.net/gh/HCLonely/blog.hclonely.com@latest/img/avatar.jpg
+      descr: 一个懒人的博客
     - name: Hermoso
       link: https://www.webpages.show/
       avatar: http://tu.webpages.show/avatar/avatar.png
@@ -75,10 +83,6 @@
       link: https://yangchaoyi.vip/
       avatar: https://cdn.jsdelivr.net/gh/Chocolate1999/cdn/img/avatar.png
       descr: 不是只会写业务代码の前端攻城狮
-    - name: HCLonely
-      link: https://blog.hclonely.com/
-      avatar: https://cdn.jsdelivr.net/gh/HCLonely/blog.hclonely.com@latest/img/avatar.jpg
-      descr: 一个懒人的博客
     - name: 火喵酱
       link: https://dorcandy.cn
       avatar: https://cdn.jsdelivr.net/gh/zc998800/cdn/image/dorcandy.jpg
@@ -103,10 +107,6 @@
       link: https://ancientone.cf
       avatar: https://s1.ax1x.com/2020/08/23/dBVBmn.png
       descr: 永远年轻，永远热泪盈眶
-    - name: Flexiston
-      link: https://flesx.cn/
-      avatar: https://rmt.dogedoge.com/fetch/Flexiston/storage/avatar-min.jpg?fmt=webp
-      descr: 立即行动吧，未来要自己争取
     - name: しゅふがく
       link: https://zfe.one
       avatar: https://zfe.space/images/headimage.png
