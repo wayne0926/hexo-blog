@@ -1,18 +1,18 @@
 - class_name: 站内链接 >内核版本较低的浏览器无法正常显示部分页面<
   class_desc: 站内链接
   link_list:
-    - name: 在线听写助手
-      link: https://wr0926.ml/tx/
-      avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/tx.png
-      descr: 快速好用的听写工具
-    - name: 随机密码生成器
-      link: https://wr0926.ml/suijimima/
-      avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/suijimima.png
-      descr: 简单易用的随机密码生成工具
-    - name: Kalimah渐变色生成器
-      link: https://wr0926.ml/color/
-      avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/jianbianse.png
-      descr: 功能强大的渐变色生成工具
+ #   - name: 在线听写助手
+ #     link: https://wr0926.ml/tx/
+ #     avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/tx.png
+ #     descr: 快速好用的听写工具
+  #  - name: 随机密码生成器
+  #    link: https://wr0926.ml/suijimima/
+  #    avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/suijimima.png
+  #    descr: 简单易用的随机密码生成工具
+   # - name: Kalimah渐变色生成器
+   #   link: https://wr0926.ml/color/
+   #   avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/jianbianse.png
+   #   descr: 功能强大的渐变色生成工具
     - name: 狗屁不通文章
       link: https://bull.wr0926.ml/
       avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/BullshitGenerator.jpg
@@ -41,17 +41,17 @@
       link: https://fonts.wr0926.ml/
       avatar: https://www.gstatic.com/images/branding/product/2x/google_fonts_blue_ios_96dp.png
       descr: Google Fonts(镜像站非CDN)出错就刷新
-- class_name: 本站
-  class_desc: 镜像站
-  link_list:
-    - name: Wayne博客
-      link: https://wr0926.ml
-      avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/avatar.jpg
-      descr: GitHub主站
-    - name: Wayne博客
-      link: https://wayne0926.gitee.io/
-      avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/avatar.jpg
-      descr: Gitee镜像(国内)
+#- class_name: 本站
+#  class_desc: 镜像站
+#  link_list:
+#    - name: Wayne博客
+#      link: https://wr0926.ml
+#      avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/avatar.jpg
+#      descr: GitHub主站
+#    - name: Wayne博客
+#      link: https://wayne0926.gitee.io/
+#      avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/avatar.jpg
+#      descr: Gitee镜像(国内)
 - class_name: 友人帐
   class_desc: 『友情链接』
   link_list:
@@ -210,6 +210,6 @@
       avatar: https://icons8.com/vue-static/upscaler/favicon.png
       descr: 免费在线放大图像
     - name: GitHub代下
-      link: http://g.widora.cn/
+      link: http://gitd.cc/
       avatar: http://g.widora.cn/images/githublogo.png
       descr: GitHub代下载服务
