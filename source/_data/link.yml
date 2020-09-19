@@ -1,4 +1,4 @@
-- class_name: 站内链接  >此页存在手机显示不全问题，待修复！<
+- class_name: 站内链接 >内核版本较低的浏览器无法正常显示部分页面<
   class_desc: 站内链接
   link_list:
     - name: 在线听写助手
