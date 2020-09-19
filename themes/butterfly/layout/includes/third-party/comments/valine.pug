@@ -20,7 +20,7 @@ script.
 
   function loadValine () {
     function initValine () {
-      window.valine = new Valine({
+      const initData = {
         el: '#vcomment',
         appId: '#{theme.valine.appId}',
         appKey: '#{theme.valine.appKey}',
@@ -35,12 +35,13 @@ script.
         emojiMaps: !{emojiMaps},
         enableQQ: #{theme.valine.enableQQ},
         path: window.location.pathname,
-        master: master,
-        friends: friends,
-        tagMeta: tagMeta,
-        metaPlaceholder: !{JSON.stringify(theme.valine.metaPlaceholder || {})}
-      });
-      if ('#{theme.valine.requiredFields}') { valine.config.requiredFields= '#{theme.valine.requiredFields}'.split(',') }
+      }
+
+      if (!{Boolean(theme.valine.requiredFields)}) { 
+        initData.requiredFields= ('!{theme.valine.requiredFields}'.split(','))
+      }
+
+      const valine = new Valine(initData)
     }
 
     if (typeof Valine === 'function') initValine() 

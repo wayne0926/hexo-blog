@@ -15,7 +15,13 @@
 
 ## 安装
 
+<<<<<<< Updated upstream
+> If you are in Mainland China, you can download in [Gitee](https://gitee.com/iamjerryw/hexo-theme-butterfly)
+
+Stable branch [recommend]:
+=======
 ### Git 安装
+>>>>>>> Stashed changes
 
 在博客根目录里安装稳定版【推荐】
 

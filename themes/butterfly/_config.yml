@@ -120,6 +120,11 @@ archive_img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.jpg
 # note: tag page, not tags page (子标签页面的 top_img)
 tag_img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.jpg
 
+# 标签页的横幅图像
+# format: 
+#  - tag name: xxxxx
+tag_per_img:
+
 # 类别页面的横幅图像
 # note: category page, not categories page (子分类页面的 top_img)
 category_img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.jpg
@@ -177,6 +182,7 @@ wordcount:
 # 1: description
 # 2: both (if the description exists, it will show description, or show the auto_excerpt)
 # 3: auto_excerpt (default)
+# false: do not show the article introduction
 index_post_content:
   method: 3
   length: 500 # if you set method to 2 or 3, the length need to config
@@ -521,8 +527,8 @@ canvas_ribbon:
   click_to_change: false
   mobile: false
 
-# Dynamic ribbon (动态彩带)
-canvas_ribbon_piao:
+# Fluttering Ribbon (动态彩带)
+canvas_fluttering_ribbon:
   enable: false
   mobile: false
 
@@ -541,15 +547,19 @@ canvas_nest:
 activate_power_mode:
   enable: false
   colorful: true # open particle animation (冒光特效)
-  shake: true #  open shake (抖动特效)
+  shake: true #  open shake (抖動特效)
+  mobile: false
 
 # Mouse click effects: fireworks (鼠标点击效果: 烟火特效)
 fireworks:
   enable: false
-  zIndex: -1 # -1 or 9999
+  zIndex: 9999 # -1 or 9999
+  mobile: false
 
-# Mouse click effects: Heart symbol (鼠标点击效果: 爱心)
-click_heart: false
+# Mouse click effects: Heart symbol (鼠標點擊效果: 愛心)
+click_heart:
+  enable: false
+  mobile: false
 
 # Mouse click effects: words (鼠标点击效果: 文字)
 ClickShowText:
@@ -558,6 +568,7 @@ ClickShowText:
     - 以梦为马
     - 不负韶华
   fontSize: 15px
+  mobile: false
 
 # Default display mode (网站默认的显示模式)
 # light (default) / dark
@@ -761,6 +772,19 @@ note:
 # other
 # --------------------------------------
 
+# Artitalk
+# see https://artitalk.js.org/
+# TODO:
+artitalk:
+  appId: TyMAFjOdbY793pDjYYXLFuGx-MdYXbMMI
+  appKey: j9eWkQgu3FhIf3BJpuwkEe3s
+  option:
+    motion :  1  
+    bgImg: 'https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp'
+    color1: '#e6e6e6'
+    color2: '#e6e6e6'
+    color3: '#000000'
+
 # Pjax [Beta]
 # 它可能包含错误且不稳定，请在发现错误时提供反馈。
 # https://github.com/MoOx/pjax
@@ -896,9 +920,9 @@ CDN:
   busuanzi: //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 
   # background effect
-  canvas_ribbon: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/third-party/canvas-ribbon.js
-  canvas_ribbon_piao: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/third-party/piao.js
-  canvas_nest: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/third-party/canvas-nest.js
+  canvas_ribbon: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js
+  canvas_fluttering_ribbon: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js
+  canvas_nest: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js
 
   lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js
   instantpage: https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js
@@ -915,11 +939,10 @@ CDN:
   snackbar: https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js
 
   # effect
-  anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
-  activate_power_mode: /js/third-party/activate-power-mode.js
-  fireworks: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/third-party/fireworks.js
-  click_heart: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/third-party/click_heart.js
-  ClickShowText: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/third-party/ClickShowText.js
+  activate_power_mode: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js
+  fireworks: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js
+  click_heart: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js
+  ClickShowText: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js
 
   # fontawesome
   fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
@@ -940,3 +963,5 @@ CDN:
   prismjs_js: https://cdn.jsdelivr.net/npm/prismjs/prism.min.js
   prismjs_lineNumber_js: https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
   prismjs_autoloader: https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
+
+  artitalk: https://cdn.jsdelivr.net/npm/artitalk

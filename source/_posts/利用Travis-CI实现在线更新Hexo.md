@@ -1,20 +1,20 @@
 ---
 title: 利用Travis-CI实现在线更新Hexo
-date: 2020-09-18 20:38:23
-tags:  
+tags:
   - Travis-CI
   - Hexo
   - 在线更新
   - 奇淫巧计
 categories: 教程
-cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/tc.jpg
+cover: 'https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/tc.jpg'
 keywords: 利用Travis-CI实现在线更新Hexo
 description: 利用Travis-CI实现在线更新Hexo
 copyright_author: CYF
-copyright_author_href: https://cyfan.top
-copyright_url: https://blog.cyfan.top/p/e626cb30.html
+copyright_author_href: 'https://cyfan.top'
+copyright_url: 'https://blog.cyfan.top/p/e626cb30.html'
 copyright_info: 本文转载于CYF，已获得其本人同意
-abbrlink:
+abbrlink: e626cb30
+date: 2020-09-18 20:38:23
 ---
 
 <div class="tip">本文转载于CYF ，已获得其本人同意 &ensp;&ensp; 原文👉 <a href="https://blog.cyfan.top/p/e626cb30.html" style="color:white;"> 利用Travis-CI实现在线更新Hexo</a></div>

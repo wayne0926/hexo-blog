@@ -29,7 +29,7 @@ cldr: 37.0
 icu: 67.1
 tz: 2019c
 unicode: 13.0
-themes: 3.1.1(butterfly)
+themes: 3.2.0-b5(butterfly)
 ```
 
 ```json

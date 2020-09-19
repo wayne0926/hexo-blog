@@ -13,8 +13,19 @@ cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/githubiofangwen.jpg
 keywords: github.io无法访问解决办法
 description: github.io无法访问解决办法
 ---
+# 方案一
+> 😘让你“爱”上 GitHub，解决访问时图裂、加载慢的问题。
 
-# 解决
+**[https://github.com/521xueweihan/GitHub520](https://github.com/521xueweihan/GitHub520)**
+**使用Host大法**
+
+> **来自评论区的大佬：**
+> [访问github或部署在gitpage上的网站过慢的解决方案](https://akilar.top/post/61b3e163.html)
+> “我这还有另一种思路，通过修改hosts来实现。
+> 原理大体就是用爬虫爬取域名对应的IP然后写入hosts”
+👆其实Github520项目就是这个原理
+
+# 方案二
 
 之前一直用的自动，有问题。我们接下来都换成`阿里DNS`
 
