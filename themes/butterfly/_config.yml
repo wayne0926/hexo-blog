@@ -685,13 +685,13 @@ runtimeshow:
 
 # Aside widget - Newest Comments
 newest_comments:
-  enable: false
+  enable: true
   limit: 6
   avatar: true
   leancloud:
-    enable: false
-    appId: # leancloud application app id
-    appKey: # leancloud application app key
+    enable: true
+    appId: Nzs79oohcaAWDCn87UJsaTff-MdYXbMMI # leancloud application app id
+    appKey: if40yp6Hp6VaITeQJjG0OwKK # leancloud application app key
     serverURL: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
     default_avatar: # mp/identicon/monsterid/wavatar/retro/robohash/blank
   github_issues:
