@@ -18,7 +18,7 @@ date: 2020-09-18 20:38:23
 ---
 
 <div class="tip">本文转载于CYF ，已获得其本人同意 &ensp;&ensp; 原文👉 <a href="https://blog.cyfan.top/p/e626cb30.html" style="color:white;"> 利用Travis-CI实现在线更新Hexo</a></div>
-
+> 时过境迁Wayne：（本站使用Vercel+Travis-CI乱七八糟部署）
 Hexo作为静态博客，好处相当明显，开销少，并且对于那种DDosS和CC套上CDN毅然不动。当然，最蛋疼的莫过于更新了，每次在自己电脑上辛辛苦苦码好字，一个push，hexo绿色光芒在命令提示符上闪烁着光芒，突然发现把仓库名字 `ChenYFan` 打成 `CehnYFan` <span class="heimu">真实事件</span> ，异或着是用手机查看自己的博客，突然发现：
 
 ![](https://unpkg.zhimg.com/chenyfan-oss@1.0.0/pic/postpic/20200629135012.jpg)
@@ -98,7 +98,7 @@ Hexo作为静态博客，好处相当明显，开销少，并且对于那种DDos
 ### 1.注册travis-ci.org
 
 前往 [https://travis-ci.org](https://travis-ci.org) 用Github账号注册 **注意了啊,注意了啊,** 是 `.org` 而不是 `.com` ! 鬼知道我在这上面浪费了多少时间! `travis-ci.org` 是免费给公开repo部署的,`travis-ci.com` 是收费的,但是 `travis-ci.com` 却是可以绑定并免费部署公开Repo的.最有问题的是这两个网站其中一个绑定repo后,另一个就不能绑定了!! 害得我以为是缓存搞出来的事,搞了半天没解决,一看地址栏人都傻了.![](https://unpkg.zhimg.com/chenyfan-oss@1.0.0/pic/moji/tx.png)
-
+> 时过境迁Wayne：**注意** travis-ci.com 也是可以的，且是推荐的！
 ### 2.绑定travis
  前往 [https://github.com/marketplace/travis-ci](https://github.com/marketplace/travis-ci) 绑定travis-ci到你的github后 继续前往 [GitHub 的 Applications settings](https://github.com/settings/installations) ,点击 `Travis CI`配置你的repo能被TravisCI访问 
 
