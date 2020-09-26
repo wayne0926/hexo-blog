@@ -323,7 +323,7 @@ valine:
   placeholder: 写下你的留言把！ # valine comment input placeholder (like: Please leave your footprints)
   guest_info: nick,mail,link # valine comment header info (nick/mail/link)
   recordIP: false # Record reviewer IP
-  serverURLs: nzs79ooh.api.lncldglobal.com # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+  serverURLs: https://nzs79ooh.api.lncldglobal.com # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   bg: # valine background
   emojiCDN: //cdn.jsdelivr.net/gh/wayne0926/valine-face/ # emoji CDN
   enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
@@ -692,7 +692,7 @@ newest_comments:
     enable: true
     appId: Nzs79oohcaAWDCn87UJsaTff-MdYXbMMI # leancloud application app id
     appKey: if40yp6Hp6VaITeQJjG0OwKK # leancloud application app key
-    serverURL: nzs79ooh.api.lncldglobal.com # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+    serverURL: https://nzs79ooh.api.lncldglobal.com # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
     default_avatar: # mp/identicon/monsterid/wavatar/retro/robohash/blank
   github_issues:
     enable: false
