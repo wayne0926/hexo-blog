@@ -20,10 +20,11 @@ description: github.io无法访问解决办法
 **使用Host大法**
 
 > **来自评论区的大佬：**
-> [访问github或部署在gitpage上的网站过慢的解决方案](https://akilar.top/post/61b3e163.html)
-> “我这还有另一种思路，通过修改hosts来实现。
-> 原理大体就是用爬虫爬取域名对应的IP然后写入hosts”
-👆其实Github520项目就是这个原理
+> > [访问github或部署在gitpage上的网站过慢的解决方案](https://akilar.top/post/61b3e163.html)
+> > “我这还有另一种思路，通过修改hosts来实现。
+> > 原理大体就是用爬虫爬取域名对应的IP然后写入hosts”
+
+>👆其实Github520项目就是这个原理
 
 # 方案二
 
