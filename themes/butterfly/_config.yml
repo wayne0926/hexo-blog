@@ -789,7 +789,7 @@ artitalk:
 # 它可能包含错误且不稳定，请在发现错误时提供反馈。
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   exclude:
     # - xxxx
     # - xxxx
