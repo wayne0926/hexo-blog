@@ -7,13 +7,13 @@
     flex-direction: row
     align-items: center
     height: 20em
-    border-radius: 12px 8px 8px 12px
+    border-radius: 25px 25px 25px 25px
     background: var(--card-bg)
     box-shadow: 0 4px 8px 6px rgba(7, 17, 27, .06)
     transition: all .3s
 
     +maxWidth768()
-      border-radius: 12px 12px 8px 8px
+      border-radius: 12px 12px 25px 25px
 
     &:hover
       box-shadow: 0 4px 12px 12px rgba(7, 17, 27, .15)
@@ -23,25 +23,25 @@
 
     if hexo-config('cover.position') == 'both'
       .left_radius
-        border-radius: 8px 0 0 8px
+        border-radius: 25px 0 0 25px
 
       .right_radius
         order: 2
-        border-radius: 0 8px 8px 0
+        border-radius: 0 25px 25px 0
     else if hexo-config('cover.position') == 'left'
       .left_radius
-        border-radius: 8px 0 0 8px
+        border-radius: 25px 0 0 25px
 
       .right_radius
-        border-radius: 8px 0 0 8px
+        border-radius: 25px 0 0 25px
     else if hexo-config('cover.position') == 'right'
       .left_radius
         order: 2
-        border-radius: 0 8px 8px 0
+        border-radius: 0 25px 25px 0
 
       .right_radius
         order: 2
-        border-radius: 0 8px 8px 0
+        border-radius: 0 25px 25px 0
 
     .post_cover
       overflow: hidden
