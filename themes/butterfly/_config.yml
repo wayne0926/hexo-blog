@@ -399,7 +399,7 @@ footer:
   owner:
     enable: true
     since: 2020
-  custom_text:
+  custom_text: 申请萌ICP备20200926号
   copyright: true # Copyright of theme and framework
   ICP: # Chinese ICP License
     enable: false

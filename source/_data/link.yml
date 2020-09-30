@@ -1,46 +1,46 @@
-- class_name: 站内链接 >内核版本较低的浏览器无法正常显示部分页面<
-  class_desc: 站内链接
-  link_list:
- #   - name: 在线听写助手
- #     link: https://wr0926.ml/tx/
- #     avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/tx.png
- #     descr: 快速好用的听写工具
-  #  - name: 随机密码生成器
-  #    link: https://wr0926.ml/suijimima/
-  #    avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/suijimima.png
-  #    descr: 简单易用的随机密码生成工具
-   # - name: Kalimah渐变色生成器
-   #   link: https://wr0926.ml/color/
-   #   avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/jianbianse.png
-   #   descr: 功能强大的渐变色生成工具
-    - name: 狗屁不通文章
-      link: https://bull.wr0926.ml/
-      avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/BullshitGenerator.jpg
-      descr: 狗屁不通文章生成器(手写)
-    - name: 帮你百度
-      link: https://baidu.wr0926.ml/
-      avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/baidu.jpg
-      descr: 来来来，让我帮你百度
-    - name: Mikutap
-      link: https://music.wr0926.ml/
-      avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/mikutap.png
-      descr: 成为音乐大师
-    - name: 维基百科-镜像
-      link: https://wiki.wr0926.ml/
-      avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/wiki2.png
-      descr: 自由的百科全书(中文镜像)
-    - name: 3D Solar System
-      link: https://sys.wr0926.ml/
-      avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/pt.png
-      descr: 游览太阳系(个人汉化)
-    - name: Wayne的仪表盘
-      link: https://ping.wr0926.ml/
-      avatar: https://uptimerobot.com/assets/ico/favicon.ico
-      descr: 网站仪表盘
-    - name: 谷歌字体-镜像
-      link: https://fonts.wr0926.ml/
-      avatar: https://www.gstatic.com/images/branding/product/2x/google_fonts_blue_ios_96dp.png
-      descr: Google Fonts(镜像站非CDN)出错就刷新
+# - class_name: 站内链接 >内核版本较低的浏览器无法正常显示部分页面<
+#   class_desc: 站内链接
+#   link_list:
+#  #   - name: 在线听写助手
+#  #     link: https://wr0926.ml/tx/
+#  #     avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/tx.png
+#  #     descr: 快速好用的听写工具
+#   #  - name: 随机密码生成器
+#   #    link: https://wr0926.ml/suijimima/
+#   #    avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/suijimima.png
+#   #    descr: 简单易用的随机密码生成工具
+#    # - name: Kalimah渐变色生成器
+#    #   link: https://wr0926.ml/color/
+#    #   avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/jianbianse.png
+#    #   descr: 功能强大的渐变色生成工具
+#     - name: 狗屁不通文章
+#       link: https://bull.wr0926.ml/
+#       avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/BullshitGenerator.jpg
+#       descr: 狗屁不通文章生成器(手写)
+#     - name: 帮你百度
+#       link: https://baidu.wr0926.ml/
+#       avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/baidu.jpg
+#       descr: 来来来，让我帮你百度
+#     - name: Mikutap
+#       link: https://music.wr0926.ml/
+#       avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/mikutap.png
+#       descr: 成为音乐大师
+#     - name: 维基百科-镜像
+#       link: https://wiki.wr0926.ml/
+#       avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/wiki2.png
+#       descr: 自由的百科全书(中文镜像)
+#     - name: 3D Solar System
+#       link: https://sys.wr0926.ml/
+#       avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/pt.png
+#       descr: 游览太阳系(个人汉化)
+#     - name: Wayne的仪表盘
+#       link: https://ping.wr0926.ml/
+#       avatar: https://uptimerobot.com/assets/ico/favicon.ico
+#       descr: 网站仪表盘
+#     - name: 谷歌字体-镜像
+#       link: https://fonts.wr0926.ml/
+#       avatar: https://www.gstatic.com/images/branding/product/2x/google_fonts_blue_ios_96dp.png
+#       descr: Google Fonts(镜像站非CDN)出错就刷新
 #- class_name: 本站
 #  class_desc: 镜像站
 #  link_list:
@@ -119,105 +119,105 @@
       link: https://zfe.one
       avatar: https://zfe.space/images/headimage.png
       descr: 做个有梦想的人！
-- class_name: 服务
-  class_desc: 本站所用服务
-  link_list:
-    - name: Github
-      link: https://github.com/
-      avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/github1.svg
-      descr: 面向开源及私有软件项目的托管平台
-    - name: Hexo
-      link: https://hexo.io/zh-cn/
-      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
-      descr: 快速、简单且强大的网志框架
-    - name: JsDelivr
-      link: https://www.jsdelivr.com/
-      avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/jsdelivr.png
-      descr: 免费、快速、可靠的开源CDN
-    - name: 韩小韩API接口站
-      link: https://api.vvhan.com/
-      avatar: https://api.vvhan.com/favicon.ico
-      descr: 免费API数据接口调用服务平台
-    - name: Iconfont
-      link: https://www.iconfont.cn/
-      avatar: https://img.alicdn.com/tps/i4/TB1_oz6GVXXXXaFXpXXJDFnIXXX-64-64.ico
-      descr: 功能强大图标内容丰富的矢量图标库，提供矢量图标下载、在线存储、格式转换等功能。
-    - name: Gitee
-      link: https://gitee.com/
-      avatar: https://assets.gitee.com/assets/favicon-9007bd527d8a7851c8330e783151df58.ico
-      descr: OSCHINA.NET 推出的代码托管平台，支持 Git 和 SVN，提供免费的私有仓库托管。
-    - name: CODING
-      link: https://coding.net/
-      avatar: https://dn-coding-net-production-static.codehub.cn/platform/favicon.ico
-      descr: 面向开发者的云端开发平台，提供 Git/SVN 代码托管、任务管理、在线 WebIDE、Cloud Studio、开发协作、文件管理、Wiki 管理、提供个人服务及企业版本的服务
-    - name: Freenom
-      link: https://www.freenom.com/
-      avatar: https://www.freenom.com/favicon.ico
-      descr: Freenom是世界上第一个也是唯一的免费域名提供商。
-    - name: Cloudflare
-      link: https://www.cloudflare.com/
-      avatar: https://www.cloudflare.com/favicon.ico
-      descr: 集成化云服务平台，专注网站应用和SaaS访问加速、安全防护、稳定在线。提供免费CDN、无限制服务器ddos防御，防cc攻击、sql注入、僵尸网络攻击
-    - name: 百度统计
-      link: https://tongji.baidu.com/
-      avatar: https://tongji.baidu.com/favicon.ico
-      descr: 最大的中文网站分析平台
-    - name: Illustration by Freepik Stories
-      link: https://stories.freepik.com
-      avatar: https://stories.freepik.com/favicon.svg
-      descr: 使用好看的免费插图网站
-- class_name: 网站
-  class_desc: 值得推荐的网站
-  link_list:
-    - name: Unsplash
-      link: https://unsplash.dogedoge.com/
-      avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/unsplash.png
-      descr: 免费高清壁纸(国内镜像)
-    - name: 廖雪峰的官方网站
-      link: https://www.liaoxuefeng.com/
-      avatar: https://www.liaoxuefeng.com/favicon.ico
-      descr: 研究互联网产品和技术，提供原创中文精品教程
-    - name: 知乎
-      link: https://www.zhihu.com/
-      avatar: https://static.zhihu.com/heifetz/assets/apple-touch-icon-152.67c7b278.png
-      descr: 可信赖的问答社区，以让每个人高效获得可信赖的解答为使命
-    - name: 小众软件
-      link: https://www.appinn.com/
-      avatar: https://img3.appinn.net/static/wp-content/uploads/Appinn-icon-152.jpg
-      descr: 一个分享、体验、评测电脑软件、手机应用、互联网产品的网站
-    - name: Convertio
-      link: https://convertio.co/zh/
-      avatar: https://static.convertio.co/img/apple-touch-icon-180x180-precomposed.png
-      descr: 在线转换文件的简单工具
-    - name: Wallhaven
-      link: https://wallhaven.cc/
-      avatar: https://wallhaven.cc/images/layout/logo.png
-      descr: 高清高质免费壁纸网站
-    - name: 爱资料在线工具
-      link: https://www.toolnb.com/
-      avatar: https://www.toolnb.com/favicon.ico
-      descr: 开发运维提供全面的在线工具箱
-    - name: DogeDoge 检索
-      link: https://www.dogedoge.com/
-      avatar: https://www.dogedoge.com/assets/doge_ico.png
-      descr: 「不追踪，不误导」
-    - name: 哔哩哔哩
-      link: https://www.bilibili.com/
-      avatar: https://www.bilibili.com/favicon.ico
-      descr: 国内知名的视频弹幕网站
-    - name: 皮皮直连
-      link: https://www.ppzhilian.com/
-      avatar: https://www.ppzhilian.com/favicon.ico
-      descr: 安全便捷的电脑/手机互连，点对点文件传送、云剪贴板、屏幕共享、可视化交流
-    - name: TinyPNG
-      link: https://tinypng.com/
-      avatar: https://tinypng.com/images/apple-touch-icon.png
-      descr: 在保持透明度的同时压缩PNG图像
-    - name: AI Image Upscaler
-      link: https://icons8.com/upscaler
-      avatar: https://icons8.com/vue-static/upscaler/favicon.png
-      descr: 免费在线放大图像
-    - name: GitHub代下
-      link: http://gitd.cc/
-      avatar: http://g.widora.cn/images/githublogo.png
-      descr: GitHub代下载服务
+# - class_name: 服务
+#   class_desc: 本站所用服务
+#   link_list:
+#     - name: Github
+#       link: https://github.com/
+#       avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/github1.svg
+#       descr: 面向开源及私有软件项目的托管平台
+#     - name: Hexo
+#       link: https://hexo.io/zh-cn/
+#       avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+#       descr: 快速、简单且强大的网志框架
+#     - name: JsDelivr
+#       link: https://www.jsdelivr.com/
+#       avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/jsdelivr.png
+#       descr: 免费、快速、可靠的开源CDN
+#     - name: 韩小韩API接口站
+#       link: https://api.vvhan.com/
+#       avatar: https://api.vvhan.com/favicon.ico
+#       descr: 免费API数据接口调用服务平台
+#     - name: Iconfont
+#       link: https://www.iconfont.cn/
+#       avatar: https://img.alicdn.com/tps/i4/TB1_oz6GVXXXXaFXpXXJDFnIXXX-64-64.ico
+#       descr: 功能强大图标内容丰富的矢量图标库，提供矢量图标下载、在线存储、格式转换等功能。
+#     - name: Gitee
+#       link: https://gitee.com/
+#       avatar: https://assets.gitee.com/assets/favicon-9007bd527d8a7851c8330e783151df58.ico
+#       descr: OSCHINA.NET 推出的代码托管平台，支持 Git 和 SVN，提供免费的私有仓库托管。
+#     - name: CODING
+#       link: https://coding.net/
+#       avatar: https://dn-coding-net-production-static.codehub.cn/platform/favicon.ico
+#       descr: 面向开发者的云端开发平台，提供 Git/SVN 代码托管、任务管理、在线 WebIDE、Cloud Studio、开发协作、文件管理、Wiki 管理、提供个人服务及企业版本的服务
+#     - name: Freenom
+#       link: https://www.freenom.com/
+#       avatar: https://www.freenom.com/favicon.ico
+#       descr: Freenom是世界上第一个也是唯一的免费域名提供商。
+#     - name: Cloudflare
+#       link: https://www.cloudflare.com/
+#       avatar: https://www.cloudflare.com/favicon.ico
+#       descr: 集成化云服务平台，专注网站应用和SaaS访问加速、安全防护、稳定在线。提供免费CDN、无限制服务器ddos防御，防cc攻击、sql注入、僵尸网络攻击
+#     - name: 百度统计
+#       link: https://tongji.baidu.com/
+#       avatar: https://tongji.baidu.com/favicon.ico
+#       descr: 最大的中文网站分析平台
+#     - name: Illustration by Freepik Stories
+#       link: https://stories.freepik.com
+#       avatar: https://stories.freepik.com/favicon.svg
+#       descr: 使用好看的免费插图网站
+# - class_name: 网站
+#   class_desc: 值得推荐的网站
+#   link_list:
+#     - name: Unsplash
+#       link: https://unsplash.dogedoge.com/
+#       avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/unsplash.png
+#       descr: 免费高清壁纸(国内镜像)
+#     - name: 廖雪峰的官方网站
+#       link: https://www.liaoxuefeng.com/
+#       avatar: https://www.liaoxuefeng.com/favicon.ico
+#       descr: 研究互联网产品和技术，提供原创中文精品教程
+#     - name: 知乎
+#       link: https://www.zhihu.com/
+#       avatar: https://static.zhihu.com/heifetz/assets/apple-touch-icon-152.67c7b278.png
+#       descr: 可信赖的问答社区，以让每个人高效获得可信赖的解答为使命
+#     - name: 小众软件
+#       link: https://www.appinn.com/
+#       avatar: https://img3.appinn.net/static/wp-content/uploads/Appinn-icon-152.jpg
+#       descr: 一个分享、体验、评测电脑软件、手机应用、互联网产品的网站
+#     - name: Convertio
+#       link: https://convertio.co/zh/
+#       avatar: https://static.convertio.co/img/apple-touch-icon-180x180-precomposed.png
+#       descr: 在线转换文件的简单工具
+#     - name: Wallhaven
+#       link: https://wallhaven.cc/
+#       avatar: https://wallhaven.cc/images/layout/logo.png
+#       descr: 高清高质免费壁纸网站
+#     - name: 爱资料在线工具
+#       link: https://www.toolnb.com/
+#       avatar: https://www.toolnb.com/favicon.ico
+#       descr: 开发运维提供全面的在线工具箱
+#     - name: DogeDoge 检索
+#       link: https://www.dogedoge.com/
+#       avatar: https://www.dogedoge.com/assets/doge_ico.png
+#       descr: 「不追踪，不误导」
+#     - name: 哔哩哔哩
+#       link: https://www.bilibili.com/
+#       avatar: https://www.bilibili.com/favicon.ico
+#       descr: 国内知名的视频弹幕网站
+#     - name: 皮皮直连
+#       link: https://www.ppzhilian.com/
+#       avatar: https://www.ppzhilian.com/favicon.ico
+#       descr: 安全便捷的电脑/手机互连，点对点文件传送、云剪贴板、屏幕共享、可视化交流
+#     - name: TinyPNG
+#       link: https://tinypng.com/
+#       avatar: https://tinypng.com/images/apple-touch-icon.png
+#       descr: 在保持透明度的同时压缩PNG图像
+#     - name: AI Image Upscaler
+#       link: https://icons8.com/upscaler
+#       avatar: https://icons8.com/vue-static/upscaler/favicon.png
+#       descr: 免费在线放大图像
+#     - name: GitHub代下
+#       link: http://gitd.cc/
+#       avatar: http://g.widora.cn/images/githublogo.png
+#       descr: GitHub代下载服务
