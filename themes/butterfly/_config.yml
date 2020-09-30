@@ -881,10 +881,10 @@ inject:
 # 非必要请不要修改
 CDN:
   # mainTODO:
-  main_css: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@01df17ca0412ec3113980d3460d7f8d5523e61f6/css/index.css
+  main_css: /css/index.css
   jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
-  main: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@01df17ca0412ec3113980d3460d7f8d5523e61f6/js/main.js
-  utils: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@01df17ca0412ec3113980d3460d7f8d5523e61f6/js/utils.js
+  main: /js/main.js
+  utils: /js/utils.js
 # https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages
   # pjax
   pjax: https://cdn.jsdelivr.net/npm/pjax/pjax.min.js
