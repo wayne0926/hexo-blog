@@ -7,7 +7,7 @@ tags:
   - 教程
   - butterfly
 categories: 教程
-cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/hexoxiangce.jpg
+cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/hexoxiangce1.jpg
 keywords: Hexo博客相册
 description: Hexo博客相册
 ---

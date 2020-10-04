@@ -6,7 +6,7 @@ tags:
   - github
   - 学习
 categories: 学习
-cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/githubxuexi.jpg
+cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/githubxuexi1.jpg
 keywords: GitHub上的好项目
 description: GitHub上的好项目
 ---

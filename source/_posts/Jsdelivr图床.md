@@ -9,7 +9,7 @@ tags:
   - github
   - jsdelivr
 categories: 教程
-cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/githubtuchuang.jpg
+cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/githubtuchuang1.jpg
 keywords: JsDelivr图床
 description: JsDelivr图床
 ---

@@ -9,7 +9,7 @@ tags:
   - 阿里
   - 教程
 categories: 教程
-cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/githubiofangwen.jpg
+cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/githubiofangwen1.jpg
 keywords: github.io无法访问解决办法
 description: github.io无法访问解决办法
 ---

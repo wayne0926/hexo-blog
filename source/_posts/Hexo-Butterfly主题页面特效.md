@@ -7,7 +7,7 @@ tags:
   - butterfly
   - 教程
 categories: 教程
-cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/hexoyemianmeihua.jpg
+cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/hexoyemianmeihua1.jpg
 keywords: Hexo Butterfly主题页面特效
 description: Hexo Butterfly主题页面特效
 ---

@@ -6,7 +6,7 @@ tags:
   - 在线更新
   - 奇淫巧计
 categories: 教程
-cover: 'https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/tc.jpg'
+cover: 'https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/tc1.jpg'
 keywords: 利用Travis-CI实现在线更新Hexo
 description: 利用Travis-CI实现在线更新Hexo
 copyright_author: CYF

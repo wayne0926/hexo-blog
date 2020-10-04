@@ -8,10 +8,12 @@ tags:
   - cnzz
   - butterfly
 categories: 教程
-cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/cnzztongji.jpg
+cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/cnzztongji1.jpg
 keywords: Hexo博客添加CNZZ统计
 description: Hexo博客添加CNZZ统计
 ---
+
+> **现在在主题配置文件里可以直接配置！**
 
 # 注册
 
