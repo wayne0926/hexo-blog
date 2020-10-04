@@ -9,7 +9,7 @@
 menu:
    首页: / || fas fa-home
    文章 || fas fa-bookmark:
-    - 时间轴 || ./archives/ || fas fa-archive
+    - 归档 || ./archives/ || fas fa-archive
     - 标签 || ./tags/ || fas fa-tags
     - 分类 || ./categories/ || fas fa-folder-open
    其他||fas fa-list:
@@ -27,7 +27,7 @@ menu:
    关于: /about/ || fas fa-info-circle
    
 # Hide the child menu items in mobile sidebar
-hide_sidebar_menu_child: false
+hide_sidebar_menu_child: true
 
 # Code Blocks (代码相关)
 # --------------------------------------
@@ -128,6 +128,10 @@ tag_per_img:
 # 类别页面的横幅图像
 # note: category page, not categories page (子分类页面的 top_img)
 category_img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.jpg
+# The banner image of category page
+# format: 
+#  - category name: xxxxx
+category_per_img:
 
 # If you are using hexo-douban, you can configure it (如果你有使用 hexo-douban,可配置这个)
 # douban:
@@ -270,7 +274,7 @@ comments:
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
   lazyload: true
-  count: false # Display comment count in top_img
+  count: true # Display comment count in top_img
 
 # disqus
 # https://disqus.com/
@@ -316,6 +320,9 @@ valine:
   pageSize: 10 # comment list page size
   master: 
     - 8ce0d0211103ef983be11b6d4f0517ed
+    - 9c22ab23f1fdedcbe1ec978af9a2a5e2
+    - 5dcd1e147f801b62d5fe858f241dae64
+    - 26c2b68b8e455c976f15de93f8c5ec28
   friends:
     - 661fcd9c4ab1201f1e8e8975c49d7af6
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
@@ -513,7 +520,8 @@ footer_bg: false
 
 # the position of bottom right button/default unit: px (右下角按钮距离底部的距离/默认单位为px)
 rightside-bottom:
-
+# Enter transitions (開啓網頁進入效果)
+enter_transitions: false
 # Background effects (背景特效)
 # --------------------------------------
 
@@ -666,12 +674,12 @@ aside:
     enable: true
     post_count: true
     last_push_date: true
-  card_calendar: true
+  card_calendar: false
   card_weather: true
-  card_wip: true
+  card_wip: false
 
 # busuanzi count for PV / UV in site
-# 访问人数TODO:
+# 访问人数
 busuanzi:
   site_uv: false
   site_pv: false
@@ -774,7 +782,7 @@ note:
 
 # Artitalk
 # see https://artitalk.js.org/
-# TODO:
+
 artitalk:
   appId: TyMAFjOdbY793pDjYYXLFuGx-MdYXbMMI
   appKey: j9eWkQgu3FhIf3BJpuwkEe3s
@@ -789,7 +797,7 @@ artitalk:
 # 它可能包含错误且不稳定，请在发现错误时提供反馈。
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   exclude:
     # - xxxx
     # - xxxx
@@ -865,8 +873,8 @@ inject:
   # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     # - <script src="https://unpkg.com/xiaokang-style/butterfly/js/xkTool.js"></script>
-    - <script src="https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/calendar.js"></script>
-    - <script src="https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/languages.js"></script>
+    # - <script src="https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/calendar.js"></script>
+    # - <script src="https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/languages.js"></script>
     # - <script data-pjax src="/js/pop.js"></script>
     # - <div id="hans-bolang"></div>
     # - <script src="https://api.vvhan.com/api/bolang"></script>
@@ -882,10 +890,10 @@ inject:
 # 非必要请不要修改
 CDN:
   # mainTODO:
-  main_css: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@f789893a74d19011e5e7abe2ebe2b136fde80678/css/index.css
+  main_css: /css/index.css
   jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
-  main: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@f789893a74d19011e5e7abe2ebe2b136fde80678/js/main.js
-  utils: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@f789893a74d19011e5e7abe2ebe2b136fde80678/js/utils.js
+  main: /js/main.js
+  utils: /js/utils.js
 # https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages
   # pjax
   pjax: https://cdn.jsdelivr.net/npm/pjax/pjax.min.js
@@ -905,8 +913,8 @@ CDN:
   sharejs_css: https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css
 
   # search
-  local_search: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/search/local-search.js
-  algolia_js: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/search/algolia.js
+  local_search: /js/search/local-search.js
+  algolia_js: /js/search/algolia.js
   algolia_search: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js
   algolia_search_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css
 

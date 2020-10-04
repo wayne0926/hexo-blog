@@ -1,13 +1,13 @@
 ---
 title: 送给GitHub新手(施工中)
-date: 2020-10-03 11:24:05
 tags:
-   - github
+  - github
 categories: 教程
-cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/to-github-new3.jpg
+cover: 'https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/to-github-new3.jpg'
+abbrlink: e78f01eb
+date: 2020-10-03 11:24:05
 keywords:
 description:
-abbrlink:
 ---
 # 访问
 有些地区的朋友访问Github成问题，这里可以参考我的这篇文章去调试。

@@ -186,7 +186,7 @@ $(function () {
  * 首頁top_img底下的箭頭
  */
   const scrollDownInIndex = () => {
-    $('#scroll_down').on('click', function () {
+    $('#scroll-down').on('click', function () {
       btf.scrollToDest('#content-inner')
     })
   }
@@ -493,8 +493,8 @@ $(function () {
     const list = $article.find('h1,h2,h3,h4,h5,h6')
 
     const findHeadPosition = function (top) {
-    // assume that we are not in the post page if no TOC link be found,
-    // thus no need to update the status
+      // assume that we are not in the post page if no TOC link be found,
+      // thus no need to update the status
       if ($tocLink.length === 0) {
         return false
       }
@@ -530,10 +530,10 @@ $(function () {
         const topLink = (parents.length > 0) ? parents.last() : _this
         expandToc(topLink.closest('.toc-item').find('.toc-child'))
         topLink
-        // Find all top-level .toc-item containers, i.e. sections
-        // excluding the currently active one
+          // Find all top-level .toc-item containers, i.e. sections
+          // excluding the currently active one
           .closest('.toc-item').siblings('.toc-item')
-        // Hide their respective list of subsections
+          // Hide their respective list of subsections
           .find('.toc-child').hide()
       }
     }
@@ -608,10 +608,10 @@ $(function () {
       let textFont; const copyFont = window.getSelection(0).toString()
       if (copyFont.length > copyright.limitCount) {
         textFont = copyFont + '\n' + '\n' + '\n' +
-        copyright.languages.author + '\n' +
-        copyright.languages.link + window.location.href + '\n' +
-        copyright.languages.source + '\n' +
-        copyright.languages.info
+          copyright.languages.author + '\n' +
+          copyright.languages.link + window.location.href + '\n' +
+          copyright.languages.source + '\n' +
+          copyright.languages.info
       } else {
         textFont = copyFont
       }
@@ -654,22 +654,6 @@ $(function () {
     $table.each(function () {
       $(this).wrap('<div class="table-wrap"></div>')
     })
-  }
-
-  /**
- * 百度推送
- */
-  const pushToBaidu = () => {
-    const bp = document.createElement('script')
-    const curProtocol = window.location.protocol.split(':')[0]
-    if (curProtocol === 'https') {
-      bp.src = 'https://zz.bdstatic.com/linksubmit/push.js'
-    } else {
-      bp.src = 'http://push.zhanzhang.baidu.com/push.js'
-    }
-    bp.dataset.pjax = ''
-    const s = document.getElementsByTagName('script')[0]
-    s.parentNode.insertBefore(bp, s)
   }
 
   /**
@@ -789,7 +773,6 @@ $(function () {
     clickFnOfSubMenu()
     GLOBAL_CONFIG.islazyload && lazyloadImg()
     GLOBAL_CONFIG.copyright !== undefined && addCopyright()
-    GLOBAL_CONFIG.baiduPush && pushToBaidu()
   }
 
   window.refreshFn = function () {
@@ -825,9 +808,3 @@ $(function () {
   refreshFn()
   unRefreshFn()
 })
-
-// // 隐藏背景
-// var full_page = document.getElementsByClassName("full_page");
-// if (full_page.length != 0) {
-//   full_page[0].style.background = "transparent";
-// }
