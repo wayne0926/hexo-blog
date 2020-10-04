@@ -9,4 +9,9 @@ keywords:
 description:
 abbrlink:
 ---
-# 施工中……  敬请期待
+# 访问
+有些地区的朋友访问Github成问题，这里可以参考我的这篇文章去调试。
+> [github.io无法访问解决办法](https://wr0926.ml/p/befe379d/)
+> (github同理)
+
+# 注册
