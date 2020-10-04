@@ -827,7 +827,7 @@ instantpage: true
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之间添加空格)
 pangu:
-  enable: true
+  enable: false
   field: post # site/post
 
 # Lazyload (图片懒加载)
@@ -889,7 +889,7 @@ inject:
 # Don't modify the following settings unless you know how they work
 # 非必要请不要修改
 CDN:
-  # mainTODO:
+  # main
   main_css: /css/index.css
   jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
   main: /js/main.js
