@@ -890,10 +890,10 @@ inject:
 # 非必要请不要修改
 CDN:
   # main
-  main_css: /css/index.css
+  main_css: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/css/index.min.css
   jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
-  main: /js/main.js
-  utils: /js/utils.js
+  main: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/main.min.js
+  utils: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/utils.min.js
 # https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages
   # pjax
   pjax: https://cdn.jsdelivr.net/npm/pjax/pjax.min.js
@@ -913,7 +913,7 @@ CDN:
   sharejs_css: https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css
 
   # search
-  local_search: /js/search/local-search.js
+  local_search: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/search/local-search.min.js
   algolia_js: /js/search/algolia.js
   algolia_search: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js
   algolia_search_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css
