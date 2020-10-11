@@ -5543,6 +5543,9 @@ blockquote.pullquote.right {
 [data-theme='dark'] #article-container .note code {
   background: rgba(27,31,35,0.05);
 }
+[data-theme='dark'] #article-container .aplayer {
+  filter: brightness(0.8);
+}
 [data-theme='dark'] #page-header > #nav.fixed,
 [data-theme='dark'] #page-header.no-top-img #nav {
   background: rgba(18,18,18,0.8);
@@ -5590,8 +5593,7 @@ blockquote.pullquote.right {
 [data-theme='dark'] .error-img,
 [data-theme='dark'] #article-container iframe,
 [data-theme='dark'] img,
-[data-theme='dark'] .gist,
-[data-theme='dark'] .aplayer {
+[data-theme='dark'] .gist {
   filter: brightness(0.8);
 }
 [data-theme='dark'] #aside_content .aside-list > .aside-list-item:not(:last-child) {
