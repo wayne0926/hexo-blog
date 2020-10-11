@@ -20,7 +20,8 @@ menu:
     # - Movie || /movies/ || fas fa-video
    工具||fas fa-box-open :
     - 在线听写助手 || /tx/ || fas fa-check-circle
-    - 人生倒计时 || /time-to/ || far fa-clock
+    - 人生倒计时 || https://cd.wr0926.ml || far fa-clock
+    - 随机密码生成器 || https://sj.wr0926.ml || fas fa-check-circle
     # - 随机密码生成器 || /suijimima/ || fas fa-
    留言板: /messageboard/ || fas fa-comment-dots
    链接: /link/ || fas fa-link
@@ -232,7 +233,7 @@ anchor: true
 
 # Displays outdated notice for a post (文章过期提醒)
 noticeOutdate:
-  enable: false
+  enable: true
   style: flat # style: simple/flat
   limit_day: 500 # 什么时候显示
   position: top # position: top/bottom
