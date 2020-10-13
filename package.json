@@ -10,7 +10,7 @@
     "show": "hexo clean && hexo s"
   },
   "hexo": {
-    "version": "5.2.0"
+    "version": "5.1.1"
   },
   "dependencies": {
     "@babel/core": "^7.11.6",
