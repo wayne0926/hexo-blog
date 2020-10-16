@@ -60,7 +60,7 @@ div
   !=partial('includes/third-party/effect', {}, {cache:theme.fragment_cache})
 
   !=partial('includes/third-party/chat/index', {}, {cache:theme.fragment_cache})
-
+  
   if theme.aplayerInject && theme.aplayerInject.enable
     if theme.pjax.enable || theme.aplayerInject.per_page
       include ./head/aplayer.pug

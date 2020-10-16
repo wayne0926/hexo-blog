@@ -68,11 +68,6 @@ algolia_search:
   hits:
     per_page: 6
 
-  labels:
-    input_placeholder: Search for Posts
-    hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
-    hits_stats: '${hits} results found in ${time} ms'
-
 # Local search
 local_search:
   enable: true
@@ -130,16 +125,9 @@ tag_per_img:
 # note: category page, not categories page (子分类页面的 top_img)
 category_img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.jpg
 # The banner image of category page
-# format: 
+# format:
 #  - category name: xxxxx
 category_per_img:
-
-# If you are using hexo-douban, you can configure it (如果你有使用 hexo-douban,可配置这个)
-# douban:
-#   meta: false
-#   movies_img:
-#   books_img:
-#   games_img:
 
 cover:
   # display the cover or not (是否显示文章封面)
