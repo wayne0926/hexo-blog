@@ -24,8 +24,8 @@ $(function () {
   // sidebar menus
   const sidebarFn = () => {
     const $toggleMenu = $('#toggle-menu')
-    const $mobileSidebarMenus = $('#mobile-sidebar-menus')
-    const $menuMask = $('#menu_mask')
+    const $mobileSidebarMenus = $('#sidebar-menus')
+    const $menuMask = $('#menu-mask')
     const $body = $('body')
 
     function openMobileSidebar () {
@@ -483,13 +483,24 @@ $(function () {
   // Back to top
   $rightsideEle.on('click', '#go-up', () => btf.scrollToDest('body'))
 
+  $rightsideEle.on('click', '#hide-aside-btn', () => {
+    const $htmlDom = $(document.documentElement)
+    if ($htmlDom.hasClass('hide-aside')) {
+      $htmlDom.removeClass('hide-aside')
+      saveToLocal.set('aside-status', 'show', 2)
+    } else {
+      $htmlDom.addClass('hide-aside')
+      saveToLocal.set('aside-status', 'hide', 2)
+    }
+  })
+
   /**
  * menu
  * 側邊欄sub-menu 展開/收縮
  * 解決menus在觸摸屏下，滑動屏幕menus_item_child不消失的問題（手機hover的bug)
  */
   const clickFnOfSubMenu = function () {
-    $('#mobile-sidebar-menus .expand').on('click', function () {
+    $('#sidebar-menus .expand').on('click', function () {
       $(this).parents('.menus_item').find('> .menus_item_child').slideToggle()
       $(this).toggleClass('hide')
     })
@@ -619,7 +630,9 @@ $(function () {
 
   const switchComments = function () {
     let switchDone = false
-    $('#switch-comments-btn').on('click', function () {
+    $('#comment-switch > .switch-btn').on('click', function () {
+      const $btn = $(this)
+      $btn.hasClass('move') ? $btn.removeClass('move') : $btn.addClass('move')
       $('#post-comment > .comment-wrap > div').each(function (i, o) {
         const $this = $(o)
         if ($this.is(':visible')) {
