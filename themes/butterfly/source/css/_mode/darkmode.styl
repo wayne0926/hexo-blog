@@ -26,7 +26,6 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
     --blockquote-color: alpha(#FFFFFF, .7)
     --blockquote-bg: lighten(#121212, 10)
     --reward-pop: lighten(#121212, 10)
-    --sidebar-icon-color: alpha(#FFFFFF, .7)
     --toc-link-color: alpha(#FFFFFF, .6)
 
     #web_bg:before,
@@ -69,7 +68,7 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
       figure.highlight
         box-shadow: none
 
-        if hexo-config('rootConfig.highlight') && hexo-config('rootConfig.highlight.enable')
+        if hexo-config('highlight_settings') && hexo-config('highlight_settings.enable')
           table::-webkit-scrollbar-thumb
             background: lighten(#121212, 5)
 
@@ -87,11 +86,11 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
           color: #90a4ae !important
 
     #post-comment
-      .comment-switch
+      #comment-switch
         if hexo-config('comments.text')
           background: #2c2c2c !important
 
-        label
+        .switch-btn
           filter: brightness(.8)
 
     // note

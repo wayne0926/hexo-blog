@@ -50,7 +50,6 @@ copy:
 # social settings (社交图标设置)
 # formal:
 #   icon: link || the description
-# TODO:
 social:
    fab fa-github: https://github.com/wayne0926 || Github
    fas fa-envelope: https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=e0hPTUlMTkxKSU07CgpVGBQW || Email
@@ -348,6 +347,10 @@ facebook_comments:
   order_by: social # social/time/reverse_time
   lang: en_US # Language en_US/zh_CN/zh_TW and so on
 
+# Twikoo
+# https://github.com/imaegoo/twikoo
+twikoo:
+
 # Chat Services
 # --------------------------------------
 
@@ -486,7 +489,7 @@ yandex_site_verification:
 # The position of site info, eg: 300px/300em/300rem/10% (主页标题距离顶部距离)
 index_site_info_top: 25% 
 # 38%
-# The height of top_img, eg: 300px/300em/300rem (主页top_img高度)TODO:
+# The height of top_img, eg: 300px/300em/300rem (主页top_img高度)
 index_top_img_height: 450px
 
 # The user interface setting of category and tag page (category和tag页的UI设置)
@@ -578,7 +581,7 @@ beautify:
   title-prefix-icon-color: '#F47466'
 
 # 全局字体设置
-# Don't modify the following settings unless you know how they work (非必要不要修改)TODO:
+# Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
   global-font-size:
   code-font-size:
@@ -628,8 +631,10 @@ preloader: false
 
 aside:
   enable: true
-  mobile: true # 在手机上显示
-  position: right # 左还是右
+  hide: false
+  button: true
+  mobile: true # display on mobile
+  position: right # left or right
   card_author:
     enable: true
     description: 以梦为马，不负韶华&ensp;<i class="fas fa-flag"></i>
@@ -896,6 +901,7 @@ CDN:
   disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
   disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
   utterances: https://utteranc.es/client.js
+  twikoo: https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js
 
   # share
   addtoany: https://static.addtoany.com/menu/page.js

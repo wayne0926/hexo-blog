@@ -1,7 +1,8 @@
+- var htmlClassHideAside = theme.aside.enable && theme.aside.hide ? 'hide-aside' : ''
 - var hideAside = !theme.aside.enable || page.aside === false ? 'hide-aside' : ''
 
 doctype html
-html(lang=config.language data-theme=theme.display_mode)
+html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside)
   head
     include ./head.pug
     script(type='text/javascript', src='https://cdn.jsdelivr.net/gh/wayne0926/wrblog.github.io/js/crash_cheat.min.js')
@@ -12,7 +13,7 @@ html(lang=config.language data-theme=theme.display_mode)
     if theme.background
       #web_bg
       
-    !=partial('includes/mobile-sidebar/index', {}, {cache:theme.fragment_cache})
+    !=partial('includes/sidebar', {}, {cache:theme.fragment_cache})
 
     #body-wrap
       include ./header/index.pug
