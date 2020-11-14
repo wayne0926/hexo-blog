@@ -863,6 +863,8 @@ inject:
     # - <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279168053'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279168053%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
   # - <link rel="stylesheet" href="/xxx.css">
     # - <link href="https://fonts.dogedoge.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    - <link rel="preconnect" href="https://rmt.dogedoge.com">
+    - <link href="https://fonts.dogedoge.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
     
   bottom:
     # - <script src="https://unpkg.com/xiaokang-style/butterfly/js/xkTool.js"></script>
@@ -879,8 +881,7 @@ inject:
     - <link rel="stylesheet" href="//at.alicdn.com/t/font_2009371_z2n39cebnib.css">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/macblack.min.css">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
-    - <link rel="preconnect" href="https://rmt.dogedoge.com">
-    - <link href="https://fonts.dogedoge.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+     
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要请不要修改
