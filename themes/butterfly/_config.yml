@@ -591,8 +591,8 @@ font:
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
 blog_title_font:
-  font_link: https://fonts.dogedoge.com/css?family=ZCOOL+XiaoWei&display=swap
-  font-family: ZCOOL XiaoWei, 'Noto Serif SC', 'Titillium Web', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'SimSun','Arial', sans-serif
+  font_link:
+  font-family: Noto Serif SC, 'Titillium Web', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'SimSun','Arial', sans-serif
 
 # The setting of divider icon (水平分隔线图标设置)
 hr_icon:
@@ -863,8 +863,7 @@ inject:
     # - <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279168053'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279168053%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
   # - <link rel="stylesheet" href="/xxx.css">
     # - <link href="https://fonts.dogedoge.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
-    - <link rel="preconnect" href="https://rmt.dogedoge.com">
-    - <link href="https://fonts.dogedoge.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    
   bottom:
     # - <script src="https://unpkg.com/xiaokang-style/butterfly/js/xkTool.js"></script>
     # - <script src="https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/calendar.js"></script>
@@ -880,7 +879,8 @@ inject:
     - <link rel="stylesheet" href="//at.alicdn.com/t/font_2009371_z2n39cebnib.css">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/macblack.min.css">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
-
+    - <link rel="preconnect" href="https://rmt.dogedoge.com">
+    - <link href="https://fonts.dogedoge.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet"> 
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要请不要修改
