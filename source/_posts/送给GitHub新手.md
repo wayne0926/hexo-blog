@@ -1,5 +1,5 @@
 ---
-title: 送给GitHub新手(施工中)
+title: 送给GitHub新手(咕~)
 tags:
   - github
 categories: 教程
