@@ -2,7 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.wr0926.ml/tx/new2/test.html</loc>
+    <loc>https://www.wr0926.ml/vadmin/index.html</loc>
+    
+    <lastmod>2020-11-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/time-to/index.html</loc>
     
     <lastmod>2020-11-14</lastmod>
     
@@ -17,48 +24,6 @@
   
   <url>
     <loc>https://www.wr0926.ml/tx/new2/demo.html</loc>
-    
-    <lastmod>2020-11-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wr0926.ml/vadmin/index.html</loc>
-    
-    <lastmod>2020-11-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wr0926.ml/update/index.html</loc>
-    
-    <lastmod>2020-11-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wr0926.ml/tx/wap.html</loc>
-    
-    <lastmod>2020-11-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wr0926.ml/messageboard/index.html</loc>
-    
-    <lastmod>2020-11-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wr0926.ml/link/index.html</loc>
-    
-    <lastmod>2020-11-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wr0926.ml/download/file/lx-music/index.html</loc>
     
     <lastmod>2020-11-14</lastmod>
     
@@ -86,7 +51,56 @@
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/img/hometown/index.html</loc>
+    <loc>https://www.wr0926.ml/tx/new2/test.html</loc>
+    
+    <lastmod>2020-11-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/update/index.html</loc>
+    
+    <lastmod>2020-11-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/tx/wap.html</loc>
+    
+    <lastmod>2020-11-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/test.html</loc>
+    
+    <lastmod>2020-11-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/tx/index.html</loc>
+    
+    <lastmod>2020-11-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/talk/index.html</loc>
+    
+    <lastmod>2020-11-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/tags/index.html</loc>
+    
+    <lastmod>2020-11-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/suijimima/index.html</loc>
     
     <lastmod>2020-11-14</lastmod>
     
@@ -107,28 +121,14 @@
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/time-to/index.html</loc>
+    <loc>https://www.wr0926.ml/messageboard/index.html</loc>
     
     <lastmod>2020-11-14</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/tx/index.html</loc>
-    
-    <lastmod>2020-11-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wr0926.ml/test.html</loc>
-    
-    <lastmod>2020-11-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wr0926.ml/talk/index.html</loc>
+    <loc>https://www.wr0926.ml/img/hometown/index.html</loc>
     
     <lastmod>2020-11-14</lastmod>
     
@@ -163,7 +163,7 @@
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/tags/index.html</loc>
+    <loc>https://www.wr0926.ml/link/index.html</loc>
     
     <lastmod>2020-11-14</lastmod>
     
@@ -184,7 +184,7 @@
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/suijimima/index.html</loc>
+    <loc>https://www.wr0926.ml/download/file/lx-music/index.html</loc>
     
     <lastmod>2020-11-14</lastmod>
     
@@ -368,6 +368,13 @@
   </url>
   
   <url>
+    <loc>https://www.wr0926.ml/tags/butterfly/</loc>
+    <lastmod>2020-11-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.wr0926.ml/tags/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2020-11-14</lastmod>
     <changefreq>daily</changefreq>
@@ -376,13 +383,6 @@
   
   <url>
     <loc>https://www.wr0926.ml/tags/cnzz/</loc>
-    <lastmod>2020-11-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wr0926.ml/tags/butterfly/</loc>
     <lastmod>2020-11-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
