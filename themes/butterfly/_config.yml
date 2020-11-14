@@ -19,7 +19,7 @@ menu:
     - 更新日志 || /update/ || far fa-paper-plane
     # - Movie || /movies/ || fas fa-video
    工具||fas fa-box-open :
-    - 在线听写助手 || /tx/ || fas fa-check-circle
+    - 在线听写助手 || https://tx.wr0926.ml || fas fa-check-circle
     - 人生倒计时 || https://cd.wr0926.ml || far fa-clock
     - 随机密码生成器 || https://sj.wr0926.ml || fas fa-check-circle
     # - 随机密码生成器 || /suijimima/ || fas fa-
@@ -644,7 +644,7 @@ aside:
       link: https://github.com/wayne0926
   card_announcement:
     enable: true
-    content: <i class="fas fa-bell"></i>&ensp;欢迎来到时过境迁Wayne的博客 <br> 本人已开学，博客更新可能只有周末甚至都不行，😔<span><a href="https://wayne0926.gitee.io/"><i class="far fa-hand-point-right"></i>  国内镜像</a></span>
+    content: <i class="fas fa-bell"></i>&ensp;欢迎来到时过境迁Wayne的博客 <br> 本人已开学，博客更新可能只有周末甚至都不行，😔<span><a href="https://wayne0926.gitee.io/"><i class="far fa-hand-point-right"></i>  国内镜像</a></span><br><span><a href="https://wr0926.ml/"><i class="far fa-hand-point-right"></i> 主站</a></span>
   card_recent_post:
     enable: true
     limit: 5 # 如果设置为0将显示全部

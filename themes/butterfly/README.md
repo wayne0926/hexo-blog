@@ -6,8 +6,9 @@
 ![npm download](https://img.shields.io/npm/dw/hexo-theme-butterfly?color=green)
 ![license](https://img.shields.io/github/license/jerryc127/hexo-theme-butterfly?color=FF5531)
 
+Demo: 👍 [Butterfly](https://butterfly.js.org/)  ||   🤞 [JerryC](https://jerryc.me/)
 
-预览: 👍 [Butterfly](https://demo.jerryc.me/)  ||  🤞 [JerryC](https://jerryc.me/)
+Docs: 📖 [Butterfly Docs](https://butterfly.js.org/posts/21cfbf15/)
 
 文档: 📖 [Butterfly Docs](https://demo.jerryc.me/posts/21cfbf15/)
 
@@ -15,13 +16,9 @@
 
 ## 安装
 
-<<<<<<< Updated upstream
 > If you are in Mainland China, you can download in [Gitee](https://gitee.com/iamjerryw/hexo-theme-butterfly)
 
 Stable branch [recommend]:
-=======
-### Git 安装
->>>>>>> Stashed changes
 
 在博客根目录里安装稳定版【推荐】
 

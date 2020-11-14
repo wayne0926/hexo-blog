@@ -111,7 +111,7 @@ deploy:
     # repo: git@github.com:wayne0926/wrblog.github.io.git
     repo: 
       # github: https://github.com/wayne0926/wayne0926.github.io.git
-      # coding: https://e.coding.net/wr0926/blog/blog.git
+      coding: https://e.coding.net/wr0926/blog/blog.git
       gitee: https://gitee.com/wayne0926/wayne0926.git
     branch: master
   - type: baidu_url_submitter
