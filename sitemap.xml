@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.wr0926.ml/talk/index.html</loc>
+    <loc>https://www.wr0926.ml/tags/index.html</loc>
     
     <lastmod>2020-11-14</lastmod>
     
@@ -30,6 +30,20 @@
   </url>
   
   <url>
+    <loc>https://www.wr0926.ml/message-board/index.html</loc>
+    
+    <lastmod>2020-11-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/message-board/index1.html</loc>
+    
+    <lastmod>2020-11-14</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.wr0926.ml/messageboard/index.html</loc>
     
     <lastmod>2020-11-14</lastmod>
@@ -51,14 +65,14 @@
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/tags/index.html</loc>
+    <loc>https://www.wr0926.ml/test.html</loc>
     
     <lastmod>2020-11-14</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/test.html</loc>
+    <loc>https://www.wr0926.ml/talk/index.html</loc>
     
     <lastmod>2020-11-14</lastmod>
     
@@ -121,21 +135,7 @@
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/p/e8c47b9c/</loc>
-    
-    <lastmod>2020-11-14</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.wr0926.ml/p/e78f01eb/</loc>
-    
-    <lastmod>2020-11-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wr0926.ml/categories/index.html</loc>
     
     <lastmod>2020-11-14</lastmod>
     
@@ -247,7 +247,21 @@
   </url>
   
   <url>
+    <loc>https://www.wr0926.ml/p/e8c47b9c/</loc>
+    
+    <lastmod>2020-11-14</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.wr0926.ml/about/index.html</loc>
+    
+    <lastmod>2020-11-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/categories/index.html</loc>
     
     <lastmod>2020-11-14</lastmod>
     
