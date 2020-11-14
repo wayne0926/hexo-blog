@@ -585,14 +585,14 @@ beautify:
 font:
   global-font-size:
   code-font-size:
-  font-family: "Noto Serif SC", 'PingFang SC', 'Microsoft YaHei', 'SimSun', 'Arial', sans-serif
+  font-family: Noto Serif SC, 'PingFang SC', 'Microsoft YaHei', 'SimSun', 'Arial', sans-serif
   code-font-family:
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
 blog_title_font:
   font_link: https://fonts.dogedoge.com/css?family=ZCOOL+XiaoWei&display=swap
-  font-family: "ZCOOL XiaoWei", 'Noto Serif SC', 'Titillium Web', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'SimSun','Arial', sans-serif
+  font-family: ZCOOL XiaoWei, 'Noto Serif SC', 'Titillium Web', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'SimSun','Arial', sans-serif
 
 # The setting of divider icon (水平分隔线图标设置)
 hr_icon:
