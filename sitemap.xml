@@ -51,14 +51,14 @@
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/music/index.html</loc>
+    <loc>https://www.wr0926.ml/mp3/index.html</loc>
     
     <lastmod>2020-11-18</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/mp3/index.html</loc>
+    <loc>https://www.wr0926.ml/music/index.html</loc>
     
     <lastmod>2020-11-18</lastmod>
     
@@ -72,14 +72,14 @@
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/update/index.html</loc>
+    <loc>https://www.wr0926.ml/talk/index.html</loc>
     
     <lastmod>2020-11-18</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/talk/index.html</loc>
+    <loc>https://www.wr0926.ml/update/index.html</loc>
     
     <lastmod>2020-11-18</lastmod>
     
@@ -305,13 +305,6 @@
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/tags/butterfly/</loc>
-    <lastmod>2020-11-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.wr0926.ml/tags/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2020-11-18</lastmod>
     <changefreq>daily</changefreq>
@@ -320,6 +313,13 @@
   
   <url>
     <loc>https://www.wr0926.ml/tags/cnzz/</loc>
+    <lastmod>2020-11-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/tags/butterfly/</loc>
     <lastmod>2020-11-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
