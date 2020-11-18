@@ -33,7 +33,7 @@
       <link href="/p/e78f01eb/"/>
       <url>/p/e78f01eb/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h1><p>有些地区的朋友访问Github成问题，这里可以参考我的这篇文章去调试。</p><blockquote><p><a href="https://wr0926.ml/p/befe379d/">github.io无法访问解决办法</a><br>(github同理)</p></blockquote><h1 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h1>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h1><p>有些地区的朋友访问 Github 成问题，这里可以参考我的这篇文章去调试。</p><blockquote><p><a href="https://wr0926.ml/p/befe379d/"><code>github.io</code> 无法访问解决办法</a><br>(Github 同理)</p></blockquote><h1 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h1><p>建议注册时使用非 <code>@qq.com</code> 来进行注册！为了方便后续使用 Github 进行账号绑定的工具的使用（如 <code>Vercel</code> ）</p>]]></content>
       
       
       <categories>
@@ -159,9 +159,9 @@
             
             <tag> hexo </tag>
             
-            <tag> 教程 </tag>
-            
             <tag> butterfly </tag>
+            
+            <tag> 教程 </tag>
             
         </tags>
       
@@ -221,9 +221,9 @@
             
             <tag> hexo </tag>
             
-            <tag> 教程 </tag>
-            
             <tag> butterfly </tag>
+            
+            <tag> 教程 </tag>
             
         </tags>
       
@@ -250,11 +250,11 @@
             
             <tag> hexo </tag>
             
+            <tag> butterfly </tag>
+            
             <tag> 教程 </tag>
             
             <tag> cnzz </tag>
-            
-            <tag> butterfly </tag>
             
         </tags>
       
