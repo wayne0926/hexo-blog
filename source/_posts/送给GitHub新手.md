@@ -12,7 +12,7 @@ description:
 # 访问
 
 有些地区的朋友访问 Github 成问题，这里可以参考我的这篇文章去调试。
-> [`github.io` 无法访问解决办法](https://wr0926.ml/p/befe379d/)
+> [`xxxx.github.io` 无法访问解决办法](https://wr0926.ml/p/befe379d/)
 > (Github 同理)
 
 # 注册
