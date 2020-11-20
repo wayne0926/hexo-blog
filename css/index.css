@@ -5787,13 +5787,6 @@ blockquote.pullquote.right {
     max-height: 75vh !important;
   }
 }
-body {
-  cursor: url("https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur"), default;
-}
-a,
-img {
-  cursor: url("https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur"), default;
-}
 #toggle-sidebar {
   color: #49b1f5 !important;
 }
