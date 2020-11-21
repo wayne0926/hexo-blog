@@ -1248,7 +1248,7 @@ body {
   background: var(--global-bg);
   color: var(--font-color);
   font-size: 14px;
-  font-family: Noto Serif SC, 'PingFang SC', 'Microsoft YaHei', 'SimSun', 'Arial', sans-serif;
+  font-family: Noto Serif SC, PingFang SC, Microsoft YaHei, SimSun, Arial, sans-serif;
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
@@ -1376,7 +1376,7 @@ a:hover {
 #site-name,
 #aside_content .author-info__name,
 #aside_content .author-info__description {
-  font-family: Noto Serif SC, 'Titillium Web', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'SimSun','Arial', sans-serif;
+  font-family: Noto Serif SC, Titillium Web, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, Arial, sans-serif;
 }
 .is-center {
   text-align: center;
@@ -1599,7 +1599,7 @@ blockquote footer cite:before {
 #article-container pre,
 #article-container code {
   font-size: 14px;
-  font-family: Fira Code, monospace !important;
+  font-family: Fira Code, Noto Serif SC, monospace !important;
 }
 #article-container code {
   padding: 0.1rem 0.2rem;
@@ -2487,7 +2487,7 @@ blockquote footer cite:before {
   padding: 0.5rem;
   text-align: center;
   font-size: 14px;
-  font-family: Noto Serif SC, 'Titillium Web', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'SimSun','Arial', sans-serif;
+  font-family: Noto Serif SC, Titillium Web, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, Arial, sans-serif;
 }
 @media screen and (max-width: 768px) {
   #error-wrap .error-content .error-info {
