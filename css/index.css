@@ -6101,3 +6101,6 @@ blockquote.pullquote.right {
   border-radius: 25px;
   overflow: hidden;
 }
+code {
+  border-radius: 10px;
+}
