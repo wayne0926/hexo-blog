@@ -13,7 +13,7 @@ timezone: "Asia/Shanghai"
 
 # 网址
 # 如果您的网站位于子目录中，则将url设置为“ http://yoursite.com/child”，将根目录设置为“ /child /”
-url: https://www.wr0926.ml
+url: https://wr0926.ml
 root: /
 # permalink: :year/:month/:day/:title/
 permalink: p/:abbrlink/  # 此处可以自己设置，也可以直接使用 :/abbrlink ，建议前面带目录，不然太乱
