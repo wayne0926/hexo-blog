@@ -1598,8 +1598,8 @@ blockquote footer cite:before {
 }
 #article-container pre,
 #article-container code {
-  font-size: Fira Code, monospace;
-  font-family: consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', sans-serif !important;
+  font-size: 14px;
+  font-family: Fira Code, monospace !important;
 }
 #article-container code {
   padding: 0.1rem 0.2rem;
@@ -1629,7 +1629,7 @@ blockquote footer cite:before {
 #article-container figure.highlight figcaption,
 #article-container figure.highlight .caption {
   padding: 0.3rem 0 0.1rem 0.7rem;
-  font-size: Fira Code, monospace;
+  font-size: 14px;
   line-height: 1em;
 }
 #article-container figure.highlight figcaption a,
@@ -1661,7 +1661,7 @@ blockquote footer cite:before {
   height: 2.15em;
   background: #1c1c1c;
   color: rgba(238,255,255,0.8);
-  font-size: Fira Code, monospace;
+  font-size: 14px;
 }
 #article-container .highlight-tools.closed + table {
   display: none;
