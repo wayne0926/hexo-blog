@@ -4,13 +4,25 @@
   
     
     <entry>
-      <title>Jsdelivr刷新缓存工具</title>
-      <link href="/p/904dc6c1/"/>
-      <url>/p/904dc6c1/</url>
+      <title>JsDelivr刷新缓存工具</title>
+      <link href="/p/6e9b38bb/"/>
+      <url>/p/6e9b38bb/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><h2 id="关于-JsDelivr"><a href="#关于-JsDelivr" class="headerlink" title="关于 JsDelivr"></a>关于 JsDelivr</h2><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/20201121222634.png" alt="JSD·3"></p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/20201121222029.png" alt="JSD·1"></p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/20201121222119.png" alt="JSD·2"></p><blockquote><p>jsDelivr is a public, open-source CDN (Content Delivery Network) developed by Dmitriy Akulov and Prospect One, focused on performance, reliability, and security. It is free to use for everyone, with no bandwidth limits.</p></blockquote><blockquote><p>JsDelivr是由Dmitriy Akulov和Prospect One开发的一个公开的、开源的CDN(内容分发网络)，专注于性能、可靠性和安全性。每个人都可以免费使用，没有带宽限制。</p></blockquote><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/20201121223153.png" alt="JSD·4"></p><p>并且 <code>JsDelivr</code> 在中国大陆拥有众多节点，非常迅速。可能是至今中国大陆最快的免费 <code>CDN</code> 服务了。</p><p><strong><a href="https://www.jsdelivr.net/">JsDelivr.com</a></strong></p><p>平时在打理博客的时候经常需要改到 <code>CSS</code> 或者 <code>JavaScrip</code> ，然而这些我为了博客加速，都放在了 <code>JsDelivr</code> 上，众所周知， <code>CDN</code> 是有缓存的，<code>JsDelivr</code> 也不例外。</p><h2 id="缓存刷新"><a href="#缓存刷新" class="headerlink" title="缓存刷新"></a>缓存刷新</h2><p>根据官方的说法，将任意 <code>CDN</code> 的链接的 <code>cdn.jsdelivr.net</code> 改为 <code>purge.jsdelivr.net</code> 即可刷新缓存，但是总是很麻烦且不多来几次还不见效！</p><h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><p>先将用户输入的 <code>CDN</code> 链接的 <code>cdn.jsdelivr.net</code> 改为 <code>purge.jsdelivr.net</code>。</p><p>然后使用 <code>Requests</code> 对改之后的链接进行 <code>get</code> ，并且计数。</p><h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h1><p>直接将 <code>CDN</code> 的链接粘贴进去。比如：<code>https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/css/index.min.css</code> 。</p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/jsd1.jpg" alt="截图·1"></p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/jsd2.jpg" alt="截图·2"></p><p>将请求 <code>4</code> 次，恰到好处。</p><h1 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h1><p><a href="https://github.com/wayne0926/jsd">https://github.com/wayne0926/jsd</a></p><blockquote><p>来都来了，给个 Star 呗 😙</p></blockquote><h1 id="成品（-exe-）"><a href="#成品（-exe-）" class="headerlink" title="成品（ exe ）"></a>成品（ <code>exe</code> ）</h1><p><a href="https://github.com/wayne0926/jsd/releases/">GitHub-Releases</a></p><h2 id="0-0-1"><a href="#0-0-1" class="headerlink" title="0.0.1"></a>0.0.1</h2><p>考虑到 <code>GitHub</code> 的情况，我在这里放个第三方的加速链接。（不保证可用，不保证最新）</p><ul><li><p><a href="https://git.yumenaka.net/https://github.com/wayne0926/jsd/releases/download/0.0.1/jsd.exe">美国洛杉矶（推荐）</a></p></li><li><p><a href="https://gh.con.sh/https://github.com/wayne0926/jsd/releases/download/0.0.1/jsd.exe">美国1</a></p></li><li><p><a href="https://gh.api.99988866.xyz/https://github.com/wayne0926/jsd/releases/download/0.0.1/jsd.exe">美国2</a></p></li><li><p><a href="https://download.fastgit.org/wayne0926/jsd/releases/download/0.0.1/jsd.exe">日本东京</a></p></li></ul>]]></content>
       
       
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工具 </tag>
+            
+        </tags>
       
     </entry>
     
