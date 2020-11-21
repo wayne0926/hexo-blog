@@ -7,7 +7,7 @@ keywords: JsDelivr刷新缓存工具
 description: JsDelivr刷新缓存工具
 abbrlink: 6e9b38bb
 date: 2020-11-21 21:17:31
-highlight_shrink: false
+highlight_shrink: true
 ---
 # 介绍
 ## 关于 JsDelivr
