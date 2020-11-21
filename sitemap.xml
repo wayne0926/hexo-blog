@@ -16,14 +16,14 @@
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/vadmin/index.html</loc>
+    <loc>https://www.wr0926.ml/img/hometown/index.html</loc>
     
     <lastmod>2020-11-21</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/update/index.html</loc>
+    <loc>https://www.wr0926.ml/img/index.html</loc>
     
     <lastmod>2020-11-21</lastmod>
     
@@ -79,7 +79,14 @@
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/img/index.html</loc>
+    <loc>https://www.wr0926.ml/update/index.html</loc>
+    
+    <lastmod>2020-11-21</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/vadmin/index.html</loc>
     
     <lastmod>2020-11-21</lastmod>
     
@@ -87,13 +94,6 @@
   
   <url>
     <loc>https://www.wr0926.ml/download/index.html</loc>
-    
-    <lastmod>2020-11-21</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wr0926.ml/img/hometown/index.html</loc>
     
     <lastmod>2020-11-21</lastmod>
     
@@ -291,13 +291,6 @@
 
   
   <url>
-    <loc>https://www.wr0926.ml/tags/%E8%AF%B4%E6%98%8E/</loc>
-    <lastmod>2020-11-21</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.wr0926.ml/tags/github/</loc>
     <lastmod>2020-11-21</lastmod>
     <changefreq>daily</changefreq>
@@ -486,24 +479,24 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://www.wr0926.ml/tags/%E8%AF%B4%E6%98%8E/</loc>
+    <lastmod>2020-11-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
-    <loc>https://www.wr0926.ml/categories/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2020-11-21</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wr0926.ml/categories/%E8%AF%B4%E6%98%8E/</loc>
-    <lastmod>2020-11-21</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.wr0926.ml/categories/%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2020-11-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2020-11-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -518,6 +511,13 @@
   
   <url>
     <loc>https://www.wr0926.ml/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2020-11-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/categories/%E8%AF%B4%E6%98%8E/</loc>
     <lastmod>2020-11-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
