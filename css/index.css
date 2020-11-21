@@ -5354,6 +5354,7 @@ blockquote.pullquote.right {
 }
 [data-theme='dark'] #article-container code {
   background: #2c2c2c;
+  border-radius: 10px;
 }
 [data-theme='dark'] #article-container pre > code {
   background: 0;
