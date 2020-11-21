@@ -7,6 +7,7 @@ keywords: JsDelivr刷新缓存工具
 description: JsDelivr刷新缓存工具
 abbrlink: 6e9b38bb
 date: 2020-11-21 21:17:31
+highlight_shrink: false
 ---
 # 介绍
 ## 关于 JsDelivr
@@ -69,3 +70,18 @@ date: 2020-11-21 21:17:31
 - [美国2](https://gh.api.99988866.xyz/https://github.com/wayne0926/jsd/releases/download/0.0.1/jsd.exe)
 
 - [日本东京](https://download.fastgit.org/wayne0926/jsd/releases/download/0.0.1/jsd.exe)
+
+### 源代码展现
+
+```python
+import requests
+url = input('输入jsd的CDN链接：')
+url = url.replace('cdn.jsdelivr.net', 'purge.jsdelivr.net')
+print('正在请求链接：' + url)
+num = 1
+while num <= 4:
+    t = requests.get(url).json()
+    print('请求了第' + str(num) + '次')
+    num = num + 1
+print('完成')
+```
