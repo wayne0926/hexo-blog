@@ -1,12 +1,12 @@
 ---
 title: JsDelivr刷新缓存工具
-date: 2020-11-21 21:17:31
 tags: 工具
 categories: 工具
-cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/jsdelivrhuancun.jpg
+cover: 'https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/jsdelivrhuancun.jpg'
 keywords: JsDelivr刷新缓存工具
 description: JsDelivr刷新缓存工具
-abbrlink:
+abbrlink: 6e9b38bb
+date: 2020-11-21 21:17:31
 ---
 # 介绍
 ## 关于 JsDelivr
