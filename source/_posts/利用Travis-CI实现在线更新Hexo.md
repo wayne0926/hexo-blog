@@ -81,7 +81,7 @@ Hexo作为静态博客，好处相当明显，开销少，并且对于那种 DDo
 
 ![](https://unpkg.zhimg.com/chenyfan-oss@1.0.0/pic/postpic/20200629141017.jpg)
 
-我 `git add .` 了一下,它运算了半小时, `git commit` 又花了半小时,幸好`git push` 是打包上去的,不然我估计又要花半个小时.
+我 `git add .` 了一下,它运算了半小时, `git commit` 又花了半小时,幸好 `git push` 是打包上去的,不然我估计又要花半个小时.
 
 ![](https://unpkg.zhimg.com/chenyfan-oss@1.0.0/pic/postpic/20200629141259.jpg)
 
@@ -156,9 +156,9 @@ deploy:
 
 Token 很重要,你必须要告诉 Travis-ci ,因为它要获取对你的 repo 的写入权,但你也不能明文写在 Repo 里面,因为别人看得到.
 
-所以,在 [### 4.修改Repo] 中,`github-token:` 后面跟着的不是明文,而是变量  `$GH_TOKEN`.
+所以,在 [### 4.修改Repo](/#4-修改-Repo) 中,`github-token:` 后面跟着的不是明文,而是变量  `$GH_TOKEN`.
 
-进入 `https://travis-ci.org/github/{用户名}/{仓库名}/settings` 中,看到 **Environment Variables** , `Name` 选择 `GH_TOKEN` , `Value` 把 [3.新建 Token](### 3.新建 Token) 中的Token粘贴到里面去.BRANCH直接默认.
+进入 `https://travis-ci.org/github/{用户名}/{仓库名}/settings` 中,看到 **Environment Variables** , `Name` 选择 `GH_TOKEN` , `Value` 把 [3.新建 Token](/#3-新建-Token) 中的Token粘贴到里面去.BRANCH直接默认.
 
 **特别注意!,将后面DISPLAY VALUE IN BUILD LOG弄成灰色,不然你的Token将会公开!**,如果你不慎公开 Token ,请前往 `Github Personal Token` 删除并重新生成一个 Token !
 
