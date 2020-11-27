@@ -37,7 +37,7 @@ Hexo作为静态博客，好处相当明显，开销少，并且对于那种 DDo
 
 ![](https://unpkg.zhimg.com/chenyfan-oss@1.0.0/pic/postpic/20200629140241.jpg)
 
-后来,促使我改变主意的,是我得知中考之后放假三天接着上课[高中],我\*\*\*,然后突然想起来博客不方便更新,接着手一抖,把博客的 Repo 删掉了.
+后来,促使我改变主意的,是我得知中考之后放假三天接着上课[高中],我\*\*\*,然后突然想起来博客不方便更新,接着手一抖,把博客的 Repo 删掉了。
 
 ...
 
@@ -51,7 +51,7 @@ Hexo作为静态博客，好处相当明显，开销少，并且对于那种 DDo
 
 实际上你会发现，当你把博客 Push 到 Github 上时，你的计算机会在 `NodeJS` 环境下生成静态文件，然后 push 到 Github 。这些步骤其实完全可以用 `Travis CI` 做到。
 
-最好在 `source` 下新建一个 `CNAME` 文件,并将绑定的域名写进去,不然直接在 `gh-page` 分支里弄Travis-ci会覆盖掉的.
+最好在 `source` 下新建一个 `CNAME` 文件,并将绑定的域名写进去,不然直接在 `gh-page` 分支里弄Travis-ci会覆盖掉的。
 
 # 开始
 
@@ -81,7 +81,7 @@ Hexo作为静态博客，好处相当明显，开销少，并且对于那种 DDo
 
 ![](https://unpkg.zhimg.com/chenyfan-oss@1.0.0/pic/postpic/20200629141017.jpg)
 
-我 `git add .` 了一下,它运算了半小时, `git commit` 又花了半小时,幸好 `git push` 是打包上去的,不然我估计又要花半个小时.
+我 `git add .` 了一下,它运算了半小时, `git commit` 又花了半小时,幸好 `git push` 是打包上去的,不然我估计又要花半个小时。
 
 ![](https://unpkg.zhimg.com/chenyfan-oss@1.0.0/pic/postpic/20200629141259.jpg)
 
@@ -116,7 +116,7 @@ Hexo作为静态博客，好处相当明显，开销少，并且对于那种 DDo
 
 ![](https://unpkg.zhimg.com/chenyfan-oss@1.0.0/pic/postpic/20200629142812.jpg)
 
-然而请注意,官方文档里说只需勾选 `repo` 全部权限即可,但是据我测试,**只勾选则会导致401验证错误**.似乎还要勾选 `read:public_key` 和 `read:user` ,当然如果你足够懒,你也可以全勾上, **但请不要把 Toke n泄露出去**,否则你的 Github 就不太好使了.
+然而请注意,官方文档里说只需勾选 `repo` 全部权限即可,但是据我测试,**只勾选则会导致401验证错误**.似乎还要勾选 `read:public_key` 和 `read:user` ,当然如果你足够懒,你也可以全勾上, **但请不要把 Toke n泄露出去**,否则你的 Github 就不太好使了。
 
 点击生成 Token ：
 
@@ -154,11 +154,11 @@ deploy:
 
 ### 5. Token 导入 Travis-ci
 
-Token 很重要,你必须要告诉 Travis-ci ,因为它要获取对你的 repo 的写入权,但你也不能明文写在 Repo 里面,因为别人看得到.
+Token 很重要,你必须要告诉 Travis-ci ,因为它要获取对你的 repo 的写入权,但你也不能明文写在 Repo 里面,因为别人看得到。
 
-所以,在 [### 4.修改Repo](/#4-修改-Repo) 中,`github-token:` 后面跟着的不是明文,而是变量  `$GH_TOKEN`.
+所以,在 [4.修改Repo](/p/e626cb30/#4-修改-Repo) 中, `github-token:` 后面跟着的不是明文,而是变量 `$GH_TOKEN` 。
 
-进入 `https://travis-ci.org/github/{用户名}/{仓库名}/settings` 中,看到 **Environment Variables** , `Name` 选择 `GH_TOKEN` , `Value` 把 [3.新建 Token](/#3-新建-Token) 中的Token粘贴到里面去.BRANCH直接默认.
+进入 `https://travis-ci.org/github/{用户名}/{仓库名}/settings` 中,看到 **Environment Variables** , `Name` 选择 `GH_TOKEN` , `Value` 把 [3.新建 Token](/p/e626cb30/#3-新建-Token) 中的Token粘贴到里面去。 BRANCH 直接默认。
 
 **特别注意!,将后面DISPLAY VALUE IN BUILD LOG弄成灰色,不然你的Token将会公开!**,如果你不慎公开 Token ,请前往 `Github Personal Token` 删除并重新生成一个 Token !
 
@@ -180,7 +180,7 @@ $ export GH_TOKEN=[secure]
 
 ### 7.触发 Travis-ci
 
-修改文件或新建 Readme ,让 Travis-ci 触发并开始工作.
+修改文件或新建 Readme ,让 Travis-ci 触发并开始工作。
 
 比如说我更新 `留言板.md` , Github 上一更新, Travis-ci 自动开始工作:
 
