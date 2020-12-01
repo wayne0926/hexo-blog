@@ -199,7 +199,7 @@ reward:
   QR_code:
     - img: https://cdn.jsdelivr.net/gh/wayne0926/wayne0926/wxpay.png
       link: https://cdn.jsdelivr.net/gh/wayne0926/wayne0926/wx.png
-      text: 我很可爱，请给我钱
+      text: 微信
     # - img: /img/wechat.jpg
     #   link:
     #   text: wechat
