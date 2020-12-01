@@ -200,6 +200,9 @@ reward:
     - img: https://cdn.jsdelivr.net/gh/wayne0926/wayne0926/wxpay.png
       link: https://cdn.jsdelivr.net/gh/wayne0926/wayne0926/wx.png
       text: 微信
+    - img: https://cdn.jsdelivr.net/gh/wayne0926/wayne0926/qqpay.png
+      link: https://cdn.jsdelivr.net/gh/wayne0926/wayne0926/qq.png
+      text: QQ
     # - img: /img/wechat.jpg
     #   link:
     #   text: wechat
