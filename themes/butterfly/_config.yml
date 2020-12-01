@@ -195,8 +195,11 @@ post_copyright:
 
 # Sponsor/reward
 reward:
-  enable: false
+  enable: true
   QR_code:
+    - img: https://cdn.jsdelivr.net/gh/wayne0926/wayne0926/wx.png
+      link: https://wr0926.ml
+      text: 微信
     # - img: /img/wechat.jpg
     #   link:
     #   text: wechat
