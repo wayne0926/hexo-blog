@@ -861,7 +861,7 @@ fragment_cache: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <style>html{filter:grayscale(100%);-moz-filter:grayscale(100%);-o-filter:grayscale(100%);-webkit-filter:grayscale(1)</style>
+    # - <style>html{filter:grayscale(100%);-moz-filter:grayscale(100%);-o-filter:grayscale(100%);-webkit-filter:grayscale(1)</style>
     # - <link rel="stylesheet" href="css/style.css">
     # - <script src="https://wr0926.ml/js/head.js"></script>
     # - <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swapC" rel="stylesheet">
