@@ -79,14 +79,14 @@
   </url>
   
   <url>
-    <loc>https://wr0926.ml/vadmin/index.html</loc>
+    <loc>https://wr0926.ml/update/index.html</loc>
     
     <lastmod>2020-12-19</lastmod>
     
   </url>
   
   <url>
-    <loc>https://wr0926.ml/update/index.html</loc>
+    <loc>https://wr0926.ml/vadmin/index.html</loc>
     
     <lastmod>2020-12-19</lastmod>
     
@@ -107,14 +107,14 @@
   </url>
   
   <url>
-    <loc>https://wr0926.ml/download/file/lx-music/index.html</loc>
+    <loc>https://wr0926.ml/download/file/ditto/index.html</loc>
     
     <lastmod>2020-12-19</lastmod>
     
   </url>
   
   <url>
-    <loc>https://wr0926.ml/download/file/ditto/index.html</loc>
+    <loc>https://wr0926.ml/download/file/lx-music/index.html</loc>
     
     <lastmod>2020-12-19</lastmod>
     
@@ -410,6 +410,13 @@
   </url>
   
   <url>
+    <loc>https://wr0926.ml/tags/%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/</loc>
+    <lastmod>2020-12-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wr0926.ml/tags/github-page/</loc>
     <lastmod>2020-12-19</lastmod>
     <changefreq>daily</changefreq>
@@ -546,6 +553,13 @@
   
   <url>
     <loc>https://wr0926.ml/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2020-12-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wr0926.ml/categories/%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/</loc>
     <lastmod>2020-12-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
