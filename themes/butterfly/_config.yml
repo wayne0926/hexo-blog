@@ -874,6 +874,7 @@ inject:
     - <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Fira+Code:wght@500&display=swap" rel="stylesheet" media="print" onload="this.media='all'"> 
    # - <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet"> 
   bottom:
+    - <script defer>pjax.site_handleResponse=pjax.handleResponse;pjax.handleResponse=function(responseText,request,href,options){Object.defineProperty(request,"responseURL",{value:href});pjax.site_handleResponse(responseText,request,href,options)};</script>
     # - <script>pjax.site_handleResponse=pjax.handleResponse;pjax.handleResponse=function(responseText,request,href,options){Object.defineProperty(request,'responseURL',{value:href});pjax.site_handleResponse(responseText,request,href,options);}</script>
     # - <script src="https://unpkg.com/xiaokang-style/butterfly/js/xkTool.js"></script>
     # - <script src="https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/calendar.js"></script>
