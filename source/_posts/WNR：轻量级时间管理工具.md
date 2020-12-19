@@ -2,10 +2,10 @@
 title: WNR：轻量级时间管理工具
 abbrlink: 644bee3
 date: 2020-12-18 22:44:59
-tags:
-categories:
-cover:
-keywords:
+tags: 工具推荐
+categories: 工具推荐
+cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/wnr5.jpg
+keywords: WNR：轻量级时间管理工具
 description:
 ---
 # 简介
