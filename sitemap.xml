@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://wr0926.ml/tags/index.html</loc>
+    <loc>https://wr0926.ml/mp3/index.html</loc>
     
     <lastmod>2020-12-19</lastmod>
     
@@ -17,6 +17,34 @@
   
   <url>
     <loc>https://wr0926.ml/img/hometown/index.html</loc>
+    
+    <lastmod>2020-12-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wr0926.ml/test.html</loc>
+    
+    <lastmod>2020-12-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wr0926.ml/vadmin/index.html</loc>
+    
+    <lastmod>2020-12-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wr0926.ml/update/index.html</loc>
+    
+    <lastmod>2020-12-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wr0926.ml/talk/index.html</loc>
     
     <lastmod>2020-12-19</lastmod>
     
@@ -51,7 +79,7 @@
   </url>
   
   <url>
-    <loc>https://wr0926.ml/mp3/index.html</loc>
+    <loc>https://wr0926.ml/tags/index.html</loc>
     
     <lastmod>2020-12-19</lastmod>
     
@@ -59,34 +87,6 @@
   
   <url>
     <loc>https://wr0926.ml/music/index.html</loc>
-    
-    <lastmod>2020-12-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wr0926.ml/test.html</loc>
-    
-    <lastmod>2020-12-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wr0926.ml/talk/index.html</loc>
-    
-    <lastmod>2020-12-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wr0926.ml/update/index.html</loc>
-    
-    <lastmod>2020-12-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wr0926.ml/vadmin/index.html</loc>
     
     <lastmod>2020-12-19</lastmod>
     
@@ -135,35 +135,7 @@
   </url>
   
   <url>
-    <loc>https://wr0926.ml/p/ec32f1a/</loc>
-    
-    <lastmod>2020-12-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wr0926.ml/p/13ea88dc/</loc>
-    
-    <lastmod>2020-12-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wr0926.ml/p/76150073/</loc>
-    
-    <lastmod>2020-12-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wr0926.ml/p/644bee3/</loc>
-    
-    <lastmod>2020-12-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wr0926.ml/about/index.html</loc>
+    <loc>https://wr0926.ml/p/e8c47b9c/</loc>
     
     <lastmod>2020-12-19</lastmod>
     
@@ -177,14 +149,14 @@
   </url>
   
   <url>
-    <loc>https://wr0926.ml/p/7fa67b31/</loc>
+    <loc>https://wr0926.ml/about/index.html</loc>
     
     <lastmod>2020-12-19</lastmod>
     
   </url>
   
   <url>
-    <loc>https://wr0926.ml/p/6e9b38bb/</loc>
+    <loc>https://wr0926.ml/p/e78f01eb/</loc>
     
     <lastmod>2020-12-19</lastmod>
     
@@ -198,14 +170,14 @@
   </url>
   
   <url>
-    <loc>https://wr0926.ml/p/e8c47b9c/</loc>
+    <loc>https://wr0926.ml/p/644bee3/</loc>
     
     <lastmod>2020-12-19</lastmod>
     
   </url>
   
   <url>
-    <loc>https://wr0926.ml/p/e78f01eb/</loc>
+    <loc>https://wr0926.ml/p/7fa67b31/</loc>
     
     <lastmod>2020-12-19</lastmod>
     
@@ -290,6 +262,34 @@
   
   <url>
     <loc>https://wr0926.ml/p/39386d76/</loc>
+    
+    <lastmod>2020-12-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wr0926.ml/p/ec32f1a/</loc>
+    
+    <lastmod>2020-12-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wr0926.ml/p/13ea88dc/</loc>
+    
+    <lastmod>2020-12-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wr0926.ml/p/76150073/</loc>
+    
+    <lastmod>2020-12-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wr0926.ml/p/6e9b38bb/</loc>
     
     <lastmod>2020-12-19</lastmod>
     
