@@ -14,7 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: CLEANTEMP
+    - name: 清除缓存
       run: |
         curl https://purge.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/main.css
+        curl https://purge.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/main.min.css
         curl https://purge.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/index.css
+        curl https://purge.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/index.min.css
