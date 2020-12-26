@@ -1,6 +1,10 @@
 name: 清除缓存
 
-on: [push]
+on: 
+  push:
+    branches: [ gh-pages ]
+  pull_request:
+    branches: [ gh-pages ]
 
 jobs:
   build:
