@@ -9,7 +9,7 @@ keywords: WNR：轻量级时间管理工具
 description:
 ---
 # 简介
-![](https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/wnr5.jpg)
+![截图1](https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/wnr5.jpg)
 
 `wnr`一款跨平台的轻量计时和时间管理工具，让你更高效、强力地管理工作与休息。
 
