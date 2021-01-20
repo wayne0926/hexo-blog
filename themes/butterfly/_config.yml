@@ -103,6 +103,9 @@ avatar:
   img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/avatar.jpg
   effect: false
 
+# Disable all banner image
+disable_top_img: false
+
 # 主页的横幅图像
 index_img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.jpg
 # 如果页面横幅未设置，则会显示top_img
@@ -159,6 +162,7 @@ post_meta:
     label: true # true or false 显示描述性文字
   post:
     date_type: both # created or updated or both 文章页日期是创建日或者更新日或都显示
+    date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 文章页是否显示分类
     tags: true # true or false 文章页是否显示标籤
     label: true # true or false 显示描述性文字
@@ -210,6 +214,14 @@ reward:
     #   link:
     #   text: alipay
 
+# Post edit
+# Easily browse and edit blog source code online.
+post_edit:
+  enable: false
+  # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
+  # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
+  url: https://github.com/wayne0926/hexo-blog/edit/master/source/_posts
+
 # Related Articles
 related_post:
   enable: true
@@ -218,6 +230,13 @@ related_post:
 
 # figcaption (图片描述文字)
 photofigcaption: false
+
+# post_pagination (分頁)
+# value: 1 || 2 || false
+# 1: The 'next post' will link to old post
+# 2: The 'next post' will link to new post
+# false: disable pagination
+post_pagination: 1
 
 # anchor
 # 当您滚动帖子时，URL将根据标题ID更新。
@@ -258,7 +277,7 @@ addtoany:
 
 comments:
   # Up to two comments system, the first will be shown as default
-  # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Utterances/Facebook Comments
+  # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo
   use:
     - Valine
   # - Valine
@@ -333,6 +352,14 @@ valine:
     mail: 邮箱(必填)
     link: 网址(https://)
 
+# waline - A simple comment system with backend support fork from Valine
+# https://waline.js.org/
+waline:
+  serverURL: # Waline server address url
+  avatar: monsterid # gravatar style https://zh-tw.gravatar.com/site/implement/images/#default-image
+  emojiCDN: # emoji CDN
+  bg: /image/comment_bg.png # waline background
+  option:
 
 # utterances
 # https://utteranc.es/
@@ -356,6 +383,9 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
+  envId:
+  region:
+  option:
 
 # Chat Services
 # --------------------------------------
@@ -405,16 +435,17 @@ footer:
     since: 2020
   custom_text:
   copyright: true # Copyright of theme and framework
-  ICP: # Chinese ICP License
-    enable: true
-    url: https://icp.gov.moe/?keyword=20200926
-    text: 萌ICP备 20200926号
-    icon: /img/moeicp.png
+  # ICP: # Chinese ICP License
+  #   enable: true
+  #   url: https://icp.gov.moe/?keyword=20200926
+  #   text: 萌ICP备 20200926号
+  #   icon: /img/moeicp.png
 
 # Analysis
 # --------------------------------------
 
 # Baidu Analytics
+# https://tongji.baidu.com/web/welcome/login
 baidu_analytics:
 
 # Google Analytics
@@ -428,6 +459,14 @@ tencent_analytics:
 # CNZZ Analytics
 # https://www.umeng.com/
 cnzz_analytics:
+
+# Cloudflare Analytics
+# https://www.cloudflare.com/zh-tw/web-analytics/
+cloudflare_analytics:
+
+# Microsoft Clarity
+# https://clarity.microsoft.com/
+microsoft_clarity:
 
 # Advertisement
 # --------------------------------------
@@ -517,6 +556,7 @@ footer_bg: false
 
 # the position of bottom right button/default unit: px (右下角按钮距离底部的距离/默认单位为px)
 rightside-bottom:
+
 # Enter transitions (開啓網頁進入效果)
 enter_transitions: false
 # Background effects (背景特效)
@@ -573,6 +613,7 @@ ClickShowText:
     - 以梦为马
     - 不负韶华
   fontSize: 15px
+  random: false
   mobile: false
 
 # Default display mode (网站默认的显示模式)
@@ -645,6 +686,7 @@ aside:
     enable: true
     description: 以梦为马，不负韶华&ensp;<i class="fas fa-flag"></i>
     button:
+      enable: true
       icon: fab fa-github
       text: Follow Me
       link: https://github.com/wayne0926
@@ -663,16 +705,19 @@ aside:
     enable: true
     limit: 40 # 如果设置为0将显示全部
     color: false
+    sort_order: # Don't modify the setting unless you know how it works
   card_archives:
     enable: true
     type: monthly # yearly or monthly
     format: MMMM YYYY # eg: YYYY年MM月
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
     limit: 8 # if set 0 will show all
+    sort_order: # Don't modify the setting unless you know how it works
   card_webinfo:
     enable: true
     post_count: true
     last_push_date: true
+    sort_order: # Don't modify the setting unless you know how it works
   # card_calendar: false
   # card_weather: true
   # card_wip: false
@@ -693,9 +738,11 @@ runtimeshow:
 # Aside widget - Newest Comments
 newest_comments:
   enable: true
+  sort_order: # Don't modify the setting unless you know how it works
   limit: 6
+  storage: 10 # unit: mins, save data to localStorage
   avatar: true
-  leancloud:
+  valine:
     enable: true
     appId: Nzs79oohcaAWDCn87UJsaTff-MdYXbMMI # leancloud application app id
     appKey: if40yp6Hp6VaITeQJjG0OwKK # leancloud application app key
@@ -708,9 +755,14 @@ newest_comments:
     enable: false
     forum:
     api_key:
+  twikoo: false
+  waline: false
 
 # Bottom right button (右下角按鈕)
 # --------------------------------------
+
+# Change font size
+change_font_size: false
 
 # Conversion between Traditional and Simplified Chinese (简繁转换)
 translate:
@@ -897,11 +949,11 @@ inject:
 CDN:
   # main
   # main_css: /css/index.css
-  main_css: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/css/index.min.css
+  main_css: /css/index.css
   jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
   # main: /js/main.js
-  main: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/main.min.js
-  utils: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/utils.min.js
+  main: /js/main.js
+  utils: /js/utils.js
 # https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages
   # pjax
   pjax: https://cdn.jsdelivr.net/npm/pjax/pjax.min.js
@@ -915,6 +967,7 @@ CDN:
   disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
   utterances: https://utteranc.es/client.js
   twikoo: https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js
+  waline: https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js
 
   # share
   addtoany: https://static.addtoany.com/menu/page.js

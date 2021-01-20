@@ -1,5 +1,5 @@
-.card-widget.card-info
-  .card-content
+if theme.aside.card_author.enable
+  .card-widget.card-info
     .card-info-avatar.is-center
       if theme.lazyload.enable
         img.avatar-img(data-lazy-src=url_for(theme.avatar.img) onerror=`this.onerror=null;this.src='` + url_for(theme.error_img.flink) + `'` alt="avatar")
@@ -27,9 +27,10 @@
             .headline= _p('aside.categories') 
             .length-num= site.categories.length
 
-    a#card-info-btn.button--animated(href=theme.aside.card_author.button.link)
-      i(class=theme.aside.card_author.button.icon)
-      span=theme.aside.card_author.button.text
+    if theme.aside.card_author.button.enable
+      a#card-info-btn.button--animated(href=theme.aside.card_author.button.link)
+        i(class=theme.aside.card_author.button.icon)
+        span=theme.aside.card_author.button.text
   
     if(theme.social)
         .card-info-social-icons.is-center

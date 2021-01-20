@@ -40,7 +40,7 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
     #article-container
       code
         background: #2c2c2c
-        
+
       pre > code
         background: 0
 
@@ -106,10 +106,11 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
     .error-img,
     #article-container iframe,
     img,
-    .gist
+    .gist,
+    .ads-wrap
       filter: brightness(.8)
 
-    #aside_content .aside-list > .aside-list-item:not(:last-child)
+    #aside-content .aside-list > .aside-list-item:not(:last-child)
       border-bottom: 1px dashed alpha(#FFFFFF, .1)
 
     // 第三方

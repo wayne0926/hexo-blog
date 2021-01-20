@@ -50,14 +50,6 @@
     })
   }
 
-  let ClickShowText = 'undefined';
-  if (theme.ClickShowText && theme.ClickShowText.enable) {
-    ClickShowText = JSON.stringify({
-    text: theme.ClickShowText.text.join(","),
-      fontSize: theme.ClickShowText.fontSize
-    })
-  }
-
   let Snackbar = 'undefined';
   if (theme.snackbar && theme.snackbar.enable) {
     Snackbar = JSON.stringify({
@@ -91,7 +83,7 @@
   }
 
 script.
-  var GLOBAL_CONFIG = { 
+  const GLOBAL_CONFIG = { 
     root: '!{config.root}',
     algolia: !{algolia},
     localSearch: !{localSearch},
@@ -116,20 +108,28 @@ script.
       month: '!{_p("date_suffix.month")}'
     },
     copyright: !{copyright},
-    ClickShowText: !{ClickShowText},
     lightbox: '!{ theme.medium_zoom ? "mediumZoom" : (theme.fancybox ? "fancybox" : "null" )}',
     Snackbar: !{Snackbar},
-    justifiedGallery: {
-      js: '!{theme.CDN.justifiedGallery_js}',
-      css: '!{theme.CDN.justifiedGallery_css}'
+    source: {
+      jQuery: '!{url_for(theme.CDN.jquery)}',
+      justifiedGallery: {
+        js: '!{url_for(theme.CDN.justifiedGallery_js)}',
+        css: '!{url_for(theme.CDN.justifiedGallery_css)}'
+      },
+      fancybox: {
+        js: '!{url_for(theme.CDN.fancybox)}',
+        css: '!{url_for(theme.CDN.fancybox_css)}'
+      }
     },
     isPhotoFigcaption: !{theme.photofigcaption},
     islazyload: !{theme.lazyload.enable},
     isanchor: !{theme.anchor}
   };
 
-  var saveToLocal = {
+  const saveToLocal = {
+    // ttl 單位是 天
     set: function setWithExpiry(key, value, ttl) {
+      if (ttl === 0) return
       const now = new Date()
       const expiryDay = ttl * 86400000
       const item = {
@@ -156,5 +156,17 @@ script.
     }
   }
 
-
-
+  // https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
+  const getScript = url => new Promise((resolve, reject) => {
+    const script = document.createElement('script')
+    script.src = url
+    script.async = true
+    script.onerror = reject
+    script.onload = script.onreadystatechange = function() {
+      const loadState = this.readyState
+      if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+      script.onload = script.onreadystatechange = null
+      resolve()
+    }
+    document.head.appendChild(script)
+  })
