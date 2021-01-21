@@ -627,12 +627,12 @@ beautify:
   title-prefix-icon: '\f0c1'
   title-prefix-icon-color: '#F47466'
 
-# 全局字体设置
+# 全局字体设置 //// Noto Serif SC
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
   global-font-size:
   code-font-size:
-  font-family: Noto Serif SC, PingFang SC, Microsoft YaHei, SimSun, Arial, sans-serif
+  font-family: PingFang SC, Microsoft YaHei, SimSun, Arial, sans-serif
   code-font-family: Fira Code, Noto Serif SC, monospace
 
 # Font settings for the site title and site subtitle
@@ -921,14 +921,14 @@ inject:
     - <script>(function redirectPjax(){if(typeof pjax==="undefined"){setTimeout(redirectPjax,50);return}pjax.site_handleResponse=pjax.handleResponse;pjax.handleResponse=function(responseText,request,href,options){Object.defineProperty(request,"responseURL",{value:href});pjax.site_handleResponse(responseText,request,href,options)}})();</script>
   # 阿里图标
     - <link rel="stylesheet" href="//at.alicdn.com/t/font_2009371_z2n39cebnib.css" media="print" onload="this.media='all'">
-  # 谷歌字体
+  # 谷歌字体 /// family=Noto+Serif+SC:wght@400;500;600;700&
     - <link rel="preconnect" href="https://fonts.gstatic.com">
-    - <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Fira+Code:wght@500&display=swap" rel="stylesheet" media="print" onload="this.media='all'"> 
+    - <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   # 代码框美化
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/macblack.min.css" media="print" onload="this.media='all'">
   # GA统计
     - <script>window.ga_tid='UA-179333436-1';(function(){var dga=document.createElement("script");dga.src="https://rmt.dogedoge.com/fetch/public/ga.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(dga,s)})();</script>
-    
+
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要请不要修改
