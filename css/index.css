@@ -797,7 +797,7 @@ body {
   background: var(--global-bg);
   color: var(--font-color);
   font-size: var(--global-font-size);
-  font-family: Noto Serif SC, PingFang SC, Microsoft YaHei, SimSun, Arial, sans-serif;
+  font-family: PingFang SC, Microsoft YaHei, SimSun, Arial, sans-serif;
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
