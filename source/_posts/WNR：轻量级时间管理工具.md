@@ -4,12 +4,12 @@ abbrlink: 644bee3
 date: 2020-12-18 22:44:59
 tags: 工具推荐
 categories: 工具推荐
-cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/wnr5.jpg
+cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/wnr111.webp
 keywords: WNR：轻量级时间管理工具
 description:
 ---
 # 简介
-![截图1](https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/wnr5.jpg)
+![截图1](https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/wnr111.webp)
 
 `wnr`一款跨平台的轻量计时和时间管理工具，让你更高效、强力地管理工作与休息。
 
