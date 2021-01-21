@@ -1427,7 +1427,7 @@ blockquote footer cite:before {
 .layout > div:first-child:not(.recent-posts) {
   align-self: flex-start;
   padding: 50px 40px;
-  border-radius: 8px;
+  border-radius: 25px;
   background: var(--card-bg);
   box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06);
 }
