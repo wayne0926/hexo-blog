@@ -1605,7 +1605,6 @@ blockquote footer cite:before {
   line-height: 1.4;
   transition: all 0.2s ease-in-out;
   -webkit-line-clamp: 2;
-  font-weight: bold;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-title:hover {
   color: #49b1f5;
