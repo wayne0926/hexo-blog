@@ -762,7 +762,7 @@ newest_comments:
 # --------------------------------------
 
 # Change font size
-change_font_size: false
+change_font_size: true
 
 # Conversion between Traditional and Simplified Chinese (简繁转换)
 translate:
