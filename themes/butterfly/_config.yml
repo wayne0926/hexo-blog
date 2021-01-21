@@ -100,23 +100,23 @@ favicon: favicon.ico
 
 # Avatar (头像)
 avatar:
-  img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/avatar.jpg
+  img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/avatar.webp
   effect: false
 
 # Disable all banner image
 disable_top_img: false
 
 # 主页的横幅图像
-index_img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.jpg
+index_img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.webp
 # 如果页面横幅未设置，则会显示top_img
-default_top_img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.jpg
+default_top_img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.webp
 
 # 存档页面的横幅图像
-archive_img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.jpg
+archive_img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.webp
 
 # 标签页的横幅图像
 # note: tag page, not tags page (子标签页面的 top_img)
-tag_img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.jpg
+tag_img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.webp
 
 # 标签页的横幅图像
 # format: 
@@ -125,7 +125,7 @@ tag_per_img:
 
 # 类别页面的横幅图像
 # note: category page, not categories page (子分类页面的 top_img)
-category_img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.jpg
+category_img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.webp
 # The banner image of category page
 # format:
 #  - category name: xxxxx
