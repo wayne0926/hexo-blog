@@ -913,36 +913,22 @@ fragment_cache: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    # - <style>html{filter:grayscale(100%);-moz-filter:grayscale(100%);-o-filter:grayscale(100%);-webkit-filter:grayscale(1)</style>
-    # - <link rel="stylesheet" href="css/style.css">
-    # - <script src="https://wr0926.ml/js/head.js"></script>
-    # - <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swapC" rel="stylesheet">
-    - <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
-    - <script>window.FPConfig={delay:0.5,ignoreKeywords:[],maxRPS:3,hoverDelay:50};</script>
-    # - <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279168053'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279168053%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
-  # - <link rel="stylesheet" href="/xxx.css">
-    # - <link href="https://fonts.dogedoge.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  #预加载 
+    # - <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
+    # - <script>window.FPConfig={delay:0.5,ignoreKeywords:[],maxRPS:3,hoverDelay:50};</script>
+  bottom:
+  # Pjax链接修改
+    - <script>(function redirectPjax(){if(typeof pjax==="undefined"){setTimeout(redirectPjax,50);return}pjax.site_handleResponse=pjax.handleResponse;pjax.handleResponse=function(responseText,request,href,options){Object.defineProperty(request,"responseURL",{value:href});pjax.site_handleResponse(responseText,request,href,options)}})();</script>
+  # 阿里图标
+    - <link rel="stylesheet" href="//at.alicdn.com/t/font_2009371_z2n39cebnib.css" media="print" onload="this.media='all'">
+  # 谷歌字体
     - <link rel="preconnect" href="https://fonts.gstatic.com">
     - <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Fira+Code:wght@500&display=swap" rel="stylesheet" media="print" onload="this.media='all'"> 
-   # - <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet"> 
-  bottom:
-    - <script>(function redirectPjax(){if(typeof pjax==="undefined"){setTimeout(redirectPjax,50);return}pjax.site_handleResponse=pjax.handleResponse;pjax.handleResponse=function(responseText,request,href,options){Object.defineProperty(request,"responseURL",{value:href});pjax.site_handleResponse(responseText,request,href,options)}})();</script>
-    # - <script>pjax.site_handleResponse=pjax.handleResponse;pjax.handleResponse=function(responseText,request,href,options){Object.defineProperty(request,'responseURL',{value:href});pjax.site_handleResponse(responseText,request,href,options);}</script>
-    # - <script src="https://unpkg.com/xiaokang-style/butterfly/js/xkTool.js"></script>
-    # - <script src="https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/calendar.js"></script>
-    # - <script src="https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/languages.js"></script>
-    # - <script data-pjax src="/js/pop.js"></script>
-    # - <div id="hans-bolang"></div>
-    # - <script src="https://api.vvhan.com/api/bolang"></script>
+  # 代码框美化
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/macblack.min.css" media="print" onload="this.media='all'">
+  # GA统计
     - <script>window.ga_tid='UA-179333436-1';(function(){var dga=document.createElement("script");dga.src="https://rmt.dogedoge.com/fetch/public/ga.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(dga,s)})();</script>
-    # - <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
-    # - <script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/js/hideMobileSidebar.js"></script>
-    # - <script src="xxxx"></script>
-    # - <link href="https://fonts.dogedoge.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
-    - <link rel="stylesheet" href="//at.alicdn.com/t/font_2009371_z2n39cebnib.css">
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/macblack.min.css">
-    # - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
-     
+    
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要请不要修改
