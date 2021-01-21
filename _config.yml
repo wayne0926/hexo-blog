@@ -125,12 +125,7 @@ deploy:
 #     repo: git@github.com:wayne0926/wrblog.github.io.git,backup
 #       #  github: https://github.com/wayne0926/wrblog.github.io,backup
 #       #  coding: https://e.coding.net/wr0926/blog/blog.git,backup
-# hexo-admin authentification
-admin:
-  deployCommand: "hexo-pubish.bat"
-  username: wayne0926
-  password_hash: $2a$10$joYksU1eboAe9F7HKxuxm.72jSNgKuX2Y7nw6IoXxBV1h3JB3tHSC
-  secret: 2006092620060926wr!
+
 
 baidu_url_submit:
   count: 3 ## 比如3，代表提交最新的三个链接
@@ -144,25 +139,6 @@ feed:
   path: atom.xml
   limit: 20
 
-# 看板娘
-live2d:
-  enable: false
-  scriptFrom: https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js
-  pluginRootPath: live2dw/
-  pluginJsPath: lib/
-  pluginModelPath: assets/
-  tagMode: false
-  debug: false
-  model:
-    use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json
-  display:
-    position: right
-    width: 150
-    height: 300
-  mobile:
-    show: false
-  react:
-    opacity: 0.7
 
 ## URL提交
 hexo_submit_urls_to_search_engine:
