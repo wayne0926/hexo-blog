@@ -56,6 +56,6 @@ while num <= 50:
 `GitHub`仓库：[https://github.com/wayne0926/shuaping](https://github.com/wayne0926/shuaping)
 
 # 鸣谢
-1、一言网的一句话（简体） [https://hitokoto.cn/](https://hitokoto.cn/)
-2、搏天api的随机语录（简体） [https://api.btstu.cn/](https://api.btstu.cn/)
-3、一句网（简体） [https://yijuzhan.com/](https://yijuzhan.com/)
+## 1、一言网的一句话（简体） [https://hitokoto.cn/](https://hitokoto.cn/)
+## 2、搏天api的随机语录（简体） [https://api.btstu.cn/](https://api.btstu.cn/)
+## 3、一句网（简体） [https://yijuzhan.com/](https://yijuzhan.com/)
