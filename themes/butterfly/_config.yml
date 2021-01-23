@@ -141,18 +141,18 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面显示)
   default_cover:
-    - https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/cover-rocket-min.png
+    - https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/cover-rocket-min-min.webp
 
 # Replace Broken Images (替换无法显示的图片)
 error_img:
-  flink: /img/friend_404.gif
-  post_page: /img/404.jpg
+  flink: /img/friend_404.webp
+  post_page: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/404.webp
 
 # 简单的404页面
 error_404:
   enable: true
   subtitle: 'Page Not Found'
-  background: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/404.jpg
+  background: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/404.webp
 
 post_meta:
   page: # Home Page
@@ -433,7 +433,7 @@ footer:
   owner:
     enable: true
     since: 2020
-  custom_text: <div class="icp"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://icp.gov.moe/?keyword=20200926"><img class="icp-icon" src="/img/moeicp.png" alt="ICP"><span>萌ICP备 20200926号</span></a></div>
+  custom_text: <div class="icp"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://icp.gov.moe/?keyword=20200926"><img class="icp-icon" src="/img/moeicp.webp" alt="ICP"><span>萌ICP备 20200926号</span></a></div>
   copyright: true # Copyright of theme and framework
   # ICP: # Chinese ICP License
   #   enable: true
@@ -863,7 +863,7 @@ aplayerInject:
 # position 弹窗位置
 # 可选 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: true
+  enable: false
   position: bottom-left
   bg_light: '#49b1f5' # 浅色模式下Toast通知的背景颜色
   bg_dark: '#121212' # 深色模式下Toast通知的背景颜色
@@ -919,6 +919,8 @@ inject:
   bottom:
   # Pjax链接修改
     - <script>(function redirectPjax(){if(typeof pjax==="undefined"){setTimeout(redirectPjax,50);return}pjax.site_handleResponse=pjax.handleResponse;pjax.handleResponse=function(responseText,request,href,options){Object.defineProperty(request,"responseURL",{value:href});pjax.site_handleResponse(responseText,request,href,options)}})();</script>
+  # f4图标
+    - <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'">
   # 阿里图标
     - <link rel="stylesheet" href="//at.alicdn.com/t/font_2009371_z2n39cebnib.css" media="print" onload="this.media='all'">
   # 谷歌字体 /// family=Noto+Serif+SC:wght@400;500;600;700&

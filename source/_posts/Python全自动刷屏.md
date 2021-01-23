@@ -1,13 +1,13 @@
 ---
 title: Python全自动刷屏
-date: 2021-01-22 20:37:43
 tags: 工具
 categories: 工具
-cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto@master/img/1611323382000.webp
+cover: 'https://cdn.jsdelivr.net/gh/wayne0926/myphoto@master/img/1611323382000.webp'
 keywords: Python全自动刷屏
 description: Python全自动刷屏
-abbrlink:
+abbrlink: 7573d519
 highlight_shrink: true
+date: 2021-01-22 20:37:43
 ---
 # 介绍
 ![](https://cdn.jsdelivr.net/gh/wayne0926/myphoto@master/img/1611323382000.webp)
