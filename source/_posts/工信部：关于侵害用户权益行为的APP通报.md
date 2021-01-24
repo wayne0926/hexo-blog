@@ -67,6 +67,6 @@ abbrlink:
 
 ![](https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/a95b485b71b3a38c85864ae8cb67b88d-19.webp)
 
-## 附件加载
+## 附件下载
 
 [附件：存在问题的应用软件名单（2021年第1批，总第10批）.docx](https://www.miit.gov.cn/api-gateway/jpaas-web-server/front/document/file-download?fileUrl=/cms_files/filemanager/1226211233/attach/20211/80acaf020cf148f4b382265b02050967.docx&fileName=%E9%99%84%E4%BB%B6%EF%BC%9A%E5%AD%98%E5%9C%A8%E9%97%AE%E9%A2%98%E7%9A%84%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%90%8D%E5%8D%95%EF%BC%882021%E5%B9%B4%E7%AC%AC1%E6%89%B9%EF%BC%8C%E6%80%BB%E7%AC%AC10%E6%89%B9%EF%BC%89.docx)
