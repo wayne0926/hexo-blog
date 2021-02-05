@@ -1,12 +1,12 @@
 ---
 title: 工信部：关于侵害用户权益行为的APP通报
-date: 2021-01-24 16:31:06
 tags: 信息
 categories: 信息
-cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto@master/img/1611479427000.webp
+cover: 'https://cdn.jsdelivr.net/gh/wayne0926/myphoto@master/img/1611479427000.webp'
 keywords: 工信部：关于侵害用户权益行为的APP通报
 description: 工信部：关于侵害用户权益行为的APP通报
-abbrlink:
+abbrlink: a62f3f4b
+date: 2021-01-24 16:31:06
 ---
 
 ## 信息
