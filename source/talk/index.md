@@ -5,7 +5,7 @@ comments: false
 ---
 <raw>
 <!-- 引用 HexoPlusPlus_Talk组件 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus/src/talk.css" /> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus/talk.css" /> 
 <script src="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus/talk_user.js"></script>
 <!-- 创建HexoPlusPlus_Talk容器 -->
 <div id="hpp_talk"></div>
