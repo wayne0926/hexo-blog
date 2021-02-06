@@ -3,7 +3,7 @@ title: 随言
 date: 2020-08-22 23:38:42
 comments: false
 ---
-
+<raw>
 <!-- 引用 HexoPlusPlus_Talk组件 -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@1.0.7/talk.css" /> 
 <script src="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@1.0.7/talk_user.js"></script>
@@ -18,3 +18,4 @@ limit: 10,//单次获取的最多条数
 start: 0//从第几条开始
 });
 </script>
+</raw>
