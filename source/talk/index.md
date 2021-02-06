@@ -13,7 +13,7 @@ comments: false
 <script>
 new hpp_talk({
 id:"hpp_talk",//容器id
-domain: "admin.wr0926.ml",//您的HexoPlusPlus域名，如blogadmin.cyfan.top
+domain: "hpp.wr0926.ml",//您的HexoPlusPlus域名，如blogadmin.cyfan.top
 limit: 10,//单次获取的最多条数
 start: 0//从第几条开始
 });
