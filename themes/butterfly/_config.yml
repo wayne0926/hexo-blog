@@ -851,6 +851,8 @@ artitalk:
 pjax:
   enable: true
   exclude:
+    - /talk/
+    - /p/2cc342b3/
     # - xxxx
     # - xxxx
 
