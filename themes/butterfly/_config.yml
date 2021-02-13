@@ -933,6 +933,9 @@ inject:
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/macblack.min.css" media="print" onload="this.media='all'">
   # GA统计
     - <script>window.ga_tid='UA-179333436-1';(function(){var dga=document.createElement("script");dga.src="https://rmt.dogedoge.com/fetch/public/ga.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(dga,s)})();</script>
+  # 灯笼    
+    - <script src="https://cdn.jsdelivr.net/gh/fz6m/china-lantern@1.6/dist/china-lantern.min.js"></script>      
+
 
 # CDN
 # Don't modify the following settings unless you know how they work
