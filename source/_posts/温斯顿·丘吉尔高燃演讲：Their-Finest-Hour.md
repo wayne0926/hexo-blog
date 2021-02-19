@@ -1,12 +1,12 @@
 ---
-title: 温斯顿·丘吉尔高燃演讲：Their Finest Hour
+title: 温斯顿·丘吉尔高燃演讲：We shall fight on the beaches
 abbrlink: 2cc342b3
 date: 2021-02-05 23:07:10
 tags: 分享
 categories: 分享
 cover: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/wensidun.webp
-keywords: 温斯顿·丘吉尔高燃演讲：Their Finest Hour
-description: 温斯顿·丘吉尔高燃演讲：Their Finest Hour
+keywords: 温斯顿·丘吉尔高燃演讲：We shall fight on the beaches
+description: 温斯顿·丘吉尔高燃演讲：We shall fight on the beaches
 ---
 `一下文段来自知乎`：[https://zhuanlan.zhihu.com/p/30352634](https://zhuanlan.zhihu.com/p/30352634)
 
