@@ -103,14 +103,14 @@
       link: https://www.hack-gov.com.cn/
       avatar: https://www.hack-gov.com.cn/img/friend_404.gif
       descr: 海客GO - 爱牟 听着海客的瀛谈
-    - name: Hermoso
-      link: https://www.webpages.show/
-      avatar: http://tu.webpages.show/avatar/avatar.png
-      descr: 时间如一捧流沙,缓缓的在指间流尽
     - name: leehoward
       link: https://leehoward.cn
       avatar: https://leehoward.cn/img/avatar.jpg
       descr:  code code study,day day up.
+    - name: 贰猹的小窝
+      link: https://noionion.top/
+      avatar: https://noionion-picture-bed.oss-cn-hangzhou.aliyuncs.com/img/head.jpg
+      descr: 用这生命中的每一秒，给自己一个不后悔的未来
     - name: 超逸の技术博客
       link: https://yangchaoyi.vip/
       avatar: https://cdn.jsdelivr.net/gh/Chocolate1999/cdn/img/avatar.png
@@ -127,18 +127,26 @@
       link: https://blog.slqwq.cn
       avatar: https://cdn.slblog.ga/pic/logo.png
       descr: 梦中做梦,做了个白日梦
+    - name: CC的部落格
+      link: https://blog.ccknbc.cc
+      avatar: https://cdn.jsdelivr.net/gh/ccknbc-backup/cdn/logo/ccknbc.png
+      descr: CC康纳百川
     - name: GamerNoTitle
       link: https://bili33.top
       avatar: https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo@1.0/AboutMe/logo-mini.png
       descr: 一个在懵懂无知中成长的高中生程序员^V^
-    - name: 古一
-      link: https://ancientone.cf
-      avatar: https://s1.ax1x.com/2020/08/23/dBVBmn.png
-      descr: 永远年轻，永远热泪盈眶
     - name: しゅふがく
       link: https://zfe.one
       avatar: https://zfe.space/images/headimage.png
       descr: 做个有梦想的人！
+    - name: Hermoso
+      link: https://www.webpages.show/
+      avatar: http://tu.webpages.show/avatar/avatar.png
+      descr: 时间如一捧流沙,缓缓的在指间流尽
+    - name: 古一
+      link: https://ancientone.cf
+      avatar: https://s1.ax1x.com/2020/08/23/dBVBmn.png
+      descr: 永远年轻，永远热泪盈眶
 # - class_name: 服务
 #   class_desc: 本站所用服务
 #   link_list:
