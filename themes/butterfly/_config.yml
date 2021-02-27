@@ -338,6 +338,8 @@ valine:
     - 26c2b68b8e455c976f15de93f8c5ec28
   friends:
     - 661fcd9c4ab1201f1e8e8975c49d7af6
+    - 4edcde65b63846d74f0fb41e6cac2b17
+    - 18bbd11ac12a681d690181cb1b66077b
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
   lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
   placeholder: 写下你的留言把！ # valine comment input placeholder (like: Please leave your footprints)
