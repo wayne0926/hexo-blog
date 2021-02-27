@@ -35,6 +35,7 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render: 
   - letbaidu\**
+  - kernel.html
 # 写作
 new_post_name: :title.md # 新帖子的文件名
 default_layout: post
