@@ -127,10 +127,14 @@
       link: https://www.antmoe.com/
       avatar: https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg
       descr: 一个收藏回忆与分享技术的地方！
-    - name: 小嘉的部落格	 # 站點名稱
-      link: //blog.imzjw.cn    # 站點鏈接
-      avatar: //cdn.jsdelivr.net/gh/zjwo/CDN/img/blog/avatar.jpg  # 站點頭像
-      descr: 好记性不如烂笔头	 # 站點描述
+    - name: 小嘉的部落格
+      link: //blog.imzjw.cn
+      avatar: //cdn.jsdelivr.net/gh/zjwo/CDN/img/blog/avatar.jpg
+      descr: 好记性不如烂笔头
+    - name: Nescx
+      link: https://www.nesxc.com
+      avatar: https://cdn-1.nesxc.com/img/avatar.webp
+      descr: 青石落晚巷 故人未还乡
     - name: SL's Blog
       link: https://blog.slqwq.cn
       avatar: https://cdn.slblog.ga/pic/logo.png
