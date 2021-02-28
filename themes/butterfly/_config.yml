@@ -8,20 +8,20 @@
 
 menu:
    首页: / || fas fa-home
-   文章 || fas fa-bookmark:
-    - 归档 || ./archives/ || fas fa-archive
-    - 标签 || ./tags/ || fas fa-tags
-    - 分类 || ./categories/ || fas fa-folder-open
+   文章||fas fa-bookmark:
+    归档: /archives/ || fas fa-archive
+    标签: /tags/ || fas fa-tags
+    分类: /categories/ || fas fa-folder-open
    其他||fas fa-list:
-    - 音乐 || /music/ || fas fa-music
-    - 图片 || /img/ || fas fa-photo-video
-    - 随言 || /talk/ || far fa-comments
-    - 更新日志 || /update/ || far fa-paper-plane
+    音乐: /music/ || fas fa-music
+    图片: /img/ || fas fa-photo-video
+    随言: /talk/ || far fa-comments
+    更新日志:  /update/ || far fa-paper-plane
     # - Movie || /movies/ || fas fa-video
    工具||fas fa-box-open :
-    - 在线听写助手 || https://tx.wr0926.ml || fas fa-check-circle
-    - 人生倒计时 || https://cd.wr0926.ml || far fa-clock
-    - 随机密码生成器 || https://sj.wr0926.ml || fas fa-check-circle
+    在线听写助手:  https://tx.wr0926.ml || fas fa-check-circle
+    人生倒计时:  https://cd.wr0926.ml || far fa-clock
+    随机密码生成器:  https://sj.wr0926.ml || fas fa-check-circle
     # - 随机密码生成器 || /suijimima/ || fas fa-
    留言板: /messageboard/ || fas fa-comment-dots
    链接: /link/ || fas fa-link
@@ -324,6 +324,7 @@ gitalk:
   distractionFreeMode: false # 类似于Facebook的无干扰模式。
   pagerDirection: last # 注释排序方向，可用值是最后和第一个。
   createIssueManually: false # Gitalk将为您的每个页面自动创建一个对应的github问题
+  option:
 
 # valine
 # https://valine.js.org
@@ -349,11 +350,13 @@ valine:
   bg: # valine background
   emojiCDN: //cdn.jsdelivr.net/gh/wayne0926/valine-face/ # emoji CDN
   enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
-  requiredFields: nick,mail # required fields (nick/mail)
+  requiredFields: 昵称/QQ号(必填),邮箱(必填),网址(https://) # required fields (nick/mail)
   metaPlaceholder:
     nick: 昵称/QQ号(必填)
     mail: 邮箱(必填)
     link: 网址(https://)
+  visitor: false
+  option:
 
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
@@ -362,6 +365,7 @@ waline:
   avatar: monsterid # gravatar style https://zh-tw.gravatar.com/site/implement/images/#default-image
   emojiCDN: # emoji CDN
   bg: # waline background
+  visitor: false
   option:
 
 # utterances
@@ -388,6 +392,7 @@ facebook_comments:
 twikoo:
   envId:
   region:
+  visitor: false
   option:
 
 # Chat Services
@@ -834,21 +839,8 @@ note:
 # other
 # --------------------------------------
 
-# Artitalk
-# see https://artitalk.js.org/
-
-artitalk:
-  appId: TyMAFjOdbY793pDjYYXLFuGx-MdYXbMMI
-  appKey: j9eWkQgu3FhIf3BJpuwkEe3s
-  option:
-    motion :  1  
-    bgImg: 'https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp'
-    color1: '#e6e6e6'
-    color2: '#e6e6e6'
-    color3: '#000000'
-
-# Pjax [Beta]
-# 它可能包含错误且不稳定，请在发现错误时提供反馈。
+# Pjax
+# It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
   enable: true
@@ -979,8 +971,8 @@ CDN:
   # math
   mathjax: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   katex: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
-  katex_copytex: https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js
-  katex_copytex_css: https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css
+  katex_copytex: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js
+  katex_copytex_css: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.css
   mermaid: https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
 
   # count
@@ -1030,5 +1022,3 @@ CDN:
   prismjs_js: https://cdn.jsdelivr.net/npm/prismjs/prism.min.js
   prismjs_lineNumber_js: https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
   prismjs_autoloader: https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
-
-  artitalk: https://cdn.jsdelivr.net/npm/artitalk
