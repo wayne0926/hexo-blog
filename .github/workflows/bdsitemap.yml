@@ -1,3 +1,4 @@
+
 name: 站点地图（百度版）
 
 on:
@@ -34,7 +35,7 @@ jobs:
         git config user.email "wayne0926@foxmail.com"
         git add .
         git commit -m "自动创建百度所需SiteMap:  $(date +'%Y-%m-%d %H:%M:%S')"
-        git push --force --quiet "https://${{ secrets.ACCESS_TOKEN }}@$GITHUB_REPO" master:master
+        git push --quiet "https://${{ secrets.ACCESS_TOKEN }}@$GITHUB_REPO" master:master
       
     - name: Telegram Notification
       if: cancelled() == false
