@@ -27,7 +27,9 @@ jobs:
       run: pip install requests
 
     - name: Generate Txt
-      run: python bdsitemap.py
+      run: |
+        cd source
+        python ../bdsitemap.py
       
     - name: Git Push
       run: |
