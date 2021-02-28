@@ -9,3 +9,4 @@ result = html.replace('https://wr0926.ml', 'https://www.wr0926.ml')
 f = codecs.open('baidu-sitemap.xml', mode='a', encoding='utf-8')
 f.write(result)
 f.close
+print(result)
