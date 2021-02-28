@@ -1,0 +1,46 @@
+name: 站点地图（百度版）
+
+on:
+  schedule:
+    - cron: '0 20 * * *'
+  workflow_dispatch:
+    inputs:
+      name:
+        description: '手动触发推送'
+        required: false
+
+jobs:
+  build:
+    name: 站点地图（百度版）
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Set Up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Install Requests
+      run: pip install requests
+
+    - name: Generate Txt
+      run: python bdsitemap.py
+      
+    - name: Git Push
+      run: |
+        git config user.name "wayne0926"
+        git config user.email "wayne0926@foxmail.com"
+        git add .
+        git commit -m "自动创建百度所需SiteMap:  $(date +'%Y-%m-%d %H:%M:%S')"
+        git push --force --quiet "https://${{ secrets.ACCESS_TOKEN }}@$GITHUB_REPO" master:master
+      
+    - name: Telegram Notification
+      if: cancelled() == false
+      uses: xinthink/action-telegram@v1.1
+      with:
+        botToken: ${{ secrets.TG_BOT_TOKEN }} #use bot @BotFather
+        chatId: ${{ secrets.TG_CHAT_ID }} #use bot @userinfobot
+        jobStatus: ${{ job.status }}
+        skipSuccess: false
