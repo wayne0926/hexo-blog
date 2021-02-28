@@ -3,7 +3,7 @@ name: 站点地图（百度版）
 
 on:
   schedule:
-    - cron: '0 20 * * *'
+    - cron: '0 12 * * *'
   workflow_dispatch:
     inputs:
       name:
@@ -33,6 +33,7 @@ jobs:
       
     - name: Git Push
       run: |
+        sudo timedatectl set-timezone 'Asia/Shanghai'
         git config user.name "wayne0926"
         git config user.email "wayne0926@foxmail.com"
         git add .
