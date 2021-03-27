@@ -504,25 +504,11 @@ google_adsense:
 # Verification (站长验证)
 # --------------------------------------
 
-# Google Webmaster tools verification setting
-# See: https://www.google.com/webmasters/
-google_site_verification:
-
-# Bing Webmaster tools verification setting
-# See: https://www.bing.com/webmaster/
-bing_site_verification:
-
-# 百度网站管理员工具验证设置
-# See: https://ziyuan.baidu.com/site/
-baidu_site_verification:
-
-# 360 Webmaster tools verification setting
-# see http://zhanzhang.so.com/
-qihu_site_verification:
-
-# Yandex Webmaster tools verification setting
-# see https://webmaster.yandex.com/
-yandex_site_verification:
+site_verification:
+  # - name: google_site_verification
+  #   content: xxxxxx
+  # - name: baidu_site_verification
+  #   content: xxxxxxx
 
 # Beautify/Effect (美化/效果)
 # --------------------------------------
@@ -886,11 +872,13 @@ pangu:
   enable: false
   field: post # site/post
 
-# Lazyload (图片懒加载)
-# https://github.com/verlok/lazyload
+# Lazyload (圖片懶加載)
+# https://github.com/verlok/vanilla-lazyload
 lazyload:
   enable: true
-  post: /img/loading.webp
+  field: site # site/post
+  placeholder: /img/loading.webp
+  blur: true
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
