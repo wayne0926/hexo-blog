@@ -108,16 +108,20 @@ avatar:
 disable_top_img: false
 
 # 主页的横幅图像
-index_img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.webp
+index_img: 
+# https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.webp
 # 如果页面横幅未设置，则会显示top_img
-default_top_img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.webp
+default_top_img: 
+# https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.webp
 
 # 存档页面的横幅图像
-archive_img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.webp
+archive_img: 
+# https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.webp
 
 # 标签页的横幅图像
 # note: tag page, not tags page (子标签页面的 top_img)
-tag_img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.webp
+tag_img: 
+# https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.webp
 
 # 标签页的横幅图像
 # format: 
@@ -126,7 +130,8 @@ tag_per_img:
 
 # 类别页面的横幅图像
 # note: category page, not categories page (子分类页面的 top_img)
-category_img: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.webp
+category_img: 
+# https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.webp
 # The banner image of category page
 # format:
 #  - category name: xxxxx
@@ -537,7 +542,7 @@ site_verification:
 index_site_info_top: 25% 
 # 38%
 # The height of top_img, eg: 300px/300em/300rem (主页top_img高度)
-index_top_img_height: 450px
+index_top_img_height: 230px
 
 # The user interface setting of category and tag page (category和tag页的UI设置)
 # index - same as Homepage UI (index 值代表 UI将与首页的UI一样)
@@ -550,7 +555,8 @@ tag_ui: # 留空或 index
 # The formal of color: '#49B202'
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 # White color will be shown as default
-background: url(https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/bd.jpg)
+background: 
+# url(https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/bd.jpg)
 # url(https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/bd.jpg)
 
 # 显示页脚背景图片（与top_img相同）
@@ -933,7 +939,7 @@ inject:
 CDN:
   # main
   # main_css: /css/index.css
-  main_css: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/css/index.min.css
+  main_css: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages@latest/css/index.min.css
   jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
   # main: /js/main.js
   main: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/main.min.js
