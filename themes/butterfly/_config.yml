@@ -694,7 +694,7 @@ aside:
       link: https://github.com/wayne0926
   card_announcement:
     enable: true
-    content: <i class="fas fa-bell"></i>&ensp;欢迎来到时过境迁Wayne的博客 <br> 安逸，在经过艰苦的期末后，至于放假，爽呀😀 <br><span><a href="https://wayne0926.gitee.io/"><i class="far fa-hand-point-right"></i>  国内镜像</a></span><br><span><a href="https://wr0926.ml/"><i class="far fa-hand-point-right"></i> 主站</a></span><br><span><a href="https://fkun.cf/"><i class="far fa-hand-point-right"></i>  镜像1</a></span><br><span><a href="https://jsd.wr0926.ml/"><i class="far fa-hand-point-right"></i>  镜像2</a></span>
+    content: <i class="fas fa-bell"></i>&ensp;欢迎来到时过境迁Wayne的博客 <br> 害…… <br><span><a href="https://wayne0926.gitee.io/"><i class="far fa-hand-point-right"></i>  国内镜像</a></span><br><span><a href="https://wr0926.ml/"><i class="far fa-hand-point-right"></i> 主站</a></span><br><span><a href="https://fkun.cf/"><i class="far fa-hand-point-right"></i>  镜像1</a></span><br><span><a href="https://jsd.wr0926.ml/"><i class="far fa-hand-point-right"></i>  镜像2</a></span>
   card_recent_post:
     enable: true
     limit: 5 # 如果设置为0将显示全部
