@@ -107,25 +107,25 @@ theme: butterfly
 plugins: hexo-generator-feed
 # 部署方式
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  - type: git
-    # repo: git@github.com:wayne0926/wrblog.github.io.git
-    repo: 
-      # github: https://github.com/wayne0926/wayne0926.github.io.git
-      coding: https://e.coding.net/wr0926/blog/blog.git
-      gitee: https://gitee.com/wayne0926/wayne0926.git
-    branch: master
-  - type: baidu_url_submitter
-  - type: cjh_google_url_submitter
-  - type: cjh_bing_url_submitter
-  - type: cjh_baidu_url_submitter
-    # branch: [branch]
-    # message: [message]''
-# backup:
-#     type: git
-#     repo: git@github.com:wayne0926/wrblog.github.io.git,backup
-#       #  github: https://github.com/wayne0926/wrblog.github.io,backup
-#       #  coding: https://e.coding.net/wr0926/blog/blog.git,backup
+# deploy:
+#   - type: git
+#     # repo: git@github.com:wayne0926/wrblog.github.io.git
+#     repo: 
+#       # github: https://github.com/wayne0926/wayne0926.github.io.git
+#       coding: https://e.coding.net/wr0926/blog/blog.git
+#       gitee: https://gitee.com/wayne0926/wayne0926.git
+#     branch: master
+#   - type: baidu_url_submitter
+#   - type: cjh_google_url_submitter
+#   - type: cjh_bing_url_submitter
+#   - type: cjh_baidu_url_submitter
+#     # branch: [branch]
+#     # message: [message]''
+# # backup:
+# #     type: git
+# #     repo: git@github.com:wayne0926/wrblog.github.io.git,backup
+# #       #  github: https://github.com/wayne0926/wrblog.github.io,backup
+# #       #  coding: https://e.coding.net/wr0926/blog/blog.git,backup
 
 
 baidu_url_submit:
@@ -164,16 +164,42 @@ hexo_submit_urls_to_search_engine:
 aplayer:
   meting: true
 
-# 跳转
-hexo_external_link:
+
+marked:
+  gfm: true
+  pedantic: false
+  breaks: true
+  smartLists: true
+  smartypants: true
+  quotes: '“”‘’'
+  modifyAnchors: 0
+  anchorAlias: false
+  autolink: true
+  mangle: true
+  sanitizeUrl: false
+  headerIds: true
+  lazyload: false
+  prependRoot: false
+  postAsset: false
+  external_link:
+    enable: true
+    exclude: []
+    nofollow: true
+  disableNunjucks: false
+  descriptionLists: true
+
+minify:
+  js: false
+  css: false
+  html: false
+
+nofollow:
   enable: true
-  enable_base64_encode: false
-  url_param_name: 'u'
-  html_file_name: 'go.html'
-  target_blank: true
-  link_rel: 'external nofollow noopener noreferrer'
-  domain:  # 如果开启了防盗链，填写你的域名
-  safety_chain: false
+  field: site
+  exclude:
+    - 'wr0926.ml'
+    - 'wayne0926.gitee.io'
+    - 'www.wr0926.ml'
 
 # offline config passed to sw-precache.
 service_worker:
