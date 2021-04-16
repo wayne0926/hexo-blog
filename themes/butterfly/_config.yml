@@ -454,7 +454,7 @@ footer:
   owner:
     enable: true
     since: 2020
-  custom_text: <div class="icp"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://icp.gov.moe/?keyword=20200926"><img class="icp-icon" src="/img/moeicp.webp" alt="ICP"><span>萌ICP备 20200926号</span></a></div>
+  custom_text: <div class="icp"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://icp.gov.moe/?keyword=20200926"><img class="icp-icon" src="/img/moeicp.webp" alt="ICP" width="30px" height="20px"><span>萌ICP备 20200926号</span></a></div>
   copyright: true # Copyright of theme and framework
   # ICP: # Chinese ICP License
   #   enable: true
