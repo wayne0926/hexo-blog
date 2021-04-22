@@ -471,7 +471,7 @@ baidu_analytics:
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
-google_analytics: UA-179333436-1
+google_analytics: 
 
 # Tencent Analytics ID
 # https://mta.qq.com
@@ -928,11 +928,11 @@ inject:
   # 代码框美化
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/macblack.min.css" media="print" onload="this.media='all'">
   # GA统计
-  #     - <script>window.ga_tid='UA-179333436-1';(function(){var dga=document.createElement("script");dga.src="https://rmt.dogedoge.com/fetch/public/ga.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(dga,s)})();</script>   
+    - <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179333436-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-179333436-1');</script>
   # IE跳转  
     - <script>function IEVersion(){var e,f,a=navigator.userAgent,b=a.indexOf("compatible")>-1&&a.indexOf("MSIE")>-1,c=a.indexOf("Edge")>-1&&!b,d=a.indexOf("Trident")>-1&&a.indexOf("rv:11.0")>-1;return b?(e=new RegExp("MSIE (\\d+\\.\\d+);"),e.test(a),f=parseFloat(RegExp["$1"]),7==f?7:8==f?8:9==f?9:10==f?10:6):c?"edge":d?11:-1}var isIE=IEVersion();("6"==isIE||"7"==isIE||"8"==isIE||"9"==isIE||"10"==isIE||"11"==isIE)&&(window.location="/kernel.html");</script>
   # 浏览器渲染时间打印
-    - <script type="module">import{getFCP,getLCP,getFID}from'https://unpkg.zhimg.com/web-vitals@0.2.4/dist/web-vitals.es5.min.js?module';getFCP(({name,value})=>console.log(name,value));getLCP(({name,value})=>console.log(name,value));getFID(({name,value})=>console.log(name,value));</script>
+  #  - <script type="module">import{getFCP,getLCP,getFID}from'https://unpkg.zhimg.com/web-vitals@0.2.4/dist/web-vitals.es5.min.js?module';getFCP(({name,value})=>console.log(name,value));getLCP(({name,value})=>console.log(name,value));getFID(({name,value})=>console.log(name,value));</script>
 
 
 # CDN
