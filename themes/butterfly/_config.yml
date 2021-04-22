@@ -750,12 +750,7 @@ newest_comments:
   limit: 6
   storage: 10 # unit: mins, save data to localStorage
   avatar: true
-  valine:
-    enable: false
-    appId: Nzs79oohcaAWDCn87UJsaTff-MdYXbMMI # leancloud application app id
-    appKey: if40yp6Hp6VaITeQJjG0OwKK # leancloud application app key
-    serverURL: https://nzs79ooh.api.lncldglobal.com # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-    default_avatar: # mp/identicon/monsterid/wavatar/retro/robohash/blank
+  valine: false
   github_issues:
     enable: false
     repo:
