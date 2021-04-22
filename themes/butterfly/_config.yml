@@ -759,7 +759,10 @@ newest_comments:
     forum:
     api_key:
   twikoo: false
-  waline: true
+  waline: 
+    serverURL: https://oauth.wr0926.ml/ # Waline server address url
+    avatar: monsterid
+    visitor: false
 
 # Bottom right button (右下角按鈕)
 # --------------------------------------
