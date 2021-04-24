@@ -700,7 +700,7 @@ aside:
       link: https://github.com/wayne0926
   card_announcement:
     enable: true
-    content: <i class="fas fa-bell"></i>&ensp;欢迎来到时过境迁Wayne的博客 <br> 害…… <br><span><a href="https://wayne0926.gitee.io/"><i class="far fa-hand-point-right"></i>  国内镜像</a></span><br><span><a href="https://wr0926.ml/"><i class="far fa-hand-point-right"></i> 主站</a></span><br><span><a href="https://fkun.cf/"><i class="far fa-hand-point-right"></i>  镜像1</a></span><br><span><a href="https://jsd.wr0926.ml/"><i class="far fa-hand-point-right"></i>  镜像2</a></span>
+    content: <i class="fas fa-bell"></i>&ensp;欢迎来到时过境迁Wayne的博客 <br> 热烈庆祝该域名使用一周年！👏 <br><span><a href="https://wayne0926.gitee.io/"><i class="far fa-hand-point-right"></i>  国内镜像</a></span><br><span><a href="https://wr0926.ml/"><i class="far fa-hand-point-right"></i> 主站</a></span><br><span><a href="https://fkun.cf/"><i class="far fa-hand-point-right"></i>  镜像1</a></span><br><span><a href="https://jsd.wr0926.ml/"><i class="far fa-hand-point-right"></i>  镜像2</a></span>
   card_recent_post:
     enable: true
     limit: 5 # 如果设置为0将显示全部
@@ -745,7 +745,7 @@ runtimeshow:
 
 # Aside widget - Newest Comments
 newest_comments:
-  enable: true
+  enable: false
   sort_order: # Don't modify the setting unless you know how it works
   limit: 6
   storage: 10 # unit: mins, save data to localStorage
@@ -759,10 +759,7 @@ newest_comments:
     forum:
     api_key:
   twikoo: false
-  waline: 
-    serverURL: https://oauth.wr0926.ml/ # Waline server address url
-    avatar: monsterid
-    visitor: false
+  waline: true
 
 # Bottom right button (右下角按鈕)
 # --------------------------------------
@@ -882,7 +879,7 @@ lazyload:
   enable: true
   field: site # site/post
   placeholder: /img/loading.webp
-  blur: true
+  blur: false
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -920,17 +917,20 @@ inject:
     - <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'">
   # 阿里图标
     - <link rel="stylesheet" href="//at.alicdn.com/t/font_2009371_z2n39cebnib.css" media="print" onload="this.media='all'">
+  # 
+
   # 谷歌字体 /// family=Noto+Serif+SC:wght@400;500;600;700&
     - <link rel="preconnect" href="https://fonts.gstatic.com">
     - <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   # 代码框美化
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/macblack.min.css" media="print" onload="this.media='all'">
-  # GA统计
-    - <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179333436-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-179333436-1');</script>
   # IE跳转  
     - <script>function IEVersion(){var e,f,a=navigator.userAgent,b=a.indexOf("compatible")>-1&&a.indexOf("MSIE")>-1,c=a.indexOf("Edge")>-1&&!b,d=a.indexOf("Trident")>-1&&a.indexOf("rv:11.0")>-1;return b?(e=new RegExp("MSIE (\\d+\\.\\d+);"),e.test(a),f=parseFloat(RegExp["$1"]),7==f?7:8==f?8:9==f?9:10==f?10:6):c?"edge":d?11:-1}var isIE=IEVersion();("6"==isIE||"7"==isIE||"8"==isIE||"9"==isIE||"10"==isIE||"11"==isIE)&&(window.location="/kernel.html");</script>
+  # GA统计
+    - <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179333436-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-179333436-1');</script>
   # 浏览器渲染时间打印
-  #  - <script type="module">import{getFCP,getLCP,getFID}from'https://unpkg.zhimg.com/web-vitals@0.2.4/dist/web-vitals.es5.min.js?module';getFCP(({name,value})=>console.log(name,value));getLCP(({name,value})=>console.log(name,value));getFID(({name,value})=>console.log(name,value));</script>
+    # - <script type="module">import{getFCP,getLCP,getFID}from'https://unpkg.zhimg.com/web-vitals@0.2.4/dist/web-vitals.es5.min.js?module';getFCP(({name,value})=>console.log(name,value));getLCP(({name,value})=>console.log(name,value));getFID(({name,value})=>console.log(name,value));</script>
+    # - <link rel="stylesheet" href="/css/1.css" media="print" onload="this.media='all'">
 
 
 # CDN
@@ -951,8 +951,7 @@ CDN:
   # comments
   gitalk: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css
-  valine: https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js
-  # https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
+  valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js 
   disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
   disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
   utterances: https://utteranc.es/client.js
@@ -1006,7 +1005,8 @@ CDN:
   ClickShowText: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js
 
   # fontawesome
-  fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
+  fontawesome: 
+    # https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
 
   # Conversion between Traditional and Simplified Chinese
   translate: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/tw_cn.min.js
