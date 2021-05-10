@@ -700,7 +700,7 @@ aside:
       link: https://github.com/wayne0926
   card_announcement:
     enable: true
-    content: <i class="fas fa-bell"></i>&ensp;欢迎来到时过境迁Wayne的博客 <br> “青春在不懈奋斗中绽放绚丽之花”——五四运动102周年 <br><span><a href="https://wayne0926.gitee.io/"><i class="far fa-hand-point-right"></i>  国内镜像</a></span><br><span><a href="https://wr0926.ml/"><i class="far fa-hand-point-right"></i> 主站</a></span><br><span><a href="https://fkun.cf/"><i class="far fa-hand-point-right"></i>  镜像1</a></span><br><span><a href="https://jsd.wr0926.ml/"><i class="far fa-hand-point-right"></i>  镜像2</a></span>
+    content: <i class="fas fa-bell"></i>&ensp;欢迎来到时过境迁Wayne的博客 <br> “青春在不懈奋斗中绽放绚丽之花”——五四运动102周年 <br><span><a href="https://wayne0926.gitee.io/"><i class="far fa-hand-point-right"></i>  国内镜像</a></span><br><span><a href="https://wr0926.ml/"><i class="far fa-hand-point-right"></i> 主站</a></span><br><span><a href="https://fkun.cf/"><i class="far fa-hand-point-right"></i>  镜像1</a></span><br><span><a href="https://jsd.wr0926.ml/"><i class="far fa-hand-point-right"></i>  镜像2</a></span<br><span><a href="https://test.wr0926.ml/"><i class="far fa-hand-point-right"></i>  CloudFlare镜像</a></span>
   card_recent_post:
     enable: true
     limit: 5 # 如果设置为0将显示全部
