@@ -25,7 +25,7 @@ menu:
     # - 随机密码生成器 || /suijimima/ || fas fa-
    留言板: /messageboard/ || fas fa-comment-dots
    链接: /link/ || fas fa-link
-   友联朋友圈: /friend/ || fas fa-users
+   友链朋友圈: /friend/ || fas fa-users
    关于: /about/ || fas fa-info-circle
    
 # Hide the child menu items in mobile sidebar
