@@ -3,8 +3,8 @@
 
 # format: name: link || icon
 # sub-menu
-# name || icon:
-#   name: link || icon
+# name || ic
+#   name || link || icon
 
 menu:
    首页: / || fas fa-home
@@ -25,7 +25,6 @@ menu:
     # - 随机密码生成器 || /suijimima/ || fas fa-
    留言板: /messageboard/ || fas fa-comment-dots
    链接: /link/ || fas fa-link
-   友链朋友圈: /friend/ || fas fa-users
    关于: /about/ || fas fa-info-circle
    
 # Hide the child menu items in mobile sidebar
@@ -909,6 +908,7 @@ fragment_cache: true
 inject:
   head:
   #预加载 
+    - <style>html{filter: grayscale(100%);}</style>
     # - <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
     # - <script>window.FPConfig={delay:0.5,ignoreKeywords:[],maxRPS:3,hoverDelay:50};</script>
   bottom:
@@ -940,7 +940,7 @@ inject:
 CDN:
   # main
   # main_css: /css/index.css
-  main_css: css/index.css
+  main_css: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/css/index.min.css
   jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
   # main: /js/main.js
   main: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/main.min.js
