@@ -908,11 +908,10 @@ fragment_cache: true
 inject:
   head:
   #预加载 
-    
+    - <style>#body-wrap{filter: grayscale(100%);}</style>
     # - <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
     # - <script>window.FPConfig={delay:0.5,ignoreKeywords:[],maxRPS:3,hoverDelay:50};</script>
   bottom:
-    - <style>#body-wrap{filter: grayscale(100%);}</style>
   # Pjax链接修改
     - <script>(function redirectPjax(){if(typeof pjax==="undefined"){setTimeout(redirectPjax,50);return}pjax.site_handleResponse=pjax.handleResponse;pjax.handleResponse=function(responseText,request,href,options){Object.defineProperty(request,"responseURL",{value:href});pjax.site_handleResponse(responseText,request,href,options)}})();</script>
   # f4图标
