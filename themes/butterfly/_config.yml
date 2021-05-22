@@ -911,6 +911,8 @@ inject:
     # - <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
     # - <script>window.FPConfig={delay:0.5,ignoreKeywords:[],maxRPS:3,hoverDelay:50};</script>
   bottom:
+  # 
+    - <style>#body-wrap{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:grayscale(100%);filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);}<style>
   # Pjax链接修改
     - <script>(function redirectPjax(){if(typeof pjax==="undefined"){setTimeout(redirectPjax,50);return}pjax.site_handleResponse=pjax.handleResponse;pjax.handleResponse=function(responseText,request,href,options){Object.defineProperty(request,"responseURL",{value:href});pjax.site_handleResponse(responseText,request,href,options)}})();</script>
   # f4图标
@@ -919,7 +921,6 @@ inject:
     - <link rel="stylesheet" href="//at.alicdn.com/t/font_2009371_z2n39cebnib.css" media="print" onload="this.media='all'">
   # 
   #  - <script>document.getElementById("body-wrap").setAttribute("style","filter: grayscale(100%);");</script>
-    - <style> #body-wrap{filter: grayscale(100%);}</style>
 
   # 谷歌字体 /// family=Noto+Serif+SC:wght@400;500;600;700&
     - <link rel="preconnect" href="https://fonts.gstatic.com">
