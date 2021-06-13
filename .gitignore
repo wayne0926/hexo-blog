@@ -6,3 +6,4 @@ db.json
 public/
 .deploy*/
 .history
+package-lock.json
