@@ -3,8 +3,8 @@
 
 # format: name: link || icon
 # sub-menu
-# name || ic
-#   name || link || icon
+# name || icon:
+#   name: link || icon
 
 menu:
    首页: / || fas fa-home
@@ -25,6 +25,7 @@ menu:
     # - 随机密码生成器 || /suijimima/ || fas fa-
    留言板: /messageboard/ || fas fa-comment-dots
    链接: /link/ || fas fa-link
+   朋友圈: /friend/ || fas fa-layer-group
    关于: /about/ || fas fa-info-circle
    
 # Hide the child menu items in mobile sidebar
@@ -299,6 +300,7 @@ comments:
 # https://disqus.com/
 disqus:
   shortname:
+  apikey: # For newest comments widget
 
 # Alternative Disqus - Render comments with Disqus API
 # DisqusJS 评论系统，可以实现在网络审查地区载入 Disqus 评论列表，兼容原版
@@ -367,9 +369,9 @@ valine:
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: https://oauth.wr0926.ml # Waline server address url
+  serverURL: https://oauth.wr0926.ml/ # Waline server address url
   avatar: monsterid # gravatar style https://zh-tw.gravatar.com/site/implement/images/#default-image
-  emojiCDN: # emoji CDN
+  avatarCDN: # Gravatar CDN baseURL
   bg: # waline background
   visitor: false
   option:
@@ -454,7 +456,7 @@ footer:
   owner:
     enable: true
     since: 2020
-  custom_text: <div class="icp"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://icp.gov.moe/?keyword=20200926"><img class="icp-icon" src="/img/moeicp.webp" alt="ICP" width="30px" height="20px"><span>萌ICP备 20200926号</span></a></div>
+  custom_text: <div class="icp"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://icp.gov.moe/?keyword=20200926"><img class="icp-icon" src="/img/moeicp.webp" alt="ICP"><span>萌ICP备 20200926号</span></a></div>
   copyright: true # Copyright of theme and framework
   # ICP: # Chinese ICP License
   #   enable: true
@@ -471,7 +473,7 @@ baidu_analytics:
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
-google_analytics: 
+google_analytics:
 
 # Tencent Analytics ID
 # https://mta.qq.com
@@ -539,7 +541,7 @@ site_verification:
 # 主页的top_img设置
 # default: top img - full screen, site info - middle (默认top_img全屏，site_info在中间)
 # The position of site info, eg: 300px/300em/300rem/10% (主页标题距离顶部距离)
-index_site_info_top: 35% 
+index_site_info_top: 25% 
 # 38%
 # The height of top_img, eg: 300px/300em/300rem (主页top_img高度)
 index_top_img_height: 230px
@@ -547,8 +549,8 @@ index_top_img_height: 230px
 # The user interface setting of category and tag page (category和tag页的UI设置)
 # index - same as Homepage UI (index 值代表 UI将与首页的UI一样)
 # default - same as archives UI 默认跟archives页面UI一样
-category_ui:  # 留空或 index
-tag_ui:  # 留空或 index
+category_ui: # 留空或 index
+tag_ui: # 留空或 index
 
 # Website Background (设置网站背景)
 # can set it to color or image (可设置图片 或者 颜色)
@@ -700,7 +702,7 @@ aside:
       link: https://github.com/wayne0926
   card_announcement:
     enable: true
-    content: <i class="fas fa-bell"></i>&ensp;欢迎来到时过境迁Wayne的博客 <br> 袁爷爷一路走好  <br><span><a href="https://wayne0926.gitee.io/"><i class="far fa-hand-point-right"></i>  国内镜像</a></span><br><span><a href="https://wr0926.ml/"><i class="far fa-hand-point-right"></i> 主站</a></span><br><span><a href="https://fkun.cf/"><i class="far fa-hand-point-right"></i>  镜像1</a></span><br><span><a href="https://jsd.wr0926.ml/"><i class="far fa-hand-point-right"></i>  镜像2</a></span><br><span><a href="https://test.wr0926.ml/"><i class="far fa-hand-point-right"></i>  CloudFlare镜像</a></span>
+    content: <i class="fas fa-bell"></i>&ensp;欢迎来到时过境迁Wayne的博客 <br> 害…… <br><span><a href="https://wayne0926.gitee.io/"><i class="far fa-hand-point-right"></i>  国内镜像</a></span><br><span><a href="https://wr0926.ml/"><i class="far fa-hand-point-right"></i> 主站</a></span><br><span><a href="https://fkun.cf/"><i class="far fa-hand-point-right"></i>  镜像1</a></span><br><span><a href="https://jsd.wr0926.ml/"><i class="far fa-hand-point-right"></i>  镜像2</a></span>
   card_recent_post:
     enable: true
     limit: 5 # 如果设置为0将显示全部
@@ -750,16 +752,6 @@ newest_comments:
   limit: 6
   storage: 10 # unit: mins, save data to localStorage
   avatar: true
-  valine: false
-  github_issues:
-    enable: false
-    repo:
-  disqus:
-    enable: false
-    forum:
-    api_key:
-  twikoo: false
-  waline: true
 
 # Bottom right button (右下角按鈕)
 # --------------------------------------
@@ -879,7 +871,7 @@ lazyload:
   enable: true
   field: site # site/post
   placeholder: /img/loading.webp
-  blur: false
+  blur: true
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -911,27 +903,21 @@ inject:
     # - <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
     # - <script>window.FPConfig={delay:0.5,ignoreKeywords:[],maxRPS:3,hoverDelay:50};</script>
   bottom:
-  #- <script>document.getElementById("body-wrap").setAttribute("style","filter: grayscale(100%);");</script>
   # Pjax链接修改
     - <script>(function redirectPjax(){if(typeof pjax==="undefined"){setTimeout(redirectPjax,50);return}pjax.site_handleResponse=pjax.handleResponse;pjax.handleResponse=function(responseText,request,href,options){Object.defineProperty(request,"responseURL",{value:href});pjax.site_handleResponse(responseText,request,href,options)}})();</script>
   # f4图标
     - <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'">
   # 阿里图标
     - <link rel="stylesheet" href="//at.alicdn.com/t/font_2009371_z2n39cebnib.css" media="print" onload="this.media='all'">
-  # 
-
   # 谷歌字体 /// family=Noto+Serif+SC:wght@400;500;600;700&
     - <link rel="preconnect" href="https://fonts.gstatic.com">
     - <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   # 代码框美化
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/macblack.min.css" media="print" onload="this.media='all'">
+  # GA统计
+    - <script>window.ga_tid='UA-179333436-1';(function(){var dga=document.createElement("script");dga.src="https://rmt.dogedoge.com/fetch/public/ga.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(dga,s)})();</script>   
   # IE跳转  
     - <script>function IEVersion(){var e,f,a=navigator.userAgent,b=a.indexOf("compatible")>-1&&a.indexOf("MSIE")>-1,c=a.indexOf("Edge")>-1&&!b,d=a.indexOf("Trident")>-1&&a.indexOf("rv:11.0")>-1;return b?(e=new RegExp("MSIE (\\d+\\.\\d+);"),e.test(a),f=parseFloat(RegExp["$1"]),7==f?7:8==f?8:9==f?9:10==f?10:6):c?"edge":d?11:-1}var isIE=IEVersion();("6"==isIE||"7"==isIE||"8"==isIE||"9"==isIE||"10"==isIE||"11"==isIE)&&(window.location="/kernel.html");</script>
-  # GA统计
-    - <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179333436-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-179333436-1');</script>
-  # 浏览器渲染时间打印
-    # - <script type="module">import{getFCP,getLCP,getFID}from'https://unpkg.zhimg.com/web-vitals@0.2.4/dist/web-vitals.es5.min.js?module';getFCP(({name,value})=>console.log(name,value));getLCP(({name,value})=>console.log(name,value));getFID(({name,value})=>console.log(name,value));</script>
-    # - <link rel="stylesheet" href="/css/1.css" media="print" onload="this.media='all'">
 
 
 # CDN
@@ -940,7 +926,7 @@ inject:
 CDN:
   # main
   # main_css: /css/index.css
-  main_css: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/css/index.min.css
+  main_css: /css/index.css
   jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
   # main: /js/main.js
   main: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/main.min.js
@@ -952,7 +938,8 @@ CDN:
   # comments
   gitalk: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css
-  valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js 
+  valine: https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js
+  # https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
   disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
   disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
   utterances: https://utteranc.es/client.js
@@ -1006,8 +993,7 @@ CDN:
   ClickShowText: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js
 
   # fontawesome
-  fontawesome: 
-    # https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
+  fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
 
   # Conversion between Traditional and Simplified Chinese
   translate: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/tw_cn.min.js
