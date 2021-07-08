@@ -2,55 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.wr0926.ml/test.html</loc>
-    
-    <lastmod>2021-07-01</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wr0926.ml/mp3/index.html</loc>
-    
-    <lastmod>2021-07-01</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wr0926.ml/music/index.html</loc>
-    
-    <lastmod>2021-07-01</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wr0926.ml/tags/index.html</loc>
-    
-    <lastmod>2021-07-01</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wr0926.ml/talk/index.html</loc>
-    
-    <lastmod>2021-07-01</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wr0926.ml/update/index.html</loc>
-    
-    <lastmod>2021-07-01</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wr0926.ml/vadmin/index.html</loc>
-    
-    <lastmod>2021-07-01</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.wr0926.ml/p/9c9746aa/</loc>
     
     <lastmod>2021-07-01</lastmod>
@@ -240,6 +191,13 @@
   </url>
   
   <url>
+    <loc>https://www.wr0926.ml/test.html</loc>
+    
+    <lastmod>2021-07-01</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.wr0926.ml/about/index.html</loc>
     
     <lastmod>2021-07-01</lastmod>
@@ -262,6 +220,48 @@
   
   <url>
     <loc>https://www.wr0926.ml/messageboard/index.html</loc>
+    
+    <lastmod>2021-07-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/mp3/index.html</loc>
+    
+    <lastmod>2021-07-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/music/index.html</loc>
+    
+    <lastmod>2021-07-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/tags/index.html</loc>
+    
+    <lastmod>2021-07-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/talk/index.html</loc>
+    
+    <lastmod>2021-07-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/update/index.html</loc>
+    
+    <lastmod>2021-07-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/vadmin/index.html</loc>
     
     <lastmod>2021-07-01</lastmod>
     
