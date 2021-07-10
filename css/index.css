@@ -2363,7 +2363,7 @@ blockquote footer cite:before {
 }
 #page-header.full_page #site-info {
   position: absolute;
-  top: 25%;
+  top: 30%;
   padding: 0 0.5rem;
   width: 100%;
 }
@@ -2424,7 +2424,7 @@ blockquote footer cite:before {
   font-size: 30px;
 }
 #page-header.not-home-page {
-  min-height: 20rem;
+  min-height: 230px;
 }
 @media screen and (max-width: 768px) {
   #page-header.not-home-page {
@@ -2433,7 +2433,7 @@ blockquote footer cite:before {
 }
 #page-header #page-site-info {
   position: absolute;
-  top: 10rem;
+  top: 30%;
   padding: 0 0.5rem;
   width: 100%;
 }
