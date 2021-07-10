@@ -541,7 +541,7 @@ site_verification:
 # 主页的top_img设置
 # default: top img - full screen, site info - middle (默认top_img全屏，site_info在中间)
 # The position of site info, eg: 300px/300em/300rem/10% (主页标题距离顶部距离)
-index_site_info_top: 25% 
+index_site_info_top: 30% 
 # 38%
 # The height of top_img, eg: 300px/300em/300rem (主页top_img高度)
 index_top_img_height: 230px
@@ -926,7 +926,7 @@ inject:
 CDN:
   # main
   # main_css: /css/index.css
-  main_css: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/css/index.min.css
+  main_css: /css/index.css
   jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
   # main: /js/main.js
   main: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/main.min.js
