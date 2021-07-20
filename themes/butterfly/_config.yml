@@ -14,9 +14,7 @@ menu:
     分类: /categories/ || fas fa-folder-open
    其他||fas fa-list:
     音乐: /music/ || fas fa-music
-    图片: /img/ || fas fa-photo-video
     随言: /talk/ || far fa-comments
-    更新日志:  /update/ || far fa-paper-plane
     # - Movie || /movies/ || fas fa-video
    工具||fas fa-box-open :
     在线听写助手:  https://tx.wr0926.ml || fas fa-check-circle
@@ -322,11 +320,11 @@ livere:
 # gitalk
 # https://github.com/gitalk/gitalk
 gitalk:
-  client_id: eb2483a263e4611ed4ed
-  client_secret: 555c3cb2ccbd204826bea96bd52741b3ef154c54
-  repo: blogtalk
-  owner: wayne0926
-  admin: wayne0926
+  client_id:
+  client_secret:
+  repo:
+  owner:
+  admin:
   language: zh-CN # en, zh-CN, zh-TW, es-ES, fr, ru
   perPage: 10 # 分页大小，最大为100。
   distractionFreeMode: false # 类似于Facebook的无干扰模式。
@@ -337,34 +335,22 @@ gitalk:
 # valine
 # https://valine.js.org
 valine:
-  appId: Nzs79oohcaAWDCn87UJsaTff-MdYXbMMI # leancloud application app id
-  appKey: if40yp6Hp6VaITeQJjG0OwKK # leancloud application app key
+  appId: # leancloud application app id
+  appKey: # leancloud application app key
   pageSize: 10 # comment list page size
-  master: 
-    - 8ce0d0211103ef983be11b6d4f0517ed
-    - 9c22ab23f1fdedcbe1ec978af9a2a5e2
-    - 5dcd1e147f801b62d5fe858f241dae64
-    - 26c2b68b8e455c976f15de93f8c5ec28
-  friends:
-    - 661fcd9c4ab1201f1e8e8975c49d7af6
-    - 4edcde65b63846d74f0fb41e6cac2b17
-    - 18bbd11ac12a681d690181cb1b66077b
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
-  lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
-  placeholder: 写下你的留言把！ # valine comment input placeholder (like: Please leave your footprints)
+  lang: en # i18n: zh-CN/zh-TW/en/ja
+  placeholder: Please leave your footprints # valine comment input placeholder (like: Please leave your footprints)
   guest_info: nick,mail,link # valine comment header info (nick/mail/link)
   recordIP: false # Record reviewer IP
-  serverURLs: https://nzs79ooh.api.lncldglobal.com # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+  serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   bg: # valine background
-  emojiCDN: //cdn.jsdelivr.net/gh/wayne0926/valine-face/ # emoji CDN
-  enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
-  requiredFields: 昵称/QQ号(必填),邮箱(必填),网址(https://) # required fields (nick/mail)
-  metaPlaceholder:
-    nick: 昵称/QQ号(必填)
-    mail: 邮箱(必填)
-    link: 网址(https://)
+  emojiCDN: # emoji CDN
+  enableQQ: false # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
+  requiredFields: nick,mail # required fields (nick/mail)
   visitor: false
   option:
+
 
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
@@ -456,7 +442,7 @@ footer:
   owner:
     enable: true
     since: 2020
-  custom_text: <div class="icp"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://icp.gov.moe/?keyword=20200926"><img class="icp-icon" src="/img/moeicp.webp" alt="ICP"><span>萌ICP备 20200926号</span></a></div>
+  custom_text: <div class="icp"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://icp.gov.moe/?keyword=20200926"><img class="icp-icon" src="/img/moeicp.webp" alt="ICP" width="30px" height="20px"><span>萌ICP备 20200926号</span></a></div>
   copyright: true # Copyright of theme and framework
   # ICP: # Chinese ICP License
   #   enable: true
@@ -473,7 +459,7 @@ baidu_analytics:
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
-google_analytics:
+google_analytics: 
 
 # Tencent Analytics ID
 # https://mta.qq.com
@@ -541,7 +527,7 @@ site_verification:
 # 主页的top_img设置
 # default: top img - full screen, site info - middle (默认top_img全屏，site_info在中间)
 # The position of site info, eg: 300px/300em/300rem/10% (主页标题距离顶部距离)
-index_site_info_top: 30% 
+index_site_info_top: 35% 
 # 38%
 # The height of top_img, eg: 300px/300em/300rem (主页top_img高度)
 index_top_img_height: 230px
@@ -549,8 +535,8 @@ index_top_img_height: 230px
 # The user interface setting of category and tag page (category和tag页的UI设置)
 # index - same as Homepage UI (index 值代表 UI将与首页的UI一样)
 # default - same as archives UI 默认跟archives页面UI一样
-category_ui: # 留空或 index
-tag_ui: # 留空或 index
+category_ui:  # 留空或 index
+tag_ui:  # 留空或 index
 
 # Website Background (设置网站背景)
 # can set it to color or image (可设置图片 或者 颜色)
@@ -702,7 +688,7 @@ aside:
       link: https://github.com/wayne0926
   card_announcement:
     enable: true
-    content: <i class="fas fa-bell"></i>&ensp;欢迎来到时过境迁Wayne的博客 <br> 害…… <br><span><a href="https://wayne0926.gitee.io/"><i class="far fa-hand-point-right"></i>  国内镜像</a></span><br><span><a href="https://wr0926.ml/"><i class="far fa-hand-point-right"></i> 主站</a></span><br><span><a href="https://fkun.cf/"><i class="far fa-hand-point-right"></i>  镜像1</a></span><br><span><a href="https://jsd.wr0926.ml/"><i class="far fa-hand-point-right"></i>  镜像2</a></span>
+    content: <i class="fas fa-bell"></i>&ensp;欢迎来到时过境迁Wayne的博客 <br> 袁爷爷一路走好  <br><span><a href="https://wayne0926.gitee.io/"><i class="far fa-hand-point-right"></i>  国内镜像</a></span><br><span><a href="https://wr0926.ml/"><i class="far fa-hand-point-right"></i> 主站</a></span><br><span><a href="https://fkun.cf/"><i class="far fa-hand-point-right"></i>  镜像1</a></span><br><span><a href="https://jsd.wr0926.ml/"><i class="far fa-hand-point-right"></i>  镜像2</a></span><br><span><a href="https://test.wr0926.ml/"><i class="far fa-hand-point-right"></i>  CloudFlare镜像</a></span>
   card_recent_post:
     enable: true
     limit: 5 # 如果设置为0将显示全部
@@ -803,7 +789,7 @@ fancybox: false
 # --------------------------------------
 
 # mermaid
-# see https://github.com/knsv/mermaid
+# see https://github.com/mermaid-js/mermaid
 mermaid:
   enable: true
   # built-in themes: default/forest/dark/neutral
@@ -871,7 +857,7 @@ lazyload:
   enable: true
   field: site # site/post
   placeholder: /img/loading.webp
-  blur: true
+  blur: false
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -899,25 +885,30 @@ fragment_cache: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-  #预加载 
+  #预加载
     # - <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
     # - <script>window.FPConfig={delay:0.5,ignoreKeywords:[],maxRPS:3,hoverDelay:50};</script>
   bottom:
+  #- <script>document.getElementById("body-wrap").setAttribute("style","filter: grayscale(100%);");</script>
   # Pjax链接修改
     - <script>(function redirectPjax(){if(typeof pjax==="undefined"){setTimeout(redirectPjax,50);return}pjax.site_handleResponse=pjax.handleResponse;pjax.handleResponse=function(responseText,request,href,options){Object.defineProperty(request,"responseURL",{value:href});pjax.site_handleResponse(responseText,request,href,options)}})();</script>
   # f4图标
     - <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'">
   # 阿里图标
     - <link rel="stylesheet" href="//at.alicdn.com/t/font_2009371_z2n39cebnib.css" media="print" onload="this.media='all'">
+
   # 谷歌字体 /// family=Noto+Serif+SC:wght@400;500;600;700&
     - <link rel="preconnect" href="https://fonts.gstatic.com">
     - <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   # 代码框美化
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/macblack.min.css" media="print" onload="this.media='all'">
-  # GA统计
-    - <script>window.ga_tid='UA-179333436-1';(function(){var dga=document.createElement("script");dga.src="https://rmt.dogedoge.com/fetch/public/ga.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(dga,s)})();</script>   
-  # IE跳转  
+  # IE跳转
     - <script>function IEVersion(){var e,f,a=navigator.userAgent,b=a.indexOf("compatible")>-1&&a.indexOf("MSIE")>-1,c=a.indexOf("Edge")>-1&&!b,d=a.indexOf("Trident")>-1&&a.indexOf("rv:11.0")>-1;return b?(e=new RegExp("MSIE (\\d+\\.\\d+);"),e.test(a),f=parseFloat(RegExp["$1"]),7==f?7:8==f?8:9==f?9:10==f?10:6):c?"edge":d?11:-1}var isIE=IEVersion();("6"==isIE||"7"==isIE||"8"==isIE||"9"==isIE||"10"==isIE||"11"==isIE)&&(window.location="/kernel.html");</script>
+  # GA统计
+    - <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179333436-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-179333436-1');</script>
+  # 浏览器渲染时间打印
+    # - <script type="module">import{getFCP,getLCP,getFID}from'https://unpkg.zhimg.com/web-vitals@0.2.4/dist/web-vitals.es5.min.js?module';getFCP(({name,value})=>console.log(name,value));getLCP(({name,value})=>console.log(name,value));getFID(({name,value})=>console.log(name,value));</script>
+    # - <link rel="stylesheet" href="/css/1.css" media="print" onload="this.media='all'">
 
 
 # CDN
@@ -938,8 +929,7 @@ CDN:
   # comments
   gitalk: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css
-  valine: https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js
-  # https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
+  valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
   disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
   disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
   utterances: https://utteranc.es/client.js
@@ -993,7 +983,8 @@ CDN:
   ClickShowText: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js
 
   # fontawesome
-  fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
+  fontawesome:
+    # https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
 
   # Conversion between Traditional and Simplified Chinese
   translate: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/tw_cn.min.js
