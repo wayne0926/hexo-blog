@@ -9,8 +9,6 @@ script.
         avatar: '#{avatar}',
         avatarCDN: '!{avatarCDN || "https://sdn.geekzu.org/avatar/"}',
         path: location.pathname,
-        emojiCDN: '#{theme.waline.emojiCDN}',
-        emojiMaps: !{emojiMaps},
         visitor: #{theme.waline.visitor},
         dark: '[data-theme="dark"]'
       }, !{JSON.stringify(theme.waline.option)}))
