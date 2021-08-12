@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>暴力解决rclone挂载网盘占用本地磁盘问题（针对VPS）</title>
+      <link href="/p/a26e0a01/"/>
+      <url>/p/a26e0a01/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="暴力解决rclone挂载网盘占用本地磁盘问题（针对VPS）"><a href="#暴力解决rclone挂载网盘占用本地磁盘问题（针对VPS）" class="headerlink" title="暴力解决rclone挂载网盘占用本地磁盘问题（针对VPS）"></a>暴力解决rclone挂载网盘占用本地磁盘问题（针对VPS）</h1><p><del>水文ing</del></p><h2 id="基本"><a href="#基本" class="headerlink" title="基本"></a>基本</h2><p>我的VPS最近莫名其妙的被占用了大量的空间，后来在群友的大力帮助下，发现这锅 <code>Rclone</code> 得背。</p><p><del>高端的食材往往只需要采用最朴素的烹饪方法</del></p><ol><li><p>首先，卸载（取消挂载）你的网盘</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fusermount -qzu &lt;本地路径&gt;</span><br></pre></td></tr></table></figure></li><li><p>其次直接把你挂载到的那个目录清空（这里请确保已经取消挂载，这样所作的删除操作就只是针对本地的文件），为了避免没删除到隐藏文件，建议使用本最暴力的方法</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -rf &lt;本地路径&gt;</span><br></pre></td></tr></table></figure></li></ol><blockquote><p><strong>注意：</strong> 当你再次挂载时一般情况下会自动创建你刚才删除的目录（亲测 <code>git.io/rcloned</code> 的脚本正常）。如果没有你再创建不就好了🙅‍♂</p></blockquote><h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><p>你可以直接往命令行里扔，但是注意这玩意一般不会自己挂载回来，所以注意挂载回去。</p><p>当然你也可以像我一样做成定时任务（<del>好吧终究是因为我的 VPS 太拉</del>）</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fusermount -qzu &lt;本地路径&gt;</span><br><span class="line">rm -rf &lt;本地路径&gt;</span><br><span class="line">sudo reboot</span><br></pre></td></tr></table></figure><blockquote><p>我的长这样</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fusermount -qzu /Onedrive</span><br><span class="line">rm -rf /Onedrive</span><br><span class="line">sudo reboot</span><br></pre></td></tr></table></figure></blockquote><h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>这玩意儿未经过长期测试，也没有经历过什么骚操作所带来的问题，更没有探究其安全与稳定性。</p><p>你要是用最好谨慎点，尽量做好备份，当然如果你还有更好的方案可以分享。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>以青春之我创造青春之中国——庆祝五四青年节</title>
       <link href="/p/9c9746aa/"/>
       <url>/p/9c9746aa/</url>

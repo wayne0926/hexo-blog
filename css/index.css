@@ -186,7 +186,7 @@ template {
 #aside-content .card-categories ul.card-category-list > .card-category-list-item a span,
 #pagination .prev_info,
 #pagination .next_info,
-#sidebar #sidebar-menus .site-data .data-item .data-item-link > a > div,
+#sidebar #sidebar-menus .site-data .data-item > a > div,
 #sidebar #sidebar-menus .menus_items .site-page {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -786,8 +786,8 @@ hr:before,
   --blockquote-bg: rgba(73,177,245,0.1);
   --reward-pop: #f5f5f5;
   --toc-link-color: #666261;
-  --card-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.06);
-  --card-hover-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.15);
+  --card-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.05);
+  --card-hover-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.09);
 }
 html {
   height: 100%;
@@ -939,10 +939,6 @@ a:hover {
 .button--animated:hover:before {
   transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
   transform: scaleX(1);
-}
-img {
-  max-width: 100%;
-  transition: all 0.2s;
 }
 img[src=''],
 img:not([src]) {
@@ -1538,7 +1534,7 @@ blockquote footer cite:before {
 #body-wrap {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 .layout {
   display: flex;
@@ -2361,7 +2357,7 @@ blockquote footer cite:before {
   transition: all 0.5s;
 }
 #page-header.full_page {
-  min-height: 230px;
+  height: 230px;
   background-attachment: fixed;
 }
 #page-header.full_page #site-info {
@@ -2427,7 +2423,7 @@ blockquote footer cite:before {
   font-size: 30px;
 }
 #page-header.not-home-page {
-  min-height: 230px;
+  height: 20rem;
 }
 @media screen and (max-width: 768px) {
   #page-header.not-home-page {
@@ -2446,7 +2442,7 @@ blockquote footer cite:before {
   }
 }
 #page-header.post-bg {
-  min-height: 20rem;
+  height: 20rem;
 }
 @media screen and (max-width: 768px) {
   #page-header.post-bg {
@@ -2484,7 +2480,7 @@ blockquote footer cite:before {
 }
 #page-header.not-top-img {
   margin-bottom: 0.5rem;
-  min-height: 60px;
+  height: 60px;
   background: 0;
 }
 #page-header.not-top-img #nav {
@@ -2824,6 +2820,7 @@ blockquote footer cite:before {
 #article-container img {
   display: block;
   margin: 0 auto 0.8rem;
+  max-width: 100%;
 }
 #article-container p {
   margin: 0 0 0.8rem;
@@ -3345,11 +3342,11 @@ blockquote footer cite:before {
 #sidebar #sidebar-menus .site-data .data-item {
   display: table-cell;
 }
-#sidebar #sidebar-menus .site-data .data-item .data-item-link .length-num {
+#sidebar #sidebar-menus .site-data .data-item .length-num {
   color: var(--text-highlight-color);
   font-size: 1.28em;
 }
-#sidebar #sidebar-menus .site-data .data-item .data-item-link .headline {
+#sidebar #sidebar-menus .site-data .data-item .headline {
   color: var(--font-color);
 }
 #sidebar #sidebar-menus hr {
@@ -3622,7 +3619,7 @@ figure.gallery-group:hover p {
 figure.gallery-group img {
   position: relative;
   margin: 0 !important;
-  max-width: none;
+  max-width: none !important;
   width: calc(100% + 20px);
   height: 250px;
   backface-visibility: hidden;
