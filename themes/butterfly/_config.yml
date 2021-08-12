@@ -305,12 +305,8 @@ disqus:
 # https://github.com/SukkaW/DisqusJS
 disqusjs:
   shortname:
-  siteName:
   apikey:
-  api:
-  nocomment: # display when a blog post or an article has no comment attached
-  admin:
-  adminLabel:
+  option:
 
 # livere (来必力)
 # https://www.livere.com/
@@ -325,11 +321,6 @@ gitalk:
   repo:
   owner:
   admin:
-  language: zh-CN # en, zh-CN, zh-TW, es-ES, fr, ru
-  perPage: 10 # 分页大小，最大为100。
-  distractionFreeMode: false # 类似于Facebook的无干扰模式。
-  pagerDirection: last # 注释排序方向，可用值是最后和第一个。
-  createIssueManually: false # Gitalk将为您的每个页面自动创建一个对应的github问题
   option:
 
 # valine
@@ -337,20 +328,11 @@ gitalk:
 valine:
   appId: # leancloud application app id
   appKey: # leancloud application app key
-  pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
-  lang: en # i18n: zh-CN/zh-TW/en/ja
-  placeholder: Please leave your footprints # valine comment input placeholder (like: Please leave your footprints)
-  guest_info: nick,mail,link # valine comment header info (nick/mail/link)
-  recordIP: false # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   bg: # valine background
-  emojiCDN: # emoji CDN
-  enableQQ: false # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
-  requiredFields: nick,mail # required fields (nick/mail)
   visitor: false
   option:
-
 
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
@@ -498,9 +480,9 @@ google_adsense:
 # --------------------------------------
 
 site_verification:
-  # - name: google_site_verification
+  # - name: google-site-verification
   #   content: xxxxxx
-  # - name: baidu_site_verification
+  # - name: baidu-site-verification
   #   content: xxxxxxx
 
 # Beautify/Effect (美化/效果)
@@ -650,18 +632,15 @@ subtitle:
   effect: true
   # loop (循环打字)
   loop: true
-  # source调用第三方服务
-  # source: false 关闭调用
-  # source: 1  调用搏天api的随机语录（简体） https://api.btstu.cn/
-  # source: 2  调用一言网的一句话（简体） https://hitokoto.cn/
-  # source: 3  调用一句网（简体） http://yijuzhan.com/
-  # source: 4  调用今日诗词（简体） https://www.jinrishici.com/
-  # subtitle 会先显示 source , 再显示 sub 的内容
+  # source調用第三方服務
+  # source: false 關閉調用
+  # source: 1  調用搏天 api 的隨機語錄（簡體）
+  # source: 2  調用一言網的一句話（簡體）
+  # source: 3  調用一句網（簡體）
+  # source: 4  調用今日詩詞（簡體）
+  # subtitle 會先顯示 source , 再顯示 sub 的內容
   source: 1
-  # 如果有英文逗号' , ',请使用转义字元 &#44;
-  # 如果有英文双引号' " ',请使用转义字元 &quot;
-  # 开头不允许转义字元，如需要，请把整个句子用双引号包住
-  # 如果关闭打字效果，subtitle只会显示sub的第一行文字
+  # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
     - 以梦为马，不负韶华
     - Run with dreams&#44; act your glorious youth.
@@ -929,7 +908,7 @@ CDN:
   # comments
   gitalk: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css
-  valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
+  valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js 
   disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
   disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
   utterances: https://utteranc.es/client.js
@@ -968,8 +947,8 @@ CDN:
   pangu: https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js
 
   # photo
-  fancybox_css: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css
-  fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js
+  fancybox_css: https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css
+  fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js
   medium_zoom: https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js
 
   # snackbar
