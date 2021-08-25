@@ -1,0 +1,26 @@
+name: update_epic
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+  
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set Up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: CHECKOUT
+      run: |
+        git clone -b master https://github.com/luminoleon/epicgames-claimer.git
+        cd epicgames-claimer
+        pip3 install -r requirements.txt
+        sudo sh install_dependencies.sh
+        python main.py -o -u ${{ secrets.UN }} -p ${{ secrets.PW }}
