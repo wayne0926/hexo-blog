@@ -6,12 +6,16 @@ script.
       const waline = new Waline(Object.assign({
         el: '#waline-wrap',
         serverURL: '!{serverURL}',
+        emoji: [
+          'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
+          'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
+        ],
         avatar: '#{avatar}',
         avatarCDN: '!{avatarCDN || "https://sdn.geekzu.org/avatar/"}',
         path: location.pathname,
-        visitor: #{theme.waline.visitor},
-        dark: '[data-theme="dark"]'
-      }, !{JSON.stringify(theme.waline.option)}))
+        visitor: !{visitor},
+        dark: 'html[data-theme="dark"]'
+      }, !{JSON.stringify(option)}))
     }
 
     if (typeof Waline === 'function') initWaline() 

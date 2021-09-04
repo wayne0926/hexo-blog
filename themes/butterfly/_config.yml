@@ -1,10 +1,6 @@
-# Main menu navigation (导航目录)
+# Main menu navigation (導航目錄)
+# see https://butterfly.js.org/posts/4aa8abbe/#導航菜單
 # --------------------------------------
-
-# format: name: link || icon
-# sub-menu
-# name || icon:
-#   name: link || icon
 
 menu:
    首页: / || fas fa-home
@@ -193,7 +189,8 @@ index_post_content:
 
 # toc (目录)
 toc:
-  enable: true
+  post: true
+  page: false
   number: true
 
 post_copyright:
@@ -339,10 +336,16 @@ valine:
 waline:
   serverURL: https://oauth.wr0926.ml # Waline server address url
   avatar: monsterid # gravatar style https://zh-tw.gravatar.com/site/implement/images/#default-image
-  avatarCDN: https://gravatar.loli.net/avatar/ # Gravatar CDN baseURL
+  avatarCDN: # Gravatar CDN baseURL
   bg: # waline background
   visitor: false
-
+  option:
+      avatarCDN: https://gravatar.loli.net/avatar/
+      langMode:
+        admin: 博主
+      emoji: [
+    'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji',
+    'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',]
 # utterances
 # https://utteranc.es/
 utterances:
@@ -483,20 +486,20 @@ site_verification:
 # 自定义主题颜色
 # 注意：颜色值必须用双引号括起来，例如“＃000”，否则可能会导致错误！
 
-# theme_color:
-#   enable: true
-#   main: "#49B1F5"
-#   paginator: "#00c4b6"
-#   button_hover: "#FF7242"
-#   text_selection: "#00c4b6"
-#   link_color: "#99a9bf"
-#   meta_color: "#858585"
-#   hr_color: "#A4D8FA"
-#   code_foreground: "#F47466"
-#   code_background: "rgba(27, 31, 35, .05)"
-#   toc_color: "#00c4b6"
-#   blockquote_padding_color: "#49b1f5"
-#   blockquote_background_color: "#49b1f5"
+theme_color:
+  enable: true
+  main: "#7d7d7d"
+  paginator: "#727171"
+  button_hover: "#727171"
+  text_selection: "#00c4b6"
+  link_color: "#226387"
+  meta_color: "#727171"
+  hr_color: "#A4D8FA"
+  code_foreground: "#282b2e"
+  code_background: "rgba(99, 110, 123, .4)"
+  toc_color: "#00c4b6"
+  blockquote_padding_color: "#49b1f5"
+  blockquote_background_color: "#49b1f5"
 
 # 主页的top_img设置
 # default: top img - full screen, site info - middle (默认top_img全屏，site_info在中间)
@@ -517,7 +520,7 @@ tag_ui:  # 留空或 index
 # The formal of color: '#49B202'
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 # White color will be shown as default
-background: 
+background: '#474a4d'
 # url(https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/bd.jpg)
 # url(https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/bd.jpg)
 
@@ -888,7 +891,7 @@ inject:
 CDN:
   # main
   # main_css: /css/index.css
-  main_css: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/css/index.min.css
+  main_css: /css/index.css
   jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
   # main: /js/main.js
   main: https://cdn.jsdelivr.net/gh/wayne0926/hexo-blog@gh-pages/js/main.min.js
