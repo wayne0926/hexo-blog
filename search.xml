@@ -255,31 +255,6 @@
     
     
     <entry>
-      <title>自建轻量纯静态登录系统</title>
-      <link href="/p/e8c47b9c/"/>
-      <url>/p/e8c47b9c/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p><strong>防君子不防小人</strong></p><p><strong>前端都没有绝对的安全</strong></p><p>这个进行的是前端的验证，有句老话叫 <code>前端的数据都不可信</code> ，因此这个工具有着它生来就不可避免的问题。我不对这个工具做出任何承诺。</p><p>我不断的与自己辩论，最终发现了我所无法解决的问题也是最根本的问题 <code>万恶之源 控制台</code> 。</p><h2 id="问题阐述"><a href="#问题阐述" class="headerlink" title="问题阐述"></a>问题阐述</h2><p>第二级页面我通过进行 <code>Cookie</code> 验证来实现继续访问或者跳到登录页面。然而这一切的一切都是在 <code>JavaScript</code> 中运行的（ <code>js.js</code>）</p><p>如果在控制台中提早将 <code>js.js</code> 文件禁用掉（过滤掉），那么身份验证也就无法进行，跳转无法实现，但是需登录后查看的内容还是照常出现。</p><p>那我要是不单独放置文件呢？比如我内嵌到 <code>HTML</code> 中呢？同理，但是可能较复杂，先不考虑具体的实现方式，我可以直接在元素中删除这个标签。</p><p>这时可能你们也想到了：解决掉控制台。</p><h3 id="解决控制台"><a href="#解决控制台" class="headerlink" title="解决控制台"></a>解决控制台</h3><p>从原理上来讲比较简单： <code>debugger</code> 命令 。页面加载后直接运行，然后间隔比如 <code>500ms</code> 运行一次，让控制台无从下手。</p><p>在网上看了很多文章，网上也有各种的反 <code>反调式</code> 工具，比如 <code>油猴脚本</code> 。</p><p>因此想要限制控制台，防的了君子防不住小人。</p><h3 id="内嵌脚本"><a href="#内嵌脚本" class="headerlink" title="内嵌脚本"></a>内嵌脚本</h3><p>不得不说，内嵌脚本真的能够有效解决一些问题，起码能把没点技术手段的人拦住。</p><p>如果要删除这个标签并且是在它执行之前，难度比前面的要大很多。这方面我也不太清楚了，但是我认为仍然是可以实现的。</p><p>还有个问题：管理难度较外链的脚本增大一点。</p><h3 id="扒站问题"><a href="#扒站问题" class="headerlink" title="扒站问题"></a>扒站问题</h3><p>这也是我无语的一个大问题。甚至于不用扒站，直接 <code>查看源代码 </code> ，所有加密的内容都一清二楚了。所以不用其他方式验证用户信息是不可能安全的。这我还得深度研究才行呀！ <code>(ー_ー)!!</code></p><h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><p>……</p><blockquote><p>后面再写吧！</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/%E7%BD%91%E9%A1%B5%E6%8D%95%E8%8E%B7_20-11-2020_223620_localhost.jpeg" alt="界面截图"></p><h1 id="已实现"><a href="#已实现" class="headerlink" title="已实现"></a>已实现</h1><ul><li><input checked="" disabled="" type="checkbox"> 纯静态</li><li><input checked="" disabled="" type="checkbox"> <code>MD5</code> 加密，不可逆</li><li><input checked="" disabled="" type="checkbox"> 登陆后反复后台验证，比较安全</li><li><input checked="" disabled="" type="checkbox"> 验证账户密码直接从表单获取而不赋值</li><li><input checked="" disabled="" type="checkbox"> 密码错误使用 <code>Bootstrap4</code> 的弹窗框提示，更加美观</li><li><input checked="" disabled="" type="checkbox"> 虽是手动添加用户名密码，却很方便<br><img src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/Snipaste_2020-11-15_01-18-28.jpg" alt="代码片段"></li></ul><h1 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h1><ul><li><input disabled="" type="checkbox"> 前端验证所生来具有的严重问题</li><li><input checked="" disabled="" type="checkbox"> <del><code>JavaScript</code> 里是以赋值的方式获取表单，有可能会被劫持然后直接把存在的 <code>MD5</code> 写进去</del></li><li><input disabled="" type="checkbox"> 后台反复验证可能会导致性能下降，设备运行卡顿</li><li><input disabled="" type="checkbox"> 输入完账户密码后回车来进行登录会有很大的延迟</li></ul><h1 id="待实现"><a href="#待实现" class="headerlink" title="待实现"></a>待实现</h1><ul><li><input disabled="" type="checkbox"> <code>SRI</code> 验证 <code>JavaScript</code> 完整性</li><li><input disabled="" type="checkbox"> 加密算法加强</li></ul><h1 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h1><p><a href="https://github.com/wayne0926/web-login-sys" target="_blank" rel="noopener external nofollow noreferrer">https://github.com/wayne0926/web-login-sys</a></p><blockquote><p>给个 Star 呗，么么哒😙</p></blockquote><h1 id="演示站点"><a href="#演示站点" class="headerlink" title="演示站点"></a>演示站点</h1><p><a href="https://fkun.cf/" target="_blank" rel="noopener external nofollow noreferrer">https://fkun.cf</a></p><h1 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h1><h2 id="1-0-1"><a href="#1-0-1" class="headerlink" title="1.0.1"></a>1.0.1</h2><p><code>2020/11/20 23:50</code> 更新取值方式，直接取值而不赋值，增加安全性。界面种种优化。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 工具 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 工具 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>送给GitHub新手(咕~)</title>
       <link href="/p/e78f01eb/"/>
       <url>/p/e78f01eb/</url>
@@ -357,33 +332,6 @@
             <tag> 白嫖 </tag>
             
             <tag> PicGo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>GitHub上的学习项目</title>
-      <link href="/p/36c2c285/"/>
-      <url>/p/36c2c285/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><div class="tip">非技术性！</div><div class="tip success">此文章收集了一些学习项目</div><h1 id="英语学习"><a href="#英语学习" class="headerlink" title="英语学习"></a>英语学习</h1><h2 id="English-level-up-tips-for-Chinese"><a href="#English-level-up-tips-for-Chinese" class="headerlink" title="English-level-up-tips-for-Chinese"></a>English-level-up-tips-for-Chinese</h2><table><thead><tr><th>仓库</th><th><a href="https://github.com/byoungd/English-level-up-tips-for-Chinese" target="_blank" rel="noopener external nofollow noreferrer">English-level-up-tips-for-Chinese</a></th></tr></thead><tbody><tr><td>介绍</td><td>可能是让你受益匪浅的英语进阶指南</td></tr><tr><td>README</td><td><a href="https://github.com/byoungd/English-level-up-tips-for-Chinese/blob/master/README.md" target="_blank" rel="noopener external nofollow noreferrer">README.md</a></td></tr><tr><td>在线地址</td><td><a href="https://byoungd.gitbook.io/english-level-up-tips/" target="_blank" rel="noopener external nofollow noreferrer">English-level-up-tips-for-Chinese(GitBook)</a></td></tr></tbody></table><table><thead><tr><th><img src="https://cdn.jsdelivr.net/gh/byoungd/English-level-up-tips-for-Chinese/assets/CEFR@2x.png" alt="img"></th><th><img src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/english1.jpg" alt="img"></th></tr></thead><tbody><tr><td><img src="https://cdn.jsdelivr.net/gh/byoungd/English-level-up-tips-for-Chinese/assets/How@2x.png" alt="img"></td><td><img src="https://cdn.jsdelivr.net/gh/byoungd/English-level-up-tips-for-Chinese/assets/Feature%402x.png" alt="img"></td></tr></tbody></table><h2 id="Jgsrty-github-docs"><a href="#Jgsrty-github-docs" class="headerlink" title="Jgsrty.github.docs"></a>Jgsrty.github.docs</h2><table><thead><tr><th>仓库</th><th><a href="https://github.com/jgsrty/jgsrty.github.docs" target="_blank" rel="noopener external nofollow noreferrer"> jgsrty.github.docs</a></th></tr></thead><tbody><tr><td>介绍</td><td>☀️ 英语学习 🐾</td></tr><tr><td>README</td><td><a href="https://github.com/jgsrty/jgsrty.github.docs/blob/master/README.md" target="_blank" rel="noopener external nofollow noreferrer">README.md</a></td></tr><tr><td>在线地址</td><td><a href="https://jgsrty.github.io/" target="_blank" rel="noopener external nofollow noreferrer">在线预览 - preview</a>  |  <a href="https://rtyxmd.gitee.io/" target="_blank" rel="noopener external nofollow noreferrer">国内访问地址 - 速度更快</a></td></tr></tbody></table><table><thead><tr><th><img src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/rty-docs.png" alt="img"></th><th><img src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/rty-docs0.jpg" alt="img"></th></tr></thead><tbody><tr><td><img src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/rty-docs2.jpg" alt="img"  /></td><td><img src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/rty-docs3.jpg" alt="img"></td></tr></tbody></table>]]></content>
-      
-      
-      <categories>
-          
-          <category> 学习 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> github </tag>
-            
-            <tag> 学习 </tag>
             
         </tags>
       
@@ -676,31 +624,6 @@
             <tag> 视频 </tag>
             
             <tag> 下载 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>全等三角形笔记</title>
-      <link href="/p/13ea88dc/"/>
-      <url>/p/13ea88dc/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="全等三角形笔记"><a href="#全等三角形笔记" class="headerlink" title="全等三角形笔记"></a>全等三角形笔记</h1><p>这个我搞了很久，一两天吧，用<code>OneNote</code>做的，导出成<code>PDF</code>文件</p><p>总结了暑假所学的大部分全等三角形知识，除了母子三角形。</p><p><img src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/quandengsanjiaoxing1.jpg" alt="笔记截图"></p><h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><p><a href="http://pan-yz.chaoxing.com/share/info/97c00ab117e9c4c9" target="_blank" rel="noopener external nofollow noreferrer">点击访问超星网盘（需登录）</a></p><p><a href="https://wayne0926.lanzous.com/iCN69f7krji" target="_blank" rel="noopener external nofollow noreferrer">点击访问蓝奏云（无需登录）</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 分享 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 笔记 </tag>
             
         </tags>
       
