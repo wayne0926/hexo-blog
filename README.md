@@ -1,4 +1,4 @@
-# 时过境迁Wayne博客
+# 时过境迁Wayne博客（已切换为Typecho）
 
 ## hexo-blog
 >## https://wr0926.ml
@@ -6,7 +6,7 @@
 >#### https://wr0926.ml/link
 
 <hr>
-
+```
 本博客使用的博客程序是：[Hexo](https://github.com/hexojs/hexo)【MIT License
 】
 
@@ -15,3 +15,5 @@
 
 本仓库使用的开源许可证是【GNU General Public License v3.0】
 
+```
+本博客已切换为`Typecho`
